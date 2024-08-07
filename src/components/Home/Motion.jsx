@@ -1,29 +1,45 @@
 import React, { useRef, useState, useEffect } from "react";
 
-function Motion() {
-  const playerRef = useRef(null);
-  const [playerReady, setPlayerReady] = useState(false);
-  const [autoplayFailed, setAutoplayFailed] = useState(false);
+let isYouTubeAPIReady = false;
+let onYouTubeIframeAPIReadyCallbacks = [];
 
-  useEffect(() => {
+function loadYouTubeAPI() {
+  if (!isYouTubeAPIReady) {
     const script = document.createElement('script');
     script.src = "https://www.youtube.com/iframe_api";
     script.async = true;
     document.body.appendChild(script);
 
     window.onYouTubeIframeAPIReady = () => {
-      setPlayerReady(true);
+      isYouTubeAPIReady = true;
+      onYouTubeIframeAPIReadyCallbacks.forEach(callback => callback());
+      onYouTubeIframeAPIReadyCallbacks = [];
     };
+  }
+}
 
-    return () => {
-      document.body.removeChild(script);
-      window.onYouTubeIframeAPIReady = null;
-    };
+function onYouTubeAPIReady(callback) {
+  if (isYouTubeAPIReady) {
+    callback();
+  } else {
+    onYouTubeIframeAPIReadyCallbacks.push(callback);
+  }
+}
+
+function Motion() {
+  const playerRef = useRef(null);
+  const [playerReady, setPlayerReady] = useState(false);
+
+  useEffect(() => {
+    loadYouTubeAPI();
+    onYouTubeAPIReady(() => setPlayerReady(true));
   }, []);
 
   useEffect(() => {
+    let player;
+
     if (playerReady && playerRef.current) {
-      new window.YT.Player(playerRef.current, {
+      player = new window.YT.Player(playerRef.current, {
         height: '100%',
         width: '100%',
         videoId: '2vbr502XSgM',
@@ -40,21 +56,18 @@ function Motion() {
         },
         events: {
           onReady: (event) => {
-            event.target.playVideo().catch(() => {
-              setAutoplayFailed(true);
-            });
+            event.target.playVideo();
           },
         },
       });
     }
-  }, [playerReady]);
 
-  const handleManualPlay = () => {
-    if (playerRef.current && playerRef.current.playVideo) {
-      playerRef.current.playVideo();
-      setAutoplayFailed(false);
-    }
-  };
+    return () => {
+      if (player) {
+        player.destroy();
+      }
+    };
+  }, [playerReady]);
 
   return (
     <div className='flex items-center justify-center bg-black h-screen'>
@@ -71,14 +84,6 @@ function Motion() {
             pointerEvents: 'none'  // Prevents interaction with the iframe
           }}
         ></div>
-        {autoplayFailed && (
-          <button
-            onClick={handleManualPlay}
-            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white text-black px-4 py-2 rounded z-10"
-          >
-            Play Video
-          </button>
-        )}
       </div>
     </div>
   );
