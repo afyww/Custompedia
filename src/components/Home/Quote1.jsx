@@ -13,7 +13,7 @@ function Quote1() {
         className="absolute inset-0 bg-cover bg-center z-10 opacity-80" 
         style={{ backgroundImage: `url(${iniColorBg})` }}
       ></div>
-      <div className="relative z-20 mb-8 max-w-3xl w-full text-center">
+      <div className="relative mb-8 max-w-3xl w-full text-center">
         <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold font-unbounded mb-4 leading-tight flex flex-wrap justify-center items-center gap-2">
           <span>A</span>
           <span className="text-white border-blue-400 border rounded-lg px-2 py-1 font-unbounded">CREATIVE</span>
@@ -50,7 +50,7 @@ function Quote1() {
           <span className="text-white border-blue-400 border rounded-lg px-2 py-1 font-serif">Time</span>
         </p>
       </div>
-      <div className="relative z-20 w-full mt-8 sm:mt-12 md:mt-16">
+      <div className="relative w-full mt-8 sm:mt-12 md:mt-16">
         <img src={logoPerusahaan} alt="logo perusahaan" className="w-full h-auto" />
       </div>
     </div>

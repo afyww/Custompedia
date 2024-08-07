@@ -10,7 +10,7 @@ function AboutUs() {
   });
 
   return (
-    <div className="bg-black text-white pt-16 min-h-screen">
+    <div className="bg-black text-white min-h-screen">
       <div className="container mx-auto py-8 md:py-16 px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Left Column: Image */}

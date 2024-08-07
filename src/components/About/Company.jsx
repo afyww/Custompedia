@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import sampleImage from '../../assets/new image/sample.jpg';
 import logoPerusahaan from '../../assets/new image/logoperusahaanlain.png'
 
-const Nineyears = () => {
+const Company = () => {
   const settings = {
     dots: true,
     infinite: true,
@@ -31,11 +31,11 @@ const Nineyears = () => {
         </Slider>
         </div>
         <div className="">
-          <img src={logoPerusahaan} alt="Logos" className="mx-auto" />
+          <img src={logoPerusahaan} alt="Logos" className="mx-auto w-full" />
         </div>
       </div>
     </section>
   );
 };
 
-export default Nineyears;
+export default Company;

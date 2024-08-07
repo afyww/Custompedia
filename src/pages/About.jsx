@@ -1,7 +1,7 @@
 import Aboutus from '../components/About/Aboutus'
-import Nineyears from '../components/About/Nineyears'
+import Nineyears from '../components/About/Company'
 import Ready from '../components/About/Ready'
-import What from '../components/About/What'
+import Workus from '../components/About/Workus'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import Whatsapp from '../components/Whatsapp'
@@ -14,7 +14,7 @@ function About() {
         <Whatsapp />
         <Aboutus />
         <Nineyears />
-        <What />
+        <Workus />
         <Ready />
       </div>
       <Footer />

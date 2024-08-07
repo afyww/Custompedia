@@ -1,9 +1,9 @@
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
-import Serviceus from '../components/Service/Serviceus'
-import Serviceus2 from '../components/Service/Serviceus2'
+import Serviceus from '../components/Works/Serviceus'
+import Serviceus2 from '../components/Works/Serviceus2'
 import Whatsapp from '../components/Whatsapp'
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 
 function Services() {
   useEffect(() => {
