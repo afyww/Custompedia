@@ -49,7 +49,6 @@ function Motion() {
           modestbranding: 1,
           loop: 1,
           playlist: '2vbr502XSgM',
-          mute: 1,
           rel: 0,
           showinfo: 0,
           iv_load_policy: 3
