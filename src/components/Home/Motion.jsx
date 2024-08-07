@@ -1,45 +1,29 @@
 import React, { useRef, useState, useEffect } from "react";
 
-let isYouTubeAPIReady = false;
-let onYouTubeIframeAPIReadyCallbacks = [];
+function Motion() {
+  const playerRef = useRef(null);
+  const [playerReady, setPlayerReady] = useState(false);
+  const [autoplayFailed, setAutoplayFailed] = useState(false);
 
-function loadYouTubeAPI() {
-  if (!isYouTubeAPIReady) {
+  useEffect(() => {
     const script = document.createElement('script');
     script.src = "https://www.youtube.com/iframe_api";
     script.async = true;
     document.body.appendChild(script);
 
     window.onYouTubeIframeAPIReady = () => {
-      isYouTubeAPIReady = true;
-      onYouTubeIframeAPIReadyCallbacks.forEach(callback => callback());
-      onYouTubeIframeAPIReadyCallbacks = [];
+      setPlayerReady(true);
     };
-  }
-}
 
-function onYouTubeAPIReady(callback) {
-  if (isYouTubeAPIReady) {
-    callback();
-  } else {
-    onYouTubeIframeAPIReadyCallbacks.push(callback);
-  }
-}
-
-function Motion() {
-  const playerRef = useRef(null);
-  const [playerReady, setPlayerReady] = useState(false);
-
-  useEffect(() => {
-    loadYouTubeAPI();
-    onYouTubeAPIReady(() => setPlayerReady(true));
+    return () => {
+      document.body.removeChild(script);
+      window.onYouTubeIframeAPIReady = null;
+    };
   }, []);
 
   useEffect(() => {
-    let player;
-
     if (playerReady && playerRef.current) {
-      player = new window.YT.Player(playerRef.current, {
+      new window.YT.Player(playerRef.current, {
         height: '100%',
         width: '100%',
         videoId: '2vbr502XSgM',
@@ -49,24 +33,28 @@ function Motion() {
           modestbranding: 1,
           loop: 1,
           playlist: '2vbr502XSgM',
+          mute: 1,
           rel: 0,
           showinfo: 0,
           iv_load_policy: 3
         },
         events: {
           onReady: (event) => {
-            event.target.playVideo();
+            event.target.playVideo().catch(() => {
+              setAutoplayFailed(true);
+            });
           },
         },
       });
     }
-
-    return () => {
-      if (player) {
-        player.destroy();
-      }
-    };
   }, [playerReady]);
+
+  const handleManualPlay = () => {
+    if (playerRef.current && playerRef.current.playVideo) {
+      playerRef.current.playVideo();
+      setAutoplayFailed(false);
+    }
+  };
 
   return (
     <div className='flex items-center justify-center bg-black h-screen'>
@@ -83,6 +71,14 @@ function Motion() {
             pointerEvents: 'none'  // Prevents interaction with the iframe
           }}
         ></div>
+        {autoplayFailed && (
+          <button
+            onClick={handleManualPlay}
+            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white text-black px-4 py-2 rounded z-10"
+          >
+            Play Video
+          </button>
+        )}
       </div>
     </div>
   );
