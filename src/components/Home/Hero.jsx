@@ -51,6 +51,7 @@ function Hero() {
                 autoPlay
                 loop
                 muted
+                playsInline
                 className="absolute z-0 w-full h-full object-cover"
             >
                 <source src={backgroundVideo} type="video/mp4" />
