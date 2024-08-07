@@ -2,7 +2,7 @@ function Motion() {
   return (
     <div className="grid grid-cols-1 h-screen bg-black">
       <div className="my-auto">
-        <div className="video-container relative">
+        <div className="video-container absolute">
           <iframe
             id="player"
             type="text/html"
