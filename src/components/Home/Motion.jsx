@@ -33,7 +33,7 @@ function Motion() {
           modestbranding: 1,
           loop: 1,
           playlist: '2vbr502XSgM',
-          mute: 1,
+          mute: 0,
           rel: 0,
           showinfo: 0,
           iv_load_policy: 3
