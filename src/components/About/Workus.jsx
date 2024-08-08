@@ -21,7 +21,7 @@ function Workus() {
   }, []);
 
   return (
-    <div className="p-4 grid grid-cols-1">
+    <div className="p-4 grid grid-cols-1 h-screen">
       <div className="space-y-4 xl:space-y-20 my-auto">
         <div className="space-y-4">
           <div className="flex space-x-2">
@@ -41,7 +41,7 @@ function Workus() {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-1 xl:grid-cols-4 gap-2 xl:gap-4">
+        <div className="grid grid-cols-2 xl:grid-cols-4 gap-2 xl:gap-4">
           {projects.map((project) => (
             <div
               key={project.id}
@@ -66,11 +66,16 @@ function Workus() {
             </div>
           ))}
         </div>
-        <div className="border-2 border-blue-400 rounded-xl w-fit mx-auto p-2">
-          <Link to="/projects" className="text-center flex space-x-1
-          ">
-            <h1 className="font-bold text-lg xl:text-xl my-auto">View All Our Work</h1>
-            <IoIosArrowForward className="w-6 h-6 my-auto xl:w-8 xl:h-8" />
+        <div className="p-2 my-auto hover:scale-110 hover:bg-gradient-to-l flex justify-between from-white to-white border-2 border-blue-400 bg-gradient-to-r from-blue-400 to-blue-500 rounded-xl w-fit duration-200 delay-150 mx-auto">
+          <Link
+            to="/projects"
+            className="text-center flex space-x-1
+          "
+          >
+            <h1 className="text-black font-semibold text-left xl:px-7 px-4 text-sm xl:text-xl 2xl:text-2xl">
+              View All Our Work
+            </h1>
+            <IoIosArrowForward className="text-black w-10 h-5 xl:w-12 xl:h-7" />
           </Link>
         </div>
       </div>

@@ -15,8 +15,8 @@ const Company = () => {
   };
 
   return (
-    <section className="bg-black">
-      <div className="p-10 space-y-16">
+    <section className="bg-black grid grid-cols-1">
+      <div className="p-10 my-auto space-y-16">
         <div className='max-w-6xl mx-auto'>
         <Slider {...settings}>
           <div>
