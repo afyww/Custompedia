@@ -6,7 +6,7 @@ import about3 from "../../assets/new image/about3.png";
 function Nineyears() {
   return (
     <div className="grid grid-cols-1 h-full bg-black p-4">
-      <div className="my-auto space-y-2 xl:space-y-4">
+      <div className="xl:my-auto space-y-2 xl:space-y-4">
         <div className="grid grid-cols-1 xl:grid-cols-4">
           <div className="xl:space-y-4 space-y-1 xl:col-span-3">
             <div className="xl:flex xl:space-x-2 space-y-2 xl:space-y-0">
