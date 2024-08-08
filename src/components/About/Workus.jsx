@@ -21,7 +21,7 @@ function Workus() {
   }, []);
 
   return (
-    <div className="mx-auto p-4 grid grid-cols-1 h-screen">
+    <div className="p-4 grid grid-cols-1">
       <div className="space-y-4 xl:space-y-20 my-auto">
         <div className="space-y-4">
           <div className="flex space-x-2">

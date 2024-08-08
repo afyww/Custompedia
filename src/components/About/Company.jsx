@@ -15,7 +15,7 @@ const Company = () => {
   };
 
   return (
-    <section className="bg-black text-white">
+    <section className="bg-black">
       <div className="p-10 space-y-16">
         <div className='max-w-6xl mx-auto'>
         <Slider {...settings}>
@@ -23,10 +23,10 @@ const Company = () => {
             <img src={sampleImage} alt="Slide 1" className="w-full h-auto rounded-xl" />
           </div>
           <div>
-            <img src={sampleImage} alt="Slide 2" className="w-full h-auto" />
+            <img src={sampleImage} alt="Slide 2" className="w-full h-auto rounded-xl" />
           </div>
           <div>
-            <img src={sampleImage} alt="Slide 3" className="w-full h-auto" />
+            <img src={sampleImage} alt="Slide 3" className="w-full h-auto rounded-xl" />
           </div>
         </Slider>
         </div>
