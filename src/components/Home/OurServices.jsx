@@ -31,7 +31,7 @@ const Slider = () => {
   };
 
   return (
-    <div className="flex flex-col justify-between items-start min-h-screen bg-black text-white p-8">
+    <div className="flex flex-col justify-between items-start min-h-screen bg-black text-white p-4  xl:p-8">
     <div className="w-full">
       <div className="flex space-x-2">
             <div>
