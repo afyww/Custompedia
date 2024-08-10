@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 
 function Motion() {
   const playerRef = useRef(null);
-  const [playerReady, setPlayerReady] = useState(false);
+  const [player, setPlayer] = useState(null);
   const [autoplayFailed, setAutoplayFailed] = useState(false);
 
   useEffect(() => {
@@ -12,7 +12,39 @@ function Motion() {
     document.body.appendChild(script);
 
     window.onYouTubeIframeAPIReady = () => {
-      setPlayerReady(true);
+      const videoId = window.innerWidth <= 768 ? 'vGU7dc1kDs8' : '2vbr502XSgM';
+      const ytPlayer = new window.YT.Player(playerRef.current, {
+        height: '100%',
+        width: '100%',
+        videoId: videoId,
+        playerVars: {
+          autoplay: 1,
+          controls: 0,
+          modestbranding: 1,
+          loop: 1,
+          playlist: videoId,
+          rel: 0,
+          showinfo: 0,
+          iv_load_policy: 3,
+        },
+        events: {
+          onReady: (event) => {
+            event.target.unMute();  // Ensure the video is unmuted
+            event.target.playVideo();
+          },
+          onStateChange: (event) => {
+            if (event.data === window.YT.PlayerState.UNSTARTED) {
+              // Autoplay likely failed due to unmuted state
+              setAutoplayFailed(true);
+            } else if (event.data === window.YT.PlayerState.PLAYING) {
+              // If video starts playing, remove the autoplay failed state
+              setAutoplayFailed(false);
+            }
+          },
+        },
+      });
+
+      setPlayer(ytPlayer);
     };
 
     return () => {
@@ -21,37 +53,9 @@ function Motion() {
     };
   }, []);
 
-  useEffect(() => {
-    if (playerReady && playerRef.current) {
-      new window.YT.Player(playerRef.current, {
-        height: '100%',
-        width: '100%',
-        videoId: '2vbr502XSgM',
-        playerVars: {
-          autoplay: 1,
-          controls: 0,
-          modestbranding: 1,
-          loop: 1,
-          playlist: '2vbr502XSgM',
-          mute: 1,
-          rel: 0,
-          showinfo: 0,
-          iv_load_policy: 3
-        },
-        events: {
-          onReady: (event) => {
-            event.target.playVideo().catch(() => {
-              setAutoplayFailed(true);
-            });
-          },
-        },
-      });
-    }
-  }, [playerReady]);
-
   const handleManualPlay = () => {
-    if (playerRef.current && playerRef.current.playVideo) {
-      playerRef.current.playVideo();
+    if (player) {
+      player.playVideo();
       setAutoplayFailed(false);
     }
   };
@@ -64,17 +68,17 @@ function Motion() {
           className="absolute top-0 left-0 w-full h-full"
           style={{
             position: 'absolute',
-            top: '-60px',  // Adjust this value to hide the top bar
+            top: '-60px',
             left: '0',
             width: '100%',
-            height: 'calc(100% + 120px)',  // Compensate for the hidden top and bottom bars
-            pointerEvents: 'none'  // Prevents interaction with the iframe
+            height: 'calc(100% + 120px)',
+            pointerEvents: 'none',
           }}
         ></div>
         {autoplayFailed && (
           <button
             onClick={handleManualPlay}
-            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white text-black px-4 py-2 rounded z-10"
+            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white text-black px-8 py-4 rounded z-10"
           >
             Play Video
           </button>

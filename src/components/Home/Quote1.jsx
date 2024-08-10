@@ -13,26 +13,26 @@ function Quote1() {
         className="absolute inset-0 bg-cover bg-center z-10 opacity-80" 
         style={{ backgroundImage: `url(${iniColorBg})` }}
       ></div>
-      <div className="relative mb-8 max-w-3xl w-full text-center">
-        <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold font-unbounded mb-4 leading-tight flex flex-wrap justify-center items-center gap-2">
+      <div className="relative mb-8 max-w-6xl w-full text-center">
+        <p className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl font-bold font-unbounded mb-2 leading-tight flex flex-wrap items-center gap-2 text-justify">
           <span>A</span>
-          <span className="text-white border-blue-400 border rounded-lg px-2 py-1 font-unbounded">CREATIVE</span>
+          <span className=" text-white border-blue-400 border rounded-lg px-2 py-1">CREATIVE</span>
           <img src={star1} alt="star" className="w-4 h-4 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 xl:w-12 xl:h-12" />
           <span>MIND</span>
           <img src={star2} alt="star" className="w-2 h-2 sm:w-2 sm:h-2 md:w-4 md:h-5 lg:w-5 lg:h-5 xl:w-8 xl:h-8" />
-          <span className="font-serif text-white border-blue-400 border rounded-lg px-2 py-1">KNOWS</span>
+          <span className="text-white border-blue-400 border rounded-lg px-2 py-1">KNOWS</span>
+        </p>
+        <p className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-2 flex flex-wrap items-center gap-2 text-justify">
           <span>HOW</span>
           <img src={star2} alt="star" className="w-2 h-2 sm:w-2 sm:h-2 md:w-4 md:h-5 lg:w-5 lg:h-5 xl:w-8 xl:h-8" />
           <span>TO</span>
-        </p>
-        <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-2 flex flex-wrap justify-center items-center gap-2">
           <span>DO</span>
           <span>THE</span>
-          <span className="font-serif text-white rounded-lg px-2 py-1">RIGHT</span>
+          <span>RIGHT</span>
           <img src={star1} alt="star" className="w-4 h-4 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 xl:w-12 xl:h-12" />
+          <span className="font-serif text-white px-2 py-1">Things</span>
         </p>
-        <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-2 flex flex-wrap justify-center items-center gap-2">
-          <span>Things</span>
+        <p className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-2 flex flex-wrap items-center gap-2 text-justify">
           <span>AT</span>
           <span>THE</span>
           <span>RIGHT</span>
@@ -42,12 +42,12 @@ function Quote1() {
           <span>AND</span>
           <span>AT</span>
         </p>
-        <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold flex flex-wrap justify-center sm:justify-center gap-x-2 items-center">
+        <p className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold flex flex-wrap items-center gap-2 text-justify">
           <span className="text-white border-blue-400 border rounded-lg px-2 py-1 font-serif">THE</span>
           <img src={star1} alt="star" className="w-4 h-4 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 xl:w-12 xl:h-12" />
           <span>RIGHT</span>
           <img src={star2} alt="star" className="w-2 h-2 sm:w-2 sm:h-2 md:w-4 md:h-5 lg:w-5 lg:h-5 xl:w-8 xl:h-8" />
-          <span className="text-white border-blue-400 border rounded-lg px-2 py-1 font-serif">Time</span>
+          <span className="text-white border-blue-400 border rounded-lg px-2 py-1 font-serif">TIME</span>
         </p>
       </div>
       <div className="relative w-full mt-8 sm:mt-12 md:mt-16">
