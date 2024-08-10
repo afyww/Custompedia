@@ -24,7 +24,7 @@ function Workus() {
   return (
     <div className="p-4 grid grid-cols-1 h-screen">
       <div className="space-y-4 xl:space-y-20 my-auto">
-        <div className="space-y-4">
+        <div className="space-y-2 xl:space-y-4">
           <div className="flex space-x-2">
             <div className="bg-blue-500 rounded p-1 xl:p-2 w-fit">
               <h1 className="text-white text-xs xl:text-xl font-semibold">
@@ -36,7 +36,7 @@ function Workus() {
             </div>
           </div>
           <div>
-            <p className="text-gray-600 text-sm sm:text-base w-3/4 xl:w-1/2">
+          <p className="text-gray-600 text-sm xl:text-xl w-full xl:w-1/2">
               Our ongoing project exemplifies our dedication and collaboration,
               driving us towards innovative and impactful results.
             </p>
@@ -59,7 +59,7 @@ function Workus() {
                       </p>
                       <p className="text-blue-500 text-xs xl:text-lg">Custompedia</p>
                     </div>
-                    <h2 className="font-bold text-lg xl:text-2xl text-left">
+                    <h2 className="font-bold text-lg xl:text-3xl text-left">
                       {project.project}
                     </h2>
                   </div>

@@ -42,15 +42,16 @@ function Workus() {
     <div className='grid grid-cols-1 bg-black p-4 xl:p-8'>
       <div className="my-auto">
         <div className="space-y-5 xl:space-y-8 2xl:space-y-12">
-          <div className="flex space-x-2">
-            <div>
-              <h1 className="text-xl text-left xl:text-5xl 2xl:text-7xl text-white font-bold">Our Work</h1>
-            </div>
-            <div className=''>
-              <div className='bg-yellow-400 p-1 xl:p-2 rounded-xl px-8 xl:px-16'>
-              </div>
-            </div>
-          </div>
+        <div className="flex space-x-2">
+      <div>
+        <h1 className="text-xl text-left xl:text-5xl 2xl:text-7xl text-white font-bold">
+          Our Work
+        </h1>
+      </div>
+      <div className="pt-3.5 xl:pt-12">
+        <div className="bg-yellow-400 p-1 xl:p-2 rounded-xl px-8 xl:px-16"></div>
+      </div>
+    </div>
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-2 xl:p-8 p-4">
             {projects.map((project) => (
               <div className="w-full my-auto" key={project.id}>

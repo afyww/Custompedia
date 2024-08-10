@@ -33,15 +33,16 @@ const Slider = () => {
   return (
     <div className="flex flex-col justify-between items-start min-h-screen bg-black text-white p-4  xl:p-8">
     <div className="w-full">
-      <div className="flex space-x-2">
-            <div>
-              <h1 className="text-xl text-left xl:text-5xl 2xl:text-7xl text-white font-bold">Our Services</h1>
-            </div>
-            <div className='pt-3.5 xl:pt-7'>
-              <div className='bg-yellow-400 p-1 xl:p-2 rounded-xl px-8 xl:px-16'>
-              </div>
-            </div>
-          </div>
+    <div className="flex space-x-2">
+      <div>
+        <h1 className="text-xl text-left xl:text-5xl 2xl:text-7xl text-white font-bold">
+          Our Service
+        </h1>
+      </div>
+      <div className="pt-3.5 xl:pt-12">
+        <div className="bg-yellow-400 p-1 xl:p-2 rounded-xl px-8 xl:px-16"></div>
+      </div>
+    </div>
         <p className="text-lg text-gray-300 max-w-2xl">
           As your partner, we're dedicated to navigating the
           complex marketing landscape and delivering

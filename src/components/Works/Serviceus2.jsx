@@ -1,13 +1,19 @@
-import { useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
-import axios from 'axios';
-import { Link } from 'react-router-dom';
+import { useState, useEffect } from "react";
+import PropTypes from "prop-types";
+import axios from "axios";
+import { Link } from "react-router-dom";
 
 const MediaCard = ({ src, title, projectId }) => (
   <div className="bg-white rounded-lg overflow-hidden shadow-lg w-full sm:w-[calc(50%-1rem)] md:w-[calc(33.333%-1rem)] lg:w-[calc(25%-1rem)] mb-4">
-    <div className="relative pb-[56.25%]"> {/* 16:9 aspect ratio */}
+    <div className="relative pb-[56.25%]">
+      {" "}
+      {/* 16:9 aspect ratio */}
       <Link to={`/project/${projectId}`}>
-        <img src={src} alt={title} className="absolute top-0 left-0 w-full h-full object-cover" />
+        <img
+          src={src}
+          alt={title}
+          className="absolute top-0 left-0 w-full h-full object-cover"
+        />
       </Link>
     </div>
     <div className="p-4">
@@ -31,12 +37,14 @@ const ServicesSection = () => {
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const response = await axios.get('https://custom.beilcoff.shop/api/kategoris');
+        const response = await axios.get(
+          "https://custom.beilcoff.shop/api/kategoris"
+        );
         setCategories(response.data);
         setSelectedCategory(response.data[0].id);
         setIsLoading(false);
       } catch (err) {
-        setError('Failed to fetch categories');
+        setError("Failed to fetch categories");
         setIsLoading(false);
       }
     };
@@ -45,9 +53,9 @@ const ServicesSection = () => {
   }, []);
 
   const hideScrollbarStyle = {
-    msOverflowStyle: 'none',
-    scrollbarWidth: 'none',
-    WebkitOverflowScrolling: 'touch',
+    msOverflowStyle: "none",
+    scrollbarWidth: "none",
+    WebkitOverflowScrolling: "touch",
   };
 
   if (isLoading) {
@@ -58,21 +66,34 @@ const ServicesSection = () => {
     return <div>Error: {error}</div>;
   }
 
-  const selectedCategoryProjects = categories.find(cat => cat.id === selectedCategory)?.projects || [];
+  const selectedCategoryProjects =
+    categories.find((cat) => cat.id === selectedCategory)?.projects || [];
 
   return (
     <div className="bg-gray-100 grid grid-cols-1 h-screen">
       <div className="my-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-6 sm:mb-8">
-          Services <span className="inline-block w-8 sm:w-12 h-1 bg-yellow-400 ml-2"></span>
-        </h2>
-        
-        <div className="flex flex-wrap gap-2 sm:gap-4 mb-6 sm:mb-8 overflow-x-auto whitespace-nowrap" style={hideScrollbarStyle}>
+        <div className="flex space-x-2">
+          <div>
+            <h1 className="text-xl text-left xl:text-2xl 2xl:text-7xl text-black font-bold">
+              Service
+            </h1>
+          </div>
+          <div className="pt-3.5 xl:pt-12">
+            <div className="bg-yellow-400 p-1 xl:p-2 rounded-xl px-8 xl:px-16"></div>
+          </div>
+        </div>
+
+        <div
+          className="flex flex-wrap gap-2 sm:gap-4 mb-6 sm:mb-8 overflow-x-auto whitespace-nowrap"
+          style={hideScrollbarStyle}
+        >
           {categories.map((category) => (
             <button
               key={category.id}
               className={`px-3 sm:px-4 py-1 sm:py-2 text-sm sm:text-base rounded-full ${
-                category.id === selectedCategory ? 'bg-blue-500 text-white' : 'bg-gray-200 text-gray-700'
+                category.id === selectedCategory
+                  ? "bg-blue-500 text-white"
+                  : "bg-gray-200 text-gray-700"
               }`}
               onClick={() => setSelectedCategory(category.id)}
             >
@@ -80,7 +101,7 @@ const ServicesSection = () => {
             </button>
           ))}
         </div>
-        
+
         <div className="flex flex-wrap gap-4">
           {selectedCategoryProjects.map((project) => (
             <MediaCard
