@@ -4,7 +4,7 @@ import lampu from "../../assets/new image/lampu.png";
 
 function Why() {
   return (
-    <div className="grid grid-cols-1 h-full bg-black p-2 xl:p-10">
+    <div className="grid grid-cols-1 h-full bg-black p-2 xl:p-16">
       <div className="my-auto space-y-2 xl:space-y-4">
         <div>
           <h1 className="text-white text-center text-4xl xl:text-9xl font-bold">WHY YOU</h1>

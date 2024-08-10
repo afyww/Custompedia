@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
@@ -61,8 +61,8 @@ const ServicesSection = () => {
   const selectedCategoryProjects = categories.find(cat => cat.id === selectedCategory)?.projects || [];
 
   return (
-    <div className="bg-gray-100 py-8 sm:py-12 px-4">
-      <div className="max-w-6xl mx-auto">
+    <div className="bg-gray-100 grid grid-cols-1 h-screen">
+      <div className="my-auto">
         <h2 className="text-3xl sm:text-4xl font-bold mb-6 sm:mb-8">
           Services <span className="inline-block w-8 sm:w-12 h-1 bg-yellow-400 ml-2"></span>
         </h2>
