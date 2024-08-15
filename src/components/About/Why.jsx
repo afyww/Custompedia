@@ -5,7 +5,7 @@ import lampu from "../../assets/new image/lampu.png";
 function Why() {
   return (
     <div className="grid grid-cols-1 h-full bg-black p-2 xl:p-16">
-      <div className="xl:my-44 my-16  space-y-4 xl:space-y-8">
+      <div className="xl:my-16 my-8 space-y-4 xl:space-y-8">
         <div>
           <h1 className="text-white text-center text-4xl xl:text-9xl font-bold">WHY YOU</h1>
         </div>
@@ -25,7 +25,7 @@ function Why() {
             </span>
           </h1>
         </div>
-        <div className="xl:mx-64 mx-4 space-y-2 xl:space-y-4">
+        <div className="max-w-5xl mx-auto space-y-2 xl:space-y-4">
           <div className="xl:flex xl:gap-4">
             <div className="h-36 xl:h-fit w-full xl:w-80 my-auto">
               <img className="mx-auto" src={full} alt="" />
