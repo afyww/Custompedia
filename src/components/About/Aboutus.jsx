@@ -2,13 +2,13 @@ import aboutUsImage from '../../assets/new image/about us.jpg';
 
 const Aboutus = () => {
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-black">
+    <div className="grid grid-cols-1 h-screen bg-black">
       <img 
         src={aboutUsImage} 
         alt="Custompedia Team" 
         className="object-cover opacity-50 w-full h-full absolute" 
       />
-      <div className="relative text-center">
+      <div className="relative text-center my-auto">
         <h1 className="text-4xl xl:text-8xl font-bold text-yellow-500">
           CUSTOMPEDIA
         </h1>
