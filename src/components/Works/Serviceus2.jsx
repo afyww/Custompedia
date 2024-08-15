@@ -71,11 +71,11 @@ const ServicesSection = () => {
 
   return (
     <div className="bg-gray-100 grid grid-cols-1 h-screen">
-      <div className="my-auto">
+      <div className="my-auto p-2">
         <div className="flex space-x-2">
           <div>
             <h1 className="text-xl text-left xl:text-2xl 2xl:text-7xl text-black font-bold">
-              Service
+              Services
             </h1>
           </div>
           <div className="pt-3.5 xl:pt-12">

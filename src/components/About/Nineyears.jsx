@@ -8,7 +8,7 @@ function Nineyears() {
     <div className="grid grid-cols-1 h-full bg-black p-4">
       <div className="xl:my-auto space-y-2 xl:space-y-4">
         <div className="grid grid-cols-1 xl:grid-cols-4">
-          <div className="xl:space-y-4 space-y-1 xl:col-span-3">
+          <div className="xl:col-span-3">
             <div className="xl:flex xl:space-x-2 space-y-2 xl:space-y-0">
               <div className="bg-blue-500 rounded p-1 xl:p-2 w-fit">
                 <h1 className="text-white text-xs xl:text-xl font-semibold">
@@ -63,20 +63,20 @@ function Nineyears() {
             </div>
           </div>
           <div className="my-auto xl:col-span-1">
-            <div className="xl:space-y-10 space-y-4">
-              <div className="mx-auto text-center">
+            <div className="xl:space-y-10 grid grid-cols-2 xl:grid-cols-1">
+              <div className="mx-auto text-center p-2">
                 <h1 className="font-bold text-2xl xl:text-5xl text-yellow-500">9th</h1>
                 <h1 className="text-white xl:text-lg">Years of Experience</h1>
               </div>
-              <div className="mx-auto text-center">
+              <div className="mx-auto text-center p-2">
                 <h1 className="font-bold text-2xl xl:text-5xl text-yellow-500">50+</h1>
                 <h1 className="text-white xl:text-lg">Skilled Professionals</h1>
               </div>
-              <div className="mx-auto text-center">
+              <div className="mx-auto text-center p-2">
                 <h1 className="font-bold text-2xl xl:text-5xl text-yellow-500">300+</h1>
                 <h1 className="text-white xl:text-lg">Satisfied Clients</h1>
               </div>
-              <div className="mx-auto text-center">
+              <div className="mx-auto text-center p-2">
                 <h1 className="font-bold text-2xl xl:text-5xl text-yellow-500">2,5k</h1>
                 <h1 className="text-white xl:text-lg">Project Done</h1>
               </div>

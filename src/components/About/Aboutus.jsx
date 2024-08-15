@@ -12,7 +12,7 @@ const Aboutus = () => {
         <h1 className="text-4xl xl:text-8xl font-bold text-yellow-500">
           CUSTOMPEDIA
         </h1>
-        <p className="text-base xl:text-xl w-3/4">
+        <p className="text-base xl:text-2xl font-extrabold xl:w-3/4">
           A full-service marketing agency that creates integrated, end-to-end marketing experiences with a creative touch. We help you optimize the full customer journey.
         </p>
       </div>

@@ -45,7 +45,7 @@ const OurNetwork = () => (
       Sister company that complete our creative universe
     </p>
 
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+    <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 sm:gap-6">
       <NetworkCard
         logo={
           <img src={image2} alt="Parcelin" className="w-16 sm:w-20 md:w-24" />
