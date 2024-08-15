@@ -1,10 +1,11 @@
-import React from "react";
 import PropTypes from "prop-types";
 import image1 from "../../assets/new image/1.png";
 import image2 from "../../assets/new image/2.png";
 import image3 from "../../assets/new image/3.png";
 import image4 from "../../assets/new image/4.png";
 import image5 from "../../assets/new image/5.png";
+import { IoIosArrowForward } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const NetworkCard = ({ logo, title, description }) => (
   <div className="bg-gray-800 rounded-lg overflow-hidden flex flex-col sm:flex-row">
@@ -45,59 +46,64 @@ const OurNetwork = () => (
       Sister company that complete our creative universe
     </p>
 
-    <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 sm:gap-6">
-      <NetworkCard
-        logo={
-          <img src={image2} alt="Parcelin" className="w-16 sm:w-20 md:w-24" />
-        }
-        title="ParcelinPack"
-        description="Parcelinpack is creative packaging and printing company. Our speciality in custom packaging, so you can create your dream packaging with any materials, shape for any occassions."
-      />
-      <NetworkCard
-        logo={
-          <img
-            src={image1}
-            alt="Customfluencer"
-            className="w-16 sm:w-20 md:w-24"
-          />
-        }
-        title="Customfluencer"
-        description="Due the high demand in KOL Marketing service, Custompedia build Customfluencer to complete Custompedia environment, especially in influencer / KOL marketing."
-      />
-      <NetworkCard
-        logo={
-          <img
-            src={image4}
-            alt="Custom Printing"
-            className="w-16 sm:w-20 md:w-24"
-          />
-        }
-        title="Custom Printing"
-        description="Customprinting focused on retail sales for printing, advertising, and merchandise item. Design your own custom products and accessories. From apparel and sticker to merchandise, our print-on-demand products offer everything you need to unleash your creativity and style."
-      />
-      <NetworkCard
-        logo={
-          <img
-            src={image3}
-            alt="Parcelin Premium"
-            className="w-16 sm:w-20 md:w-24"
-          />
-        }
-        title="Parcelin Premium"
-        description="Parcelinpremium is a online-based Exclusive Hampers and Gift for any special event such as Eid Mubarak, Christmas, CNY, etc. We also accept for corporate gift."
-      />
-      <NetworkCard
-        logo={
-          <img src={image5} alt="Creasa" className="w-16 sm:w-20 md:w-24" />
-        }
-        title="Creasa Supply"
-        description="Creative Supply Asia (Creasa) is distrubutor for printing and advertising raw material. Either we use for our internal company (in our group), we can also sell to another company."
-      />
-    </div>
-    <div className="text-center mt-6 sm:mt-8">
-      <a href="#" className="text-yellow-400 text-base sm:text-lg font-bold">
-        read more &gt;
-      </a>
+    <div className="space-y-4 xl:space-y-16">
+      <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 sm:gap-6">
+        <NetworkCard
+          logo={
+            <img src={image2} alt="Parcelin" className="w-16 sm:w-20 md:w-24" />
+          }
+          title="ParcelinPack"
+          description="Parcelinpack is creative packaging and printing company. Our speciality in custom packaging, so you can create your dream packaging with any materials, shape for any occassions."
+        />
+        <NetworkCard
+          logo={
+            <img
+              src={image1}
+              alt="Customfluencer"
+              className="w-16 sm:w-20 md:w-24"
+            />
+          }
+          title="Customfluencer"
+          description="Due the high demand in KOL Marketing service, Custompedia build Customfluencer to complete Custompedia environment, especially in influencer / KOL marketing."
+        />
+        <NetworkCard
+          logo={
+            <img
+              src={image4}
+              alt="Custom Printing"
+              className="w-16 sm:w-20 md:w-24"
+            />
+          }
+          title="Custom Printing"
+          description="Customprinting focused on retail sales for printing, advertising, and merchandise item. Design your own custom products and accessories. From apparel and sticker to merchandise, our print-on-demand products offer everything you need to unleash your creativity and style."
+        />
+        <NetworkCard
+          logo={
+            <img
+              src={image3}
+              alt="Parcelin Premium"
+              className="w-16 sm:w-20 md:w-24"
+            />
+          }
+          title="Parcelin Premium"
+          description="Parcelinpremium is a online-based Exclusive Hampers and Gift for any special event such as Eid Mubarak, Christmas, CNY, etc. We also accept for corporate gift."
+        />
+        <NetworkCard
+          logo={
+            <img src={image5} alt="Creasa" className="w-16 sm:w-20 md:w-24" />
+          }
+          title="Creasa Supply"
+          description="Creative Supply Asia (Creasa) is distrubutor for printing and advertising raw material. Either we use for our internal company (in our group), we can also sell to another company."
+        />
+      </div>
+      <div className="w-full">
+        <div className="flex justify-center">
+        <Link to="/about" className="text-yellow-400 text-base xl:text-xl font-bold my-auto">
+          read more
+        </Link>
+        <IoIosArrowForward className="text-yellow-400 w-6 h-6 xl:w-8 xl:h-8" />
+        </div>
+      </div>
     </div>
   </div>
 );

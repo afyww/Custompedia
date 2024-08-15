@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import teamPhoto from "../../assets/new image/teamphoto.png";
+import { IoIosArrowForward } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 function AboutUs() {
   const [ref, inView] = useInView({
@@ -49,9 +51,14 @@ function AboutUs() {
               Through our years of experience, we develop branding and marketing
               strategies to best possible growth solutions for our clients.
             </p>
-            <button className="border border-blue-500 text-white font-bold rounded-full hover:bg-blue-500 hover:text-white text-sm xl:text-base p-2">
-              Get To Know More
-            </button>
+            <Link to="/about">
+            <div className="flex border border-blue-500 text-white font-bold rounded-3xl w-fit mx-auto hover:bg-blue-500 hover:text-white text-sm xl:text-base p-2">
+              <h1 className="my-auto">
+                Get To Know More
+              </h1>
+              <IoIosArrowForward className="w-6 h-6 xl:w-8 xl:h-8" />
+            </div>
+            </Link>
           </div>
         </div>
       </div>

@@ -70,7 +70,7 @@ function Workus() {
         </div>
         <div className="p-2 my-auto hover:scale-110 hover:bg-gradient-to-l flex justify-between from-white to-white border-2 border-blue-400 bg-gradient-to-r from-blue-400 to-blue-500 rounded-xl w-fit duration-200 delay-150 mx-auto">
           <Link
-            to="/projects"
+            to="/work"
             className="text-center flex space-x-1
           "
           >

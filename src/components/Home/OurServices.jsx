@@ -79,14 +79,6 @@ const Slider = () => {
         <button id="next" className="absolute top-1/2 transform -translate-y-1/2 right-2 md:right-10 text-white text-4xl md:text-6xl font-bold" onClick={nextSlide}>{'>'}</button>
         <button id="prev" className="absolute top-1/2 transform -translate-y-1/2 left-2 md:left-10 text-white text-4xl md:text-6xl font-bold" onClick={prevSlide}>{'<'}</button>
       </div>
-      
-      <div className="w-full">
-        <p className="text-lg md:text-xl text-justify">
-          Our goal is to make it as easy as possible for you to walk away with the integrated solutions that suits
-          your needs. We make sure you see the exponential results that will help you achieve exponential
-          growth.
-        </p>
-      </div>
     </div>
   );
 };

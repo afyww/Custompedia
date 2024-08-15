@@ -8,7 +8,7 @@ import star2 from "../../assets/new image/star2.png";
 function Quote1() {
   return (
     <div className="relative h-screen grid grid-cols-1 text-white font-unbounded">
-      <div className="my-auto">
+      <div className="my-auto p-2">
         <div className="absolute inset-0 bg-black z-0"></div>
         <div
           className="absolute inset-0 bg-cover bg-center z-10 opacity-80"
@@ -17,7 +17,7 @@ function Quote1() {
         <div className="relative mx-auto max-w-6xl text-center">
           <p className="text-xl sm:text-5xl md:text-5xl lg:text-xl xl:text-7xl font-bold font-unbounded mb-2 leading-tight flex flex-wrap items-center gap-2 text-justify">
             <span>A</span>
-            <span className=" text-white border-blue-400 border rounded-lg px-2 py-1">
+            <span className=" text-white border-blue-400 border rounded-lg p-2">
               CREATIVE
             </span>
             <img
@@ -29,7 +29,7 @@ function Quote1() {
             <img
               src={star2}
               alt="star"
-              className="w-2 h-2 sm:w-2 sm:h-2 md:w-4 md:h-5 lg:w-5 lg:h-5 xl:w-8 xl:h-8"
+              className="w-4 h-4 sm:w-2 sm:h-2 md:w-4 md:h-5 lg:w-5 lg:h-5 xl:w-8 xl:h-8"
             />
             <span className="text-white border-blue-400 border rounded-lg px-2 py-1">
               KNOWS
@@ -40,7 +40,7 @@ function Quote1() {
             <img
               src={star2}
               alt="star"
-              className="w-2 h-2 sm:w-2 sm:h-2 md:w-4 md:h-5 lg:w-5 lg:h-5 xl:w-8 xl:h-8"
+              className="w-4 h-4 sm:w-2 sm:h-2 md:w-4 md:h-5 lg:w-5 lg:h-5 xl:w-8 xl:h-8"
             />
             <span>TO</span>
             <span>DO</span>
@@ -60,18 +60,18 @@ function Quote1() {
             <img
               src={star2}
               alt="star"
-              className="w-2 h-2 sm:w-2 sm:h-2 md:w-4 md:h-5 lg:w-5 lg:h-5 xl:w-8 xl:h-8"
+              className="w-4 h-4 sm:w-2 sm:h-2 md:w-4 md:h-5 lg:w-5 lg:h-5 xl:w-8 xl:h-8"
             />
             <span>PLACE</span>
             <img
               src={star2}
               alt="star"
-              className="w-2 h-2 sm:w-2 sm:h-2 md:w-4 md:h-5 lg:w-5 lg:h-5 xl:w-8 xl:h-8"
+              className="w-4 h-4 sm:w-2 sm:h-2 md:w-4 md:h-5 lg:w-5 lg:h-5 xl:w-8 xl:h-8"
             />
             <span>AND</span>
             <span>AT</span>
           </p>
-          <p className="text-2l sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold flex flex-wrap items-center gap-2 text-justify">
+          <p className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold flex flex-wrap items-center gap-2 text-justify">
             <span className="text-white border-blue-400 border rounded-lg px-2 py-1 font-serif">
               THE
             </span>
@@ -84,7 +84,7 @@ function Quote1() {
             <img
               src={star2}
               alt="star"
-              className="w-2 h-2 sm:w-2 sm:h-2 md:w-4 md:h-5 lg:w-5 lg:h-5 xl:w-8 xl:h-8"
+              className="w-4 h-4 sm:w-2 sm:h-2 md:w-4 md:h-5 lg:w-5 lg:h-5 xl:w-8 xl:h-8"
             />
             <span className="text-white border-blue-400 border rounded-lg px-2 py-1 font-serif">
               TIME
