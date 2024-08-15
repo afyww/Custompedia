@@ -62,7 +62,7 @@ function Motion() {
 
   return (
     <div className='bg-black h-screen grid grid-cols-1'>
-      <div className="relative w-screen h-screen overflow-hidden">
+      <div className="relative h-full w-full xl:w-screen xl:h-screen overflow-hidden">
         <div
           ref={playerRef}
           className="absolute top-0 left-0 w-full h-full"

@@ -28,7 +28,7 @@ function Nineyears() {
               </h1>
             </div>
             <div className="xl:space-y-2">
-              <h1 className="text-white font-extralight xl:text-xl">
+              <h1 className="text-white text-xs font-extralight xl:text-xl">
                 Why Us? Experience the all-in-one solution for unmatched
                 creative marketing results.  Founded in 2014, our creative
                 agency started by selling merchandise and souvenirs. We applied
@@ -40,7 +40,7 @@ function Nineyears() {
                 sizes to accomplish their goals and develop their digital
                 presence.
               </h1>
-              <h1 className="text-white font-extralight xl:text-xl">
+              <h1 className="text-white text-xs font-extralight xl:text-xl">
                 With a decade of expertise, our team combines creativity and
                 strategic thinking to craft compelling campaigns that resonate
                 with target audiences. Our extensive awareness of the most
@@ -50,7 +50,7 @@ function Nineyears() {
                 search enginestherefore we may be your choice to create
                 marketing campaigns that deliver verifiable marketing results.
               </h1>
-              <h1 className="text-white font-extralight xl:text-xl">
+              <h1 className="text-white text-xs font-extralight xl:text-xl">
                 At the core of our success is our unwavering commitment to
                 client satisfaction. We pride ourselves on building strong,
                 collaborative relationships with our clients—micro/small/medium

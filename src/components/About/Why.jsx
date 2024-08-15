@@ -27,7 +27,7 @@ function Why() {
         </div>
         <div className="xl:mx-64 mx-4 space-y-2 xl:space-y-4">
           <div className="xl:flex xl:gap-4">
-            <div className="h-36 xl:h-fit w-full xl:w-56 my-auto">
+            <div className="h-36 xl:h-fit w-full xl:w-80 my-auto">
               <img className="mx-auto" src={full} alt="" />
             </div>
             <div className="space-y-2 my-auto">
@@ -58,7 +58,7 @@ function Why() {
                 </h1>
               </div>
               <div className="">
-                <h1 className="text-white font-light">
+                <h1 className="text-white text-xs font-light">
                   From the vision to strategy, from strategy to execute, our
                   objective is that the process and progress will lead the
                   project to targeted KPI.
@@ -77,7 +77,7 @@ function Why() {
                 </h1>
               </div>
               <div className="">
-                <h1 className="text-white font-light">
+                <h1 className="text-white text-xs font-light">
                   As the world trend and customer behaviour change faster, it
                   makes the business face new issues and have to adapt day to
                   day. We create new new ideas to help the client to solve the
