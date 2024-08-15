@@ -6,13 +6,13 @@ function Serviceus() {
       <img
         src={eleganImage}
         alt="Custompedia Team"
-        className="absolute w-full h-full object-cover opacity-50" 
+        className="object-cover opacity-50 w-full h-full absolute" 
       />
-      <div className="relative z-10 flex flex-col items-center justify-center text-center text-white">
+      <div className="relative text-center my-auto">
       <h1 className="text-4xl xl:text-8xl font-bold text-yellow-500">
       OUR WORK
         </h1>
-        <p className="text-base xl:text-2xl font-extrabold xl:w-3/4">
+        <p className="text-base xl:text-2xl font-extrabold xl:w-3/4 text-white">
           While many marketing agencies specialize in certain parts of the
           process, such as branding, analytics, or advertising, CUSTOMPEDIA
           offers a full range of digital services. This is a tremendous
