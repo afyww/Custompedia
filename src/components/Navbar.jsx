@@ -126,7 +126,7 @@ const Navbar = () => {
     return (
         <AnimatePresence>
             {isVisible && (
-                <motion.nav className={`shadow-xl z-20 fixed top-0 right-0 left-0 p-4 lg:p-6 xl:p-8 ${isScrollingUp ? 'bg-black' : 'bg-transparent'}`} variants={navLinksVariants}>
+                <motion.nav className={`shadow-xl z-50 fixed top-0 right-0 left-0 p-4 lg:p-6 xl:p-8 ${isScrollingUp ? 'bg-black' : 'bg-transparent'}`} variants={navLinksVariants}>
                     <div className="flex justify-between items-center">
                         <div>
                             <Link className='flex items-center' to="/">

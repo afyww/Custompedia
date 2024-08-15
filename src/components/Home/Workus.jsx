@@ -1,5 +1,5 @@
 import { getProject } from "../../api";
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowBack } from "react-icons/io";
@@ -17,7 +17,7 @@ function Workus() {
         setTotalPages(projectData.last_page);
         console.log("Total Pages:", projectData.last_page);
       } catch (error) {
-        console.error('Error fetching menu data:', error);
+        console.error("Error fetching menu data:", error);
       }
     };
 
@@ -39,19 +39,24 @@ function Workus() {
   };
 
   return (
-    <div className='grid grid-cols-1 bg-black p-4 xl:p-8'>
+    <div className="grid grid-cols-1 bg-black p-4 xl:p-8">
       <div className="my-auto">
         <div className="space-y-5 xl:space-y-8 2xl:space-y-12">
-        <div className="flex space-x-2">
-      <div>
-        <h1 className="text-xl text-left xl:text-5xl 2xl:text-7xl text-white font-bold">
-          Our Work
-        </h1>
-      </div>
-      <div className="pt-3.5 xl:pt-12">
-        <div className="bg-yellow-400 p-1 xl:p-2 rounded-xl px-8 xl:px-16"></div>
-      </div>
-    </div>
+          <div className="w-full">
+            <div className="flex space-x-2">
+              <div>
+                <h1 className="text-xl text-left xl:text-5xl 2xl:text-7xl text-white font-bold">
+                  Our Work
+                </h1>
+              </div>
+              <div className="pt-3.5 xl:pt-12">
+                <div className="bg-yellow-400 p-1 xl:p-2 rounded-xl px-8 xl:px-16"></div>
+              </div>
+            </div>
+            <p className="text-lg text-gray-300 max-w-2xl">
+              Moves Businesses Forward
+            </p>
+          </div>
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-2 xl:p-8 p-4">
             {projects.map((project) => (
               <div className="w-full my-auto" key={project.id}>
@@ -72,16 +77,28 @@ function Workus() {
               </div>
             ))}
           </div>
-          <div className="flex justify-between">
-            <button className="p-2 my-auto hover:scale-110 hover:bg-gradient-to-l flex justify-between from-blue-400 to-blue-600 bg-gradient-to-r from-blue-400 to-blue-500 rounded-xl w-fit duration-200 delay-150" onClick={handlePrevPage} disabled={currentPage === 1}>
-              <IoIosArrowBack className='text-white w-5 h-5 xl:w-7 xl:h-7' />
-              <h1 className="text-white font-semibold text-left xl:px-5 px-2 text-sm xl:text-xl 2xl:text-2xl">Previous</h1>
+          {/* <div className="flex justify-between">
+            <button
+              className="p-2 my-auto hover:scale-110 hover:bg-gradient-to-l flex justify-between from-blue-400 to-blue-600 bg-gradient-to-r from-blue-400 to-blue-500 rounded-xl w-fit duration-200 delay-150"
+              onClick={handlePrevPage}
+              disabled={currentPage === 1}
+            >
+              <IoIosArrowBack className="text-white w-5 h-5 xl:w-7 xl:h-7" />
+              <h1 className="text-white font-semibold text-left xl:px-5 px-2 text-sm xl:text-xl 2xl:text-2xl">
+                Previous
+              </h1>
             </button>
-            <button className="p-2 my-auto hover:scale-110 hover:bg-gradient-to-l flex justify-between from-blue-400 to-blue-600 bg-gradient-to-r from-blue-400 to-blue-500 rounded-xl w-fit duration-200 delay-150" onClick={handleNextPage} disabled={currentPage === totalPages}>
-              <h1 className="text-white font-semibold text-left xl:px-7 px-4 text-sm xl:text-xl 2xl:text-2xl">Next</h1>
-              <IoIosArrowForward className='text-white w-10 h-5 xl:w-12 xl:h-7' />
+            <button
+              className="p-2 my-auto hover:scale-110 hover:bg-gradient-to-l flex justify-between from-blue-400 to-blue-600 bg-gradient-to-r from-blue-400 to-blue-500 rounded-xl w-fit duration-200 delay-150"
+              onClick={handleNextPage}
+              disabled={currentPage === totalPages}
+            >
+              <h1 className="text-white font-semibold text-left xl:px-7 px-4 text-sm xl:text-xl 2xl:text-2xl">
+                Next
+              </h1>
+              <IoIosArrowForward className="text-white w-10 h-5 xl:w-12 xl:h-7" />
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

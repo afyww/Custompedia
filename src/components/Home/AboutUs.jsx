@@ -13,7 +13,7 @@ function AboutUs() {
 
   return (
     <div className="bg-black text-white grid grid-cols-1 h-screen">
-      <div className="mx-auto my-auto">
+      <div className="mx-auto my-auto p-1">
         <div className="grid grid-cols-1 xl:grid-cols-2 space-x-0 xl:space-x-8">
           <div className="p-2 xl:p-0">
             <img
@@ -24,10 +24,15 @@ function AboutUs() {
           </div>
           <div className="text-center xl:text-left my-auto space-y-4 xl:space-y-8">
             <div>
-              <h1 className="text-yellow-500 text-2xl font-semibold">About Us</h1>
+              <h1 className="text-yellow-500 text-2xl font-semibold">
+                About Us
+              </h1>
             </div>
             <div>
-              <h1 className="text-white xl:text-4xl font-semibold">We Use <span className="text-blue-500">Creativity</span> to Deliver Your Brand Vision.</h1>
+              <h1 className="text-white xl:text-4xl font-semibold">
+                We Use <span className="text-blue-500">Creativity</span> to
+                Deliver Your Brand Vision.
+              </h1>
             </div>
             <div>
               <p className="text-gray-300 text-sm xl:text-base">
@@ -48,42 +53,48 @@ function AboutUs() {
         </div>
       </div>
       <div
-        ref={ref}
-        className="w-full p-4 my-auto"
-        style={{
-          background:
-            "linear-gradient(to right, rgba(250, 192, 22, 0.3), rgba(11, 153, 206, 0.3))",
-        }}
-      >
-        <div className="">
-          <div className="grid grid-cols-2 xl:grid-cols-4 gap-4 xl:gap-8">
-            <StatItem
-              number="9"
-              suffix="th"
-              text="Years of Experience"
-              inView={inView}
-            />
-            <StatItem
-              number="50"
-              suffix="+"
-              text="Skilled Professionals"
-              inView={inView}
-            />
-            <StatItem
-              number="300"
-              suffix="+"
-              text="Satisfied Clients"
-              inView={inView}
-            />
-            <StatItem
-              number="2500"
-              suffix=""
-              text="Projects Done"
-              inView={inView}
-            />
-          </div>
-        </div>
-      </div>
+  ref={ref}
+  className="p-4"
+  style={{
+    background:
+      "linear-gradient(to right, rgba(250, 192, 22, 0.3), rgba(11, 153, 206, 0.3))",
+  }}
+>
+  <div className="grid grid-cols-2 xl:grid-cols-4 gap-4 xl:gap-8 h-56">
+    <div className="flex items-center justify-center h-full">
+      <StatItem
+        number="9"
+        suffix="th"
+        text="Years of Experience"
+        inView={inView}
+      />
+    </div>
+    <div className="flex items-center justify-center h-full">
+      <StatItem
+        number="50"
+        suffix="+"
+        text="Skilled Professionals"
+        inView={inView}
+      />
+    </div>
+    <div className="flex items-center justify-center h-full">
+      <StatItem
+        number="300"
+        suffix="+"
+        text="Satisfied Clients"
+        inView={inView}
+      />
+    </div>
+    <div className="flex items-center justify-center h-full">
+      <StatItem
+        number="2500"
+        suffix=""
+        text="Projects Done"
+        inView={inView}
+      />
+    </div>
+  </div>
+</div>
     </div>
   );
 }

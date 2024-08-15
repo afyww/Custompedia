@@ -1,23 +1,21 @@
-import React from "react";
-import iniQuotes from "../../assets/new image/quotes.png";
-import iniColorBg from "../../assets/new image/Group 42.png";
 import logoPerusahaan from "../../assets/new image/logoperusahaanlain.png";
 import star1 from "../../assets/new image/star1.png";
 import star2 from "../../assets/new image/star2.png";
 
 function Quote1() {
   return (
-    <div className="relative h-screen grid grid-cols-1 text-white font-unbounded">
-      <div className="my-auto p-2">
-        <div className="absolute inset-0 bg-black z-0"></div>
-        <div
-          className="absolute inset-0 bg-cover bg-center z-10 opacity-80"
-          style={{ backgroundImage: `url(${iniColorBg})` }}
-        ></div>
+    <div className="relative grid grid-cols-1 text-white bg-gradient-to-br from-yellow-600 to-blue-600">
+      {/* Combined Background Images */}
+      
+      {/* Overlay */}
+      <div className="bg-black z-10 absolute w-full h-full opacity-85"></div>
+      
+      {/* Content */}
+      <div className="p-2 z-20 my-16 xl:my-44">
         <div className="relative mx-auto max-w-6xl text-center">
           <p className="text-xl sm:text-5xl md:text-5xl lg:text-xl xl:text-7xl font-bold font-unbounded mb-2 leading-tight flex flex-wrap items-center gap-2 text-justify">
             <span>A</span>
-            <span className=" text-white border-blue-400 border rounded-lg p-2">
+            <span className="text-white border-blue-400 border rounded-lg px-2 py-1">
               CREATIVE
             </span>
             <img
@@ -91,26 +89,9 @@ function Quote1() {
             </span>
           </p>
         </div>
-        <style jsx>{`
-          @keyframes slideLeftToRight {
-            0% {
-              transform: translateX(0);
-            }
-            100% {
-              transform: translateX(-50%);
-            }
-          }
-          .slide-container {
-            display: flex;
-            width: 200%;
-          }
-          .slide-animation {
-            animation: slideLeftToRight 15s linear infinite;
-            display: flex;
-            width: 100%;
-          }
-        `}</style>
-        <div className="relative w-full mt-8 sm:mt-12 md:mt-16 overflow-hidden">
+
+        {/* Sliding Logos */}
+        <div className="relative w-full mt-8 sm:mt-12 md:mt-16 overflow-hidden z-20">
           <div className="slide-container">
             <div className="slide-animation">
               <img
@@ -127,6 +108,27 @@ function Quote1() {
           </div>
         </div>
       </div>
+      
+      {/* Custom CSS for Sliding Animation */}
+      <style jsx>{`
+        @keyframes slideLeftToRight {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+        .slide-container {
+          display: flex;
+          width: 200%;
+        }
+        .slide-animation {
+          animation: slideLeftToRight 15s linear infinite;
+          display: flex;
+          width: 100%;
+        }
+      `}</style>
     </div>
   );
 }
