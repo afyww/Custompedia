@@ -70,8 +70,8 @@ const ServicesSection = () => {
     categories.find((cat) => cat.id === selectedCategory)?.projects || [];
 
   return (
-    <div className="bg-gray-100 grid grid-cols-1 h-screen">
-      <div className="my-auto p-2">
+    <div className="bg-gray-100 grid grid-cols-1 h-screen p-4">
+      <div className="space-y-4">
         <div className="flex space-x-2">
           <div>
             <h1 className="text-xl text-left xl:text-2xl 2xl:text-7xl text-black font-bold">
@@ -82,35 +82,32 @@ const ServicesSection = () => {
             <div className="bg-yellow-400 p-1 xl:p-2 rounded-xl px-8 xl:px-16"></div>
           </div>
         </div>
-
-        <div
-          className="flex flex-wrap gap-2 sm:gap-4 mb-6 sm:mb-8 overflow-x-auto whitespace-nowrap"
-          style={hideScrollbarStyle}
-        >
-          {categories.map((category) => (
-            <button
-              key={category.id}
-              className={`px-3 sm:px-4 py-1 sm:py-2 text-sm sm:text-base rounded-full ${
-                category.id === selectedCategory
-                  ? "bg-blue-500 text-white"
-                  : "bg-gray-200 text-gray-700"
-              }`}
-              onClick={() => setSelectedCategory(category.id)}
-            >
-              {category.kategori}
-            </button>
-          ))}
-        </div>
-
-        <div className="flex flex-wrap gap-4">
-          {selectedCategoryProjects.map((project) => (
-            <MediaCard
-              key={project.id}
-              src={`https://custom.beilcoff.shop/storage/${project.img1}`}
-              title={project.project}
-              projectId={project.id}
-            />
-          ))}
+        <div className="my-auto space-y-2">
+          <div className="flex " style={hideScrollbarStyle}>
+            {categories.map((category) => (
+              <button
+                key={category.id}
+                className={`p-2 text-xs xl:text-base rounded-full ${
+                  category.id === selectedCategory
+                    ? "bg-blue-500 text-white"
+                    : "bg-gray-200 text-gray-700"
+                }`}
+                onClick={() => setSelectedCategory(category.id)}
+              >
+                {category.kategori}
+              </button>
+            ))}
+          </div>
+          <div className="flex flex-wrap gap-4">
+            {selectedCategoryProjects.map((project) => (
+              <MediaCard
+                key={project.id}
+                src={`https://custom.beilcoff.shop/storage/${project.img1}`}
+                title={project.project}
+                projectId={project.id}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>

@@ -23,7 +23,7 @@ function Workus() {
 
   return (
     <div className="p-4 grid grid-cols-1 h-screen">
-      <div className="space-y-4 xl:space-y-20 my-auto">
+      <div className="space-y-4 xl:space-y-20">
         <div className="space-y-2 xl:space-y-4">
           <div className="flex space-x-2">
             <div className="bg-blue-500 rounded p-1 xl:p-2 w-fit">
@@ -42,7 +42,7 @@ function Workus() {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-2 xl:grid-cols-4 gap-2 xl:gap-4">
+        <div className="grid grid-cols-1 xl:grid-cols-4 gap-2 xl:gap-4">
           {projects.map((project) => (
             <div key={project.id} className="">
               <Link to={`/project/${project.id}`}>
