@@ -8,7 +8,7 @@ function Nineyears() {
     <div className="grid grid-cols-1 h-full bg-black p-4">
       <div className="xl:my-auto space-y-2 xl:space-y-4">
         <div className="grid grid-cols-1 xl:grid-cols-4">
-          <div className="xl:col-span-3">
+          <div className="xl:col-span-3 xl:space-y-2 space-y-1">
             <div className="xl:flex xl:space-x-2 space-y-2 xl:space-y-0">
               <div className="bg-blue-500 rounded p-1 xl:p-2 w-fit">
                 <h1 className="text-white text-xs xl:text-xl font-semibold">

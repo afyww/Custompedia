@@ -27,7 +27,7 @@ const Slider = () => {
   };
 
   const handleSeeMoreClick = () => {
-    navigate('/service');
+    navigate('/work');
   };
 
   return (
@@ -50,7 +50,7 @@ const Slider = () => {
         </p>
       </div>
       
-      <div className="relative w-full h-[60vh] flex justify-center items-center overflow-hidden my-8">
+      <div className="relative w-full h-[50vh] flex justify-center items-center overflow-hidden my-8">
         {items.map((item, index) => (
           <div
             key={item.id}

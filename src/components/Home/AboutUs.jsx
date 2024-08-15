@@ -22,43 +22,28 @@ function AboutUs() {
               className="w-full h-auto rounded-xl shadow-xl"
             />
           </div>
-          <div className="text-center xl:text-left my-auto space-y-8">
-            <div
-              className=""
-              style={{
-                fontFamily: "Unbounded",
-                fontSize: "18px",
-                fontWeight: "500",
-                lineHeight: "1.2",
-                color: "rgba(250, 192, 22, 1)",
-              }}
-            >
-              About Us
+          <div className="text-center xl:text-left my-auto space-y-4 xl:space-y-8">
+            <div>
+              <h1 className="text-yellow-500 text-2xl font-semibold">About Us</h1>
             </div>
-            <h2
-              className="text-2xl xl:text-4xl font-bold"
-              style={{
-                fontFamily: "Unbounded",
-                fontWeight: "500",
-                lineHeight: "1.2",
-              }}
-            >
-              We Use{" "}
-              <span style={{ color: "rgba(11, 153, 206, 1)" }}>Creativity</span>{" "}
-              to Deliver Your Brand Vision.
-            </h2>
-            <p className="text-gray-300 text-sm xl:text-base">
-              Through our years of experience, we develop branding and marketing
-              strategies to best possible growth solutions for our clients.
-            </p>
-            <Link to="/about">
-            <div className="flex border border-blue-500 text-white font-bold rounded-3xl w-fit mx-auto hover:bg-blue-500 hover:text-white text-sm xl:text-base p-2">
-              <h1 className="my-auto">
-                Get To Know More
-              </h1>
-              <IoIosArrowForward className="w-6 h-6 xl:w-8 xl:h-8" />
+            <div>
+              <h1 className="text-white xl:text-4xl font-semibold">We Use <span className="text-blue-500">Creativity</span> to Deliver Your Brand Vision.</h1>
             </div>
-            </Link>
+            <div>
+              <p className="text-gray-300 text-sm xl:text-base">
+                Through our years of experience, we develop branding and
+                marketing strategies to best possible growth solutions for our
+                clients.
+              </p>
+            </div>
+            <div>
+              <Link to="/about">
+                <div className="flex border border-blue-500 text-white font-bold rounded-xl w-fit mx-auto xl:mx-0 hover:bg-blue-500 hover:text-white text-sm xl:text-base p-2">
+                  <h1 className="my-auto">Get To Know More</h1>
+                  <IoIosArrowForward className="w-6 h-6 xl:w-8 xl:h-8" />
+                </div>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
