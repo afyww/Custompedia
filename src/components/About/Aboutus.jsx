@@ -2,13 +2,12 @@ import aboutUsImage from '../../assets/new image/about us.jpg';
 
 const Aboutus = () => {
   return (
-    <div className="grid grid-cols-1 h-screen bg-black">
-      <img 
-        src={aboutUsImage} 
-        alt="Custompedia Team" 
-        className="object-cover opacity-50 w-full h-full absolute" 
-      />
-      <div className="relative text-center my-auto">
+    <div 
+      className="relative grid grid-cols-1 h-screen bg-black bg-cover bg-center"
+      style={{ backgroundImage: `url(${aboutUsImage})` }}
+    >
+      <div className="absolute inset-0 bg-black opacity-50"></div>
+      <div className="relative text-center m-auto">
         <h1 className="text-4xl xl:text-8xl font-bold text-yellow-500">
           CUSTOMPEDIA
         </h1>
