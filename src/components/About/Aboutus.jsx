@@ -6,7 +6,7 @@ const Aboutus = () => {
       <img 
         src={aboutUsImage} 
         alt="Custompedia Team" 
-        className="absolute w-full h-full object-cover opacity-50" 
+        className="object-cover opacity-50 w-screen h-screen absolute" 
       />
       <div className="relative z-10 flex flex-col items-center justify-center text-center text-white">
         <h1 className="text-4xl xl:text-8xl font-bold text-yellow-500">
