@@ -83,7 +83,7 @@ function Nineyears() {
             </div>
           </div>
         </div>
-        <div className="xl:flex justify-between space-y-4 xl:space-y-0">
+        <div className="grid grid-cols-3 gap-2">
           <div>
             <img src={about1} alt="" />
           </div>
