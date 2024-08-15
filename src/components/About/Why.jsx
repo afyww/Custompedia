@@ -27,8 +27,8 @@ function Why() {
         </div>
         <div className="xl:mx-64 mx-4 space-y-2 xl:space-y-4">
           <div className="xl:flex xl:gap-4">
-            <div className="h-fit w-80 my-auto">
-              <img src={full} alt="" />
+            <div className="h-36 xl:h-fit w-full xl:w-56 my-auto">
+              <img className="mx-auto" src={full} alt="" />
             </div>
             <div className="space-y-2 my-auto">
               <div>
@@ -48,8 +48,8 @@ function Why() {
             </div>
           </div>
           <div className="xl:flex xl:gap-4">
-            <div className="h-fit w-40  my-auto">
-              <img className="" src={park} alt="" />
+            <div className="h-28 xl:h-fit w-full xl:w-40  my-auto">
+              <img className="mx-auto" src={park} alt="" />
             </div>
             <div className="space-y-2 my-auto">
               <div>
@@ -67,8 +67,8 @@ function Why() {
             </div>
           </div>
           <div className="xl:flex xl:gap-4">
-            <div className="h-fit w-64 my-auto">
-              <img className="" src={lampu} alt="" />
+            <div className="h-28 xl:h-fit w-full xl:w-64 my-auto">
+              <img className="mx-auto" src={lampu} alt="" />
             </div>
             <div className="space-y-2 my-auto">
               <div>
