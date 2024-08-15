@@ -6,8 +6,6 @@ import { Link } from "react-router-dom";
 const MediaCard = ({ src, title, projectId }) => (
   <div className="bg-white rounded-lg overflow-hidden shadow-lg w-full sm:w-[calc(50%-1rem)] md:w-[calc(33.333%-1rem)] lg:w-[calc(25%-1rem)]">
     <div className="relative pb-[56.25%]">
-      {" "}
-
       <Link to={`/project/${projectId}`}>
         <img
           src={src}
