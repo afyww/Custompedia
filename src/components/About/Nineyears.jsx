@@ -84,13 +84,13 @@ function Nineyears() {
           </div>
         </div>
         <div className="grid grid-cols-3 gap-2">
-          <div>
+          <div className="mx-auto">
             <img src={about1} alt="" />
           </div>
-          <div>
+          <div className="mx-auto">
             <img src={about2} alt="" />
           </div>
-          <div>
+          <div className="mx-auto">
             <img src={about3} alt="" />
           </div>
         </div>
