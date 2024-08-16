@@ -9,7 +9,7 @@ function Whatsapp() {
 
   return (
     <>
-      <div className="z-50 fixed bottom-12 left-4 opacity-85 shadow-blue-500 hover:opacity-100">
+      <div className="z-50 fixed bottom-6 left-4 opacity-85 shadow-blue-500 hover:opacity-100">
         <button onClick={scrollToTop}>
           <div className="bg-blue-600 opacity-85 shadow-blue-600 xl:p-2 rounded-xl px-2 py-6  hover:opacity-100">
             <FaArrowUp className="text-white xl:w-6 xl:h-20 w-4 h-8" />
