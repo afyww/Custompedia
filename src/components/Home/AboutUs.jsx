@@ -15,7 +15,7 @@ function AboutUs() {
     <div className="relative grid grid-cols-1 text-white bg-gradient-to-br from-yellow-500 to-blue-500">
             <div className="bg-black z-10 absolute w-full h-full opacity-75"></div>
 
-      <div className="mx-16 xl:my-44 my-auto p-1 z-20">
+      <div className="my-16 xl:my-44 z-20">
         <div className="grid grid-cols-1 xl:grid-cols-2 space-x-0 xl:space-x-8">
           <div className="p-2 xl:p-0">
             <img
