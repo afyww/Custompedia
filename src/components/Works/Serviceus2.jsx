@@ -3,17 +3,15 @@ import PropTypes from "prop-types";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
-const MediaCard = ({ src, title, projectId }) => (
-  <div className="bg-white rounded-lg overflow-hidden shadow-lg w-full sm:w-[calc(50%-1rem)] md:w-[calc(33.333%-1rem)] lg:w-[calc(25%-1rem)]">
-    <div className="relative pb-[56.25%]">
-      <Link to={`/project/${projectId}`}>
-        <img
-          src={src}
-          alt={title}
-          className="absolute top-0 left-0 w-full h-full object-cover"
-        />
-      </Link>
-    </div>
+const MediaCard = ({ src, projectId }) => (
+  <div className="overflow-hidden mb-4 w-full" style={{ aspectRatio: "16/9" }}>
+    <Link to={`/project/${projectId}`}>
+      <img
+        src={`https://custom.beilcoff.shop/storage/${src}`}
+        alt="Project"
+        className="w-full h-full object-cover"
+      />
+    </Link>
   </div>
 );
 
@@ -35,8 +33,7 @@ const ServicesSection = () => {
         const response = await axios.get(
           "https://custom.beilcoff.shop/api/kategoris"
         );
-        setCategories(response.data);
-        setSelectedCategory(response.data[0].id);
+        setCategories([{ id: "all", kategori: "All" }, ...response.data]);
         setIsLoading(false);
       } catch (err) {
         setError("Failed to fetch categories");
@@ -47,22 +44,18 @@ const ServicesSection = () => {
     fetchCategories();
   }, []);
 
-  const hideScrollbarStyle = {
-    msOverflowStyle: "none",
-    scrollbarWidth: "none",
-    WebkitOverflowScrolling: "touch",
-  };
+  if (isLoading) return <div>Loading...</div>;
+  if (error) return <div>Error: {error}</div>;
 
-  if (isLoading) {
-    return <div>Loading...</div>;
-  }
+  const allProjects = categories.flatMap((category) =>
+    category.id === "all" ? [] : category.projects
+  );
 
-  if (error) {
-    return <div>Error: {error}</div>;
-  }
-
-  const selectedCategoryProjects =
-    categories.find((cat) => cat.id === selectedCategory)?.projects || [];
+  const displayedProjects =
+    selectedCategory === "All"
+      ? allProjects
+      : categories.find((cat) => cat.kategori === selectedCategory)?.projects ||
+        [];
 
   return (
     <div className="bg-gray-100 grid grid-cols-1 h-screen p-4">
@@ -77,30 +70,30 @@ const ServicesSection = () => {
             <div className="bg-yellow-400 p-1 xl:p-2 rounded-xl px-8 xl:px-16"></div>
           </div>
         </div>
-        <div className="my-auto space-y-2">
-          <div className="flex " style={hideScrollbarStyle}>
-            {categories.map((category) => (
-              <button
-                key={category.id}
-                className={`p-2 text-xs xl:text-base rounded-full ${
-                  category.id === selectedCategory
-                    ? "bg-blue-500 text-white"
-                    : "bg-gray-200 text-gray-700"
-                }`}
-                onClick={() => setSelectedCategory(category.id)}
-              >
-                {category.kategori}
-              </button>
-            ))}
-          </div>
-          <div className="flex flex-wrap gap-4">
-            {selectedCategoryProjects.map((project) => (
-              <MediaCard
-                key={project.id}
-                src={`https://custom.beilcoff.shop/storage/${project.img1}`}
-              />
-            ))}
-          </div>
+        <div className="flex overflow-x-auto mb-4 pb-2">
+          {categories.map((category) => (
+            <button
+              key={category.id}
+              className={`px-2 md:px-4 py-1 md:py-2 text-xs md:text-sm whitespace-nowrap mr-2 rounded-full shadow-md ${
+                category.kategori === selectedCategory
+                  ? "bg-blue-500 text-white"
+                  : "bg-white text-black "
+              }`}
+              onClick={() => setSelectedCategory(category.kategori)}
+            >
+              {category.kategori}
+            </button>
+          ))}
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {displayedProjects.map((project) => (
+            <MediaCard
+              key={project.id}
+              src={project.img1}
+              projectId={project.id}
+            />
+          ))}
         </div>
       </div>
     </div>

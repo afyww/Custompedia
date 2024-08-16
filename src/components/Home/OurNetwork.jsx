@@ -31,8 +31,8 @@ NetworkCard.propTypes = {
 };
 
 const OurNetwork = () => (
-  <div className="relative h-full grid grid-cols-1 text-white bg-gradient-to-tr from-yellow-600 to-blue-600 p-4">
-    <div className="bg-black z-10 h-full w-full absolute opacity-85"></div>
+  <div className="relative h-full grid grid-cols-1 text-white bg-gradient-to-tr from-yellow-500 to-blue-500 p-4">
+    <div className="bg-black z-10 h-full w-full absolute opacity-75"></div>
     <div className="z-20 xl:my-32 my-12">
       <div className="flex space-x-2">
         <div>
