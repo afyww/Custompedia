@@ -36,7 +36,7 @@ function Workus() {
             </div>
           </div>
           <div>
-          <p className="text-gray-600 text-sm xl:text-xl w-full xl:w-1/2">
+          <p className="text-black text-sm xl:text-xl w-full xl:w-1/2">
               Our ongoing project exemplifies our dedication and collaboration,
               driving us towards innovative and impactful results.
             </p>
