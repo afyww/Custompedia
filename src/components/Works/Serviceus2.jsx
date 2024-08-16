@@ -4,12 +4,12 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 
 const MediaCard = ({ src, projectId }) => (
-  <div className="overflow-hidden mb-4 w-full" style={{ aspectRatio: "16/9" }}>
+  <div className="w-full" >
     <Link to={`/project/${projectId}`}>
       <img
         src={`https://custom.beilcoff.shop/storage/${src}`}
         alt="Project"
-        className="w-full h-full object-cover"
+        className="w-full h-full object-cover rounded-xl"
       />
     </Link>
   </div>
@@ -17,13 +17,12 @@ const MediaCard = ({ src, projectId }) => (
 
 MediaCard.propTypes = {
   src: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
   projectId: PropTypes.number.isRequired,
 };
 
 const ServicesSection = () => {
   const [categories, setCategories] = useState([]);
-  const [selectedCategory, setSelectedCategory] = useState(null);
+  const [selectedCategory, setSelectedCategory] = useState("All");
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -86,7 +85,7 @@ const ServicesSection = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-4">
           {displayedProjects.map((project) => (
             <MediaCard
               key={project.id}
