@@ -12,8 +12,10 @@ function AboutUs() {
   });
 
   return (
-    <div className="bg-black text-white grid grid-cols-1 h-screen">
-      <div className="mx-auto my-auto p-1">
+    <div className="relative grid grid-cols-1 text-white bg-gradient-to-br from-yellow-500 to-blue-500">
+            <div className="bg-black z-10 absolute w-full h-full opacity-75"></div>
+
+      <div className="mx-16 xl:my-44 my-auto p-1 z-20">
         <div className="grid grid-cols-1 xl:grid-cols-2 space-x-0 xl:space-x-8">
           <div className="p-2 xl:p-0">
             <img
@@ -54,14 +56,14 @@ function AboutUs() {
       </div>
       <div
   ref={ref}
-  className="p-4"
+  className="p-4 z-20"
   style={{
     background:
       "linear-gradient(to right, rgba(250, 192, 22, 0.3), rgba(11, 153, 206, 0.3))",
   }}
 >
-  <div className="grid grid-cols-2 xl:grid-cols-4 gap-4 xl:gap-8 h-56">
-    <div className="flex items-center justify-center h-full">
+  <div className="grid grid-cols-2 xl:grid-cols-4 gap-4 xl:gap-8 h-56 z-20">
+    <div className="flex items-center justify-center h-full z-20">
       <StatItem
         number="9"
         suffix="th"
