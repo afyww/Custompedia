@@ -23,8 +23,8 @@ const Company = () => {
 
   return (
     <section className="bg-black grid grid-cols-1">
-      <div className="xl:p-10  p-8 my-auto space-y-16">
-        <div className="max-w-6xl mx-auto">
+      <div className="my-auto space-y-16">
+        <div className="max-w-6xl mx-auto p-8 xl:p-0">
           <Slider {...settings}>
             <div>
               <img
