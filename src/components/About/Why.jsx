@@ -5,7 +5,7 @@ import why3 from "../../assets/images/why3.png";
 function Why() {
   return (
     <div className="grid grid-cols-1 h-full bg-black p-2 xl:p-16">
-      <div className="xl:my-16 my-8 space-y-4 xl:space-y-8">
+      <div className="xl:my-8 my-4 space-y-4 xl:space-y-8">
         <div>
           <h1 className="text-white text-center text-4xl xl:text-9xl font-bold">WHY YOU</h1>
         </div>

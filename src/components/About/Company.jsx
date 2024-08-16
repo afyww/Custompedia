@@ -61,11 +61,11 @@ const Company = () => {
           }
         `}
         </style>
-        <div className="overflow-hidden relative h-16">
+        <div className="overflow-hidden relative h-8 xl:h-16">
           <div style={logoAnimationStyle}>
             {/* Duplicate the logo image for seamless scrolling */}
-            <img src={company} alt="Logos" className="h-full" />
-            <img src={company} alt="Logos" className="h-full" />
+            <img src={company} alt="Logos" className="h-auto" />
+            <img src={company} alt="Logos" className="h-auto" />
           </div>
         </div>
       </div>
