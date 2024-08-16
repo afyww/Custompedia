@@ -28,7 +28,7 @@ function Aboutus() {
               </h1>
             </div>
             <div className="xl:space-y-2">
-              <h1 className="text-white text-xs font-extralight xl:text-xl">
+              <h1 className="text-white text-xs font-extralight text-left xl:text-xl">
                 Why Us? Experience the all-in-one solution for unmatched
                 creative marketing results.  Founded in 2014, our creative
                 agency started by selling merchandise and souvenirs. We applied
@@ -49,16 +49,6 @@ function Aboutus() {
                 and determine the most effective strategy to sell your brand on
                 search enginestherefore we may be your choice to create
                 marketing campaigns that deliver verifiable marketing results.
-              </h1>
-              <h1 className="text-white text-xs font-extralight xl:text-xl">
-                At the core of our success is our unwavering commitment to
-                client satisfaction. We pride ourselves on building strong,
-                collaborative relationships with our clients—micro/small/medium
-                enterprises to multinational companies—ensuring that their
-                unique needs and goals are met. Whether it’s idea and branding
-                strategy, creative advertisement, design, content-making, or
-                events, our results consistently exceed our client’s
-                expectations.
               </h1>
             </div>
           </div>
