@@ -24,7 +24,7 @@ const CTAJourney = () => {
             className="bg-blue-500 text-white px-4 py-2 rounded-full flex items-center hover:bg-blue-600 focus:ring-4 focus:ring-blue-300 transition-colors text-sm sm:text-base"
             aria-label="Click here to talk to us about your ideas"
           >
-            Click Here
+            Contact Us
             <ChevronRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
           </button>
         </div>

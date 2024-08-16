@@ -14,13 +14,13 @@ function Why() {
             NEED US?
           </h1>
         </div>
-        <div className="max-w-2xl mx-auto text-xs xl:text-base">
+        <div className="max-w-3xl mx-auto text-xs xl:text-base">
           <h1 className="text-white text-center font-light">
             In a world filled with endless distractions, capturing attention is
             an art and we are the masters of it. Our mission is clear: to create{" "}
             <span className="text-yellow-400">
               extraordinary, winning social marketing campaigns, comprehensive
-              engagement strategies, and captivating narratives that propel
+              engagement strategies,<span className="text-white">and</span> captivating narratives that propel
               brands to new heights on industry.
             </span>
           </h1>
