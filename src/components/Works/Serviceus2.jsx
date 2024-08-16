@@ -69,11 +69,11 @@ const ServicesSection = () => {
             <div className="bg-yellow-400 p-1 xl:p-2 rounded-xl px-8 xl:px-16"></div>
           </div>
         </div>
-        <div className="flex overflow-x-auto mb-4 pb-2">
+        <div className="flex gap-2 overflow-auto">
           {categories.map((category) => (
             <button
               key={category.id}
-              className={`px-2 md:px-4 py-1 md:py-2 text-xs md:text-sm whitespace-nowrap mr-2 rounded-full shadow-md ${
+              className={`px-4 xl:px-8 p-1 xl:p-2 text-xs xl:text-sm font-bold rounded-xl ${
                 category.kategori === selectedCategory
                   ? "bg-blue-500 text-white"
                   : "bg-white text-black "
