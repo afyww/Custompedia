@@ -4,7 +4,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 
 const MediaCard = ({ src, projectId }) => (
-  <div className="w-full" >
+  <div className="w-full">
     <Link to={`/project/${projectId}`}>
       <img
         src={`https://custom.beilcoff.shop/storage/${src}`}
@@ -58,14 +58,14 @@ const ServicesSection = () => {
 
   return (
     <div className="bg-gray-100 grid grid-cols-1 h-screen p-4">
-      <div className="space-y-4 my-auto">
+      <div className="space-y-4 xl:space-y-8 my-auto">
         <div className="flex space-x-2">
           <div>
-            <h1 className="text-xl text-left xl:text-2xl 2xl:text-7xl text-black font-bold">
+            <h1 className="text-xl text-left xl:text-5xl 2xl:text-7xl text-black font-bold">
               Services
             </h1>
           </div>
-          <div className="pt-3.5 xl:pt-12">
+          <div className="pt-3.5 xl:pt-8 2xl:pt-12">
             <div className="bg-yellow-400 p-1 xl:p-2 rounded-xl px-8 xl:px-16"></div>
           </div>
         </div>

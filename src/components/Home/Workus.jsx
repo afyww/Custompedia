@@ -49,8 +49,8 @@ function Workus() {
                   Our Work
                 </h1>
               </div>
-              <div className="pt-3.5 xl:pt-12">
-                <div className="bg-yellow-400 p-1 xl:p-2 rounded-xl px-8 xl:px-16"></div>
+              <div className="pt-3.5 xl:pt-8 2xl:pt-12">
+              <div className="bg-yellow-400 p-1 xl:p-2 rounded-xl px-8 xl:px-16"></div>
               </div>
             </div>
             <p className="text-lg text-gray-300 max-w-2xl">
@@ -77,28 +77,6 @@ function Workus() {
               </div>
             ))}
           </div>
-          {/* <div className="flex justify-between">
-            <button
-              className="p-2 my-auto hover:scale-110 hover:bg-gradient-to-l flex justify-between from-blue-400 to-blue-600 bg-gradient-to-r from-blue-400 to-blue-500 rounded-xl w-fit duration-200 delay-150"
-              onClick={handlePrevPage}
-              disabled={currentPage === 1}
-            >
-              <IoIosArrowBack className="text-white w-5 h-5 xl:w-7 xl:h-7" />
-              <h1 className="text-white font-semibold text-left xl:px-5 px-2 text-sm xl:text-xl 2xl:text-2xl">
-                Previous
-              </h1>
-            </button>
-            <button
-              className="p-2 my-auto hover:scale-110 hover:bg-gradient-to-l flex justify-between from-blue-400 to-blue-600 bg-gradient-to-r from-blue-400 to-blue-500 rounded-xl w-fit duration-200 delay-150"
-              onClick={handleNextPage}
-              disabled={currentPage === totalPages}
-            >
-              <h1 className="text-white font-semibold text-left xl:px-7 px-4 text-sm xl:text-xl 2xl:text-2xl">
-                Next
-              </h1>
-              <IoIosArrowForward className="text-white w-10 h-5 xl:w-12 xl:h-7" />
-            </button>
-          </div> */}
         </div>
       </div>
     </div>

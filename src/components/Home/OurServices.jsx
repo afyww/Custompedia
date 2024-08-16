@@ -39,8 +39,8 @@ const Slider = () => {
           Our Service
         </h1>
       </div>
-      <div className="pt-3.5 xl:pt-12">
-        <div className="bg-yellow-400 p-1 xl:p-2 rounded-xl px-8 xl:px-16"></div>
+      <div className="pt-3.5 xl:pt-8 2xl:pt-12">
+      <div className="bg-yellow-400 p-1 xl:p-2 rounded-xl px-8 xl:px-16"></div>
       </div>
     </div>
         <p className="text-lg text-gray-300 max-w-2xl">
