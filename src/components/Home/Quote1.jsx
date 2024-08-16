@@ -1,6 +1,6 @@
-import logoPerusahaan from "../../assets/new image/logoperusahaanlain.png";
-import star1 from "../../assets/new image/star1.png";
-import star2 from "../../assets/new image/star2.png";
+import company from "../../assets/images/company.png";
+import star1 from "../../assets/images/star1.png";
+import star2 from "../../assets/images/star2.png";
 
 function Quote1() {
   return (
@@ -95,12 +95,12 @@ function Quote1() {
           <div className="slide-container">
             <div className="slide-animation">
               <img
-                src={logoPerusahaan}
+                src={company}
                 alt="logo perusahaan"
                 className="w-full h-auto p-2 max-w-[2000%]"
               />
               <img
-                src={logoPerusahaan}
+                src={company}
                 alt="logo perusahaan"
                 className="w-full h-auto p-2 max-w-[200%]"
               />

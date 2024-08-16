@@ -1,8 +1,8 @@
-import advertisingImage from '../../assets/new image/advertisemnt.png';
-import brandActivationImage from '../../assets/new image/brandactivation.png';
-import kolImage from '../../assets/new image/kol.png';
-import eoImage from '../../assets/new image/eo.png';
-import sosmedImage from '../../assets/new image/sosmed.png';
+import ads from '../../assets/images/ads.png';
+import brand from '../../assets/images/brand.png';
+import kol from '../../assets/images/kol.png';
+import eo from '../../assets/images/eo.png';
+import sosmed from '../../assets/images/sosmed.png';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -11,11 +11,11 @@ const Slider = () => {
   const navigate = useNavigate();
 
   const items = [
-    { id: 1, title: "Advertising", content: "See More", image: advertisingImage },
-    { id: 2, title: "Brand Activation", content: "See More", image: brandActivationImage },
-    { id: 3, title: "KOL Management", content: "See More", image: kolImage },
-    { id: 4, title: "Event Organizer", content: "See More", image: eoImage },
-    { id: 5, title: "Social Media", content: "See More", image: sosmedImage }
+    { id: 1, title: "Advertising", content: "See More", image: ads },
+    { id: 2, title: "Brand Activation", content: "See More", image: brand },
+    { id: 3, title: "KOL Management", content: "See More", image: kol },
+    { id: 4, title: "Event Organizer", content: "See More", image: eo },
+    { id: 5, title: "Social Media", content: "See More", image: sosmed }
   ];
 
   const nextSlide = () => {

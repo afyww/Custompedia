@@ -1,7 +1,7 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import RunningStar from '../../assets/new image/running_star.png';
+import star from '../../assets/images/star1.png';
 
 function Runningtext() {
   const settings = {
@@ -23,17 +23,17 @@ function Runningtext() {
         <Slider className="" {...settings}>
           <div className="w-full">
             <h1 className="text-white text-xl xl:text-5xl font-extrabold flex items-center">
-              Merchant Branding <img src={RunningStar} alt="Running Star" className="ml-2 h-6 xl:h-10" />
+              Merchant Branding <img src={star} alt="Running Star" className="ml-2 h-6 xl:h-10" />
             </h1>
           </div>
           <div className="w-full">
             <h1 className="text-white text-xl xl:text-5xl font-extrabold flex items-center">
-              POI & POSM <img src={RunningStar} alt="Running Star" className="ml-2 h-6 xl:h-10" />
+              POI & POSM <img src={star} alt="Running Star" className="ml-2 h-6 xl:h-10" />
             </h1>
           </div>
           <div className="w-full">
             <h1 className="text-white text-xl xl:text-5xl font-extrabold flex items-center">
-              Advertising <img src={RunningStar} alt="Running Star" className="ml-2 h-6 xl:h-10" />
+              Advertising <img src={star} alt="Running Star" className="ml-2 h-6 xl:h-10" />
             </h1>
           </div>
         </Slider>

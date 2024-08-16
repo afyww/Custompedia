@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import WaLogo from '../assets/new image/Group 37.png';
+import wa from '../assets/images/wa.png';
 import { FaArrowUp } from "react-icons/fa6";
 
 function Whatsapp() {
@@ -18,7 +18,7 @@ function Whatsapp() {
       </div>
       <div className="z-50 fixed bottom-10 right-6 opacity-85 shadow-emerald-200 hover:opacity-100">
         <Link to="">
-          <img src={WaLogo} alt="WhatsApp Logo" className="w-16 h-16 xl:w-20 xl:h-20" />
+          <img src={wa} alt="WhatsApp Logo" className="w-16 h-16 xl:w-20 xl:h-20" />
         </Link>
       </div>
     </>

@@ -1,6 +1,6 @@
-import full from "../../assets/new image/full.png";
-import park from "../../assets/new image/park.png";
-import lampu from "../../assets/new image/lampu.png";
+import why1 from "../../assets/images/why1.png";
+import why2 from "../../assets/images/why2.png";
+import why3 from "../../assets/images/why3.png";
 
 function Why() {
   return (
@@ -28,7 +28,7 @@ function Why() {
         <div className="max-w-5xl mx-auto space-y-2 xl:space-y-4">
           <div className="xl:flex xl:gap-4">
             <div className="h-36 xl:h-fit w-full xl:w-80 my-auto">
-              <img className="mx-auto" src={full} alt="" />
+              <img className="mx-auto" src={why1} alt="" />
             </div>
             <div className="space-y-2 my-auto">
               <div>
@@ -49,7 +49,7 @@ function Why() {
           </div>
           <div className="xl:flex xl:gap-4">
             <div className="h-28 xl:h-fit w-full xl:w-40  my-auto">
-              <img className="mx-auto" src={park} alt="" />
+              <img className="mx-auto" src={why2} alt="" />
             </div>
             <div className="space-y-2 my-auto">
               <div>
@@ -68,7 +68,7 @@ function Why() {
           </div>
           <div className="xl:flex xl:gap-4">
             <div className="h-28 xl:h-fit w-full xl:w-64 my-auto">
-              <img className="mx-auto" src={lampu} alt="" />
+              <img className="mx-auto" src={why3} alt="" />
             </div>
             <div className="space-y-2 my-auto">
               <div>

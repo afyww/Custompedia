@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
-import teamPhoto from "../../assets/new image/teamphoto.png";
+import teamyellow from "../../assets/images/teamyellow.png";
 import { IoIosArrowForward } from "react-icons/io";
 import { Link } from "react-router-dom";
 
@@ -19,7 +19,7 @@ function AboutUs() {
         <div className="grid grid-cols-1 xl:grid-cols-2 space-x-0 xl:space-x-8">
           <div className="p-2 xl:p-0">
             <img
-              src={teamPhoto}
+              src={teamyellow}
               alt="Team"
               className="w-full h-auto rounded-xl shadow-xl"
             />

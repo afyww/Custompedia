@@ -1,27 +1,102 @@
-import eleganImage from "../../assets/new image/people-working-elegant-cozy-office-space 1.jpg";
+import { useState, useEffect } from "react";
+import PropTypes from "prop-types";
+import axios from "axios";
+import { Link } from "react-router-dom";
 
-function Serviceus() {
+const MediaCard = ({ src, projectId }) => (
+  <div className="w-full">
+    <Link to={`/project/${projectId}`}>
+      <img
+        src={`https://custom.beilcoff.shop/storage/${src}`}
+        alt="Project"
+        className="w-full h-full object-cover rounded-xl"
+      />
+    </Link>
+  </div>
+);
+
+MediaCard.propTypes = {
+  src: PropTypes.string.isRequired,
+  projectId: PropTypes.number.isRequired,
+};
+
+const Serviceus = () => {
+  const [categories, setCategories] = useState([]);
+  const [selectedCategory, setSelectedCategory] = useState("All");
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchCategories = async () => {
+      try {
+        const response = await axios.get(
+          "https://custom.beilcoff.shop/api/kategoris"
+        );
+        setCategories([{ id: "all", kategori: "All" }, ...response.data]);
+        setIsLoading(false);
+      } catch (err) {
+        setError("Failed to fetch categories");
+        setIsLoading(false);
+      }
+    };
+
+    fetchCategories();
+  }, []);
+
+  if (isLoading) return <div>Loading...</div>;
+  if (error) return <div>Error: {error}</div>;
+
+  const allProjects = categories.flatMap((category) =>
+    category.id === "all" ? [] : category.projects
+  );
+
+  const displayedProjects =
+    selectedCategory === "All"
+      ? allProjects
+      : categories.find((cat) => cat.kategori === selectedCategory)?.projects ||
+        [];
+
   return (
-    <div 
-      className="relative grid grid-cols-1 h-screen bg-black bg-cover bg-center"
-      style={{ backgroundImage: `url(${eleganImage})` }}
-    >
-      <div className="absolute inset-0 bg-black opacity-50"></div>
-      <div className="relative text-center m-auto">
-        <h1 className="text-4xl xl:text-8xl font-bold text-yellow-500">
-          OUR WORK
-        </h1>
-        <p className="text-sm xl:text-2xl font-extrabold mx-auto xl:w-3/4 text-white">
-          While many marketing agencies specialize in certain parts of the process, 
-          such as branding, analytics, or advertising, CUSTOMPEDIA offers a full 
-          range of digital services. This is a tremendous advantage of our partners. 
-          Housing all these functions under one roof fosters cross-functional 
-          collaboration and cost efficiency, giving you the opportunity to view your 
-          entire digital strategy in full picture.
-        </p>
+    <div className="bg-gray-100 grid grid-cols-1 h-screen p-4">
+      <div className="space-y-4 xl:space-y-8 my-auto">
+        <div className="flex space-x-2">
+          <div>
+            <h1 className="text-xl text-left xl:text-5xl 2xl:text-7xl text-black font-bold">
+              Services
+            </h1>
+          </div>
+          <div className="pt-3.5 xl:pt-8 2xl:pt-12">
+            <div className="bg-yellow-400 p-1 xl:p-2 rounded-xl px-8 xl:px-16"></div>
+          </div>
+        </div>
+        <div className="flex gap-2 overflow-auto">
+          {categories.map((category) => (
+            <button
+              key={category.id}
+              className={`px-4 xl:px-8 p-1 xl:p-2 text-xs xl:text-sm font-bold rounded-xl ${
+                category.kategori === selectedCategory
+                  ? "bg-blue-500 text-white"
+                  : "bg-white text-black "
+              }`}
+              onClick={() => setSelectedCategory(category.kategori)}
+            >
+              {category.kategori}
+            </button>
+          ))}
+        </div>
+
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-4">
+          {displayedProjects.map((project) => (
+            <MediaCard
+              key={project.id}
+              src={project.img1}
+              projectId={project.id}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
-}
+};
 
 export default Serviceus;

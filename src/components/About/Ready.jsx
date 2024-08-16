@@ -1,5 +1,5 @@
 import { ChevronRight } from "lucide-react";
-import ready from "../../assets/new image/people-working-elegant-cozy-office-space 6.jpg";
+import ready from "../../assets/images/ready.jpg";
 
 const CTAJourney = () => {
   return (

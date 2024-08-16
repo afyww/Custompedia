@@ -1,4 +1,4 @@
-import GetInTouchImage from '../../assets/new image/getintouchimage.jpg';
+import gettouch from '../../assets/images/gettouch.jpg';
 import { IoIosArrowForward } from "react-icons/io";
 
 const GetInTouch = () => {
@@ -19,7 +19,7 @@ const GetInTouch = () => {
       </div>
       <div
         className="absolute inset-0 bg-cover bg-center mix-blend-overlay"
-        style={{ backgroundImage: `url(${GetInTouchImage})`, filter: 'brightness(0.5)' }}
+        style={{ backgroundImage: `url(${gettouch})`, filter: 'brightness(0.5)' }}
       ></div>
     </div>
   );

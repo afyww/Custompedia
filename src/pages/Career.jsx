@@ -1,4 +1,4 @@
-import Careerus from "../components/Career/Careerus"
+import Hero from "../components/Career/Hero"
 import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
 import Whatsapp from "../components/Whatsapp"
@@ -10,7 +10,7 @@ function Career() {
       <Navbar />
     <div>
       <Whatsapp />
-      <Careerus />
+      <Hero />
     </div>
     <Footer />
     </main>

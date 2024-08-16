@@ -1,6 +1,6 @@
 
 
-function Careerus() {
+function Hero() {
     return (
         <div className='grid grid-cols-1 h-screen bg-black'>
             <div className="my-auto mx-5 xl:mx-24 2xl:mx-28">
@@ -29,4 +29,4 @@ function Careerus() {
     )
 }
 
-export default Careerus
+export default Hero;

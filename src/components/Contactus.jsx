@@ -1,12 +1,11 @@
-import React from 'react';
-import officeImage from '../assets/new image/view-messy-office-workspace-with-laptop-device 1.jpg';
+import messlaptop from '../assets/images/messlaptop.jpg';
 
 const ContactForm = () => {
   return (
     <div className="w-full">
       {/* Hero Section */}
       <div className="relative min-h-screen flex items-center"> {/* Added flex and items-center for better centering */}
-        <img src={officeImage} alt="Background" className="w-full h-full object-cover object-center absolute inset-0" />
+        <img src={messlaptop} alt="Background" className="w-full h-full object-cover object-center absolute inset-0" />
         <div className="absolute inset-0 bg-yellow-600 opacity-80"></div>
         <div className="relative z-10 w-full px-4 sm:px-8 md:px-16 py-8 sm:py-12 md:py-16"> {/* Adjusted padding and added z-index */}
           <h1 className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-4 sm:mb-6 md:mb-8 tracking-tight leading-tight">

@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
-import image1 from "../../assets/new image/1.png";
-import image2 from "../../assets/new image/2.png";
-import image3 from "../../assets/new image/3.png";
-import image4 from "../../assets/new image/4.png";
-import image5 from "../../assets/new image/5.png";
+import customfluencer from "../../assets/images/customfluencer.png";
+import parcelinpack from "../../assets/images/parcelinpack.png";
+import parcelinpremium from "../../assets/images/parcelinpremium.png";
+import customprinting from "../../assets/images/customprinting.png";
+import creasa from "../../assets/images/creasa.png";
 import { IoIosArrowForward } from "react-icons/io";
 import { Link } from "react-router-dom";
 
@@ -53,7 +53,7 @@ const OurNetwork = () => (
           <NetworkCard
             logo={
               <img
-                src={image2}
+                src={parcelinpack}
                 alt="Parcelin"
                 className="w-16 sm:w-20 md:w-24"
               />
@@ -64,7 +64,7 @@ const OurNetwork = () => (
           <NetworkCard
             logo={
               <img
-                src={image1}
+                src={customfluencer}
                 alt="Customfluencer"
                 className="w-16 sm:w-20 md:w-24"
               />
@@ -75,7 +75,7 @@ const OurNetwork = () => (
           <NetworkCard
             logo={
               <img
-                src={image4}
+                src={customprinting}
                 alt="Custom Printing"
                 className="w-16 sm:w-20 md:w-24"
               />
@@ -86,7 +86,7 @@ const OurNetwork = () => (
           <NetworkCard
             logo={
               <img
-                src={image3}
+                src={parcelinpremium}
                 alt="Parcelin Premium"
                 className="w-16 sm:w-20 md:w-24"
               />
@@ -96,7 +96,7 @@ const OurNetwork = () => (
           />
           <NetworkCard
             logo={
-              <img src={image5} alt="Creasa" className="w-16 sm:w-20 md:w-24" />
+              <img src={creasa} alt="Creasa" className="w-16 sm:w-20 md:w-24" />
             }
             title="Creasa Supply"
             description="Creative Supply Asia (Creasa) is distrubutor for printing and advertising raw material. Either we use for our internal company (in our group), we can also sell to another company."

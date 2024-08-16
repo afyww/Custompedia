@@ -1,9 +1,9 @@
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import Serviceus from '../components/Works/Serviceus'
-import Serviceus2 from '../components/Works/Serviceus2'
 import Whatsapp from '../components/Whatsapp'
 import { useEffect } from 'react'
+import Hero from '../components/Works/Hero'
 
 function Services() {
   useEffect(() => {
@@ -14,8 +14,8 @@ function Services() {
       <Navbar />
     <div>
       <Whatsapp />
+      <Hero />
       <Serviceus />
-      <Serviceus2 />
     </div>
     <Footer />
     </main>

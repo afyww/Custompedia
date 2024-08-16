@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import getstarted from '../../assets/new image/getstarted_rev.png';
-import backgroundVideo from '../../assets/new image/WhatsApp Video 2024-07-28 at 10.25.39 PM.mp4';
+import { useState, useEffect } from 'react';
+import getstarted from '../../assets/images/getstarted.png';
+import bghero from '../../assets/images/bghero.mp4';
 
 const TYPING_SPEED = 150;
 const DELETING_SPEED = 50;
@@ -54,7 +54,7 @@ function Hero() {
                 playsInline
                 className="absolute z-0 w-full h-full object-cover"
             >
-                <source src={backgroundVideo} type="video/mp4" />
+                <source src={bghero} type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
 

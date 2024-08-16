@@ -1,6 +1,6 @@
 import Aboutus from '../components/About/Aboutus'
 import Company from '../components/About/Company'
-import Nineyears from '../components/About/Nineyears'
+import Hero from '../components/About/Hero'
 import Ready from '../components/About/Ready'
 import Why from '../components/About/Why'
 import Workus from '../components/About/Workus'
@@ -14,8 +14,8 @@ function About() {
       <Navbar />
       <div>
         <Whatsapp />
+        <Hero />
         <Aboutus />
-        <Nineyears />
         <Company />
         <Why />
         <Workus />
