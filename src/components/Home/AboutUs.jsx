@@ -24,13 +24,13 @@ function AboutUs() {
               className="w-full h-auto rounded-xl shadow-xl"
             />
           </div>
-          <div className="text-center xl:text-left my-auto space-y-4 xl:space-y-8">
+          <div className="text-center xl:text-left my-auto space-y-4 xl:space-y-2">
             <div>
               <h1 className="text-yellow-500 text-2xl font-semibold">
                 About Us
               </h1>
             </div>
-            <div>
+            <div className="xl:w-4/5">
               <h1 className="text-white xl:text-4xl font-semibold">
                 We Use <span className="text-blue-500">Creativity</span> to
                 Deliver Your Brand Vision.
