@@ -1,6 +1,6 @@
 
 function Motion() {
-  const videoId = window.innerWidth <= 768 ? 'vGU7dc1kDs8' : '2vbr502XSgM';
+  const videoId = window.innerWidth <= 768 ? "G7eYjjLX4M0" : "2vbr502XSgM";
 
   return (
     <div className='h-screen grid grid-cols-1'>
@@ -10,7 +10,6 @@ function Motion() {
           className="absolute top-0 left-0 w-full h-full"
           style={{
             position: 'absolute',
-            top: '-60px',
             left: '0',
             width: '100%',
             height: 'calc(100% + 120px)',
