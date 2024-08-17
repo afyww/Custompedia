@@ -5,9 +5,6 @@ function Why() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isDropdownOpen2, setIsDropdownOpen2] = useState(false);
   const [isDropdownOpen3, setIsDropdownOpen3] = useState(false);
-  const [isDropdownOpen4, setIsDropdownOpen4] = useState(false);
-  const [isDropdownOpen5, setIsDropdownOpen5] = useState(false);
-  const [isDropdownOpen6, setIsDropdownOpen6] = useState(false);
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
@@ -20,12 +17,9 @@ function Why() {
   const toggleDropdown3 = () => {
     setIsDropdownOpen3(!isDropdownOpen3);
   };
-  const toggleDropdown4 = () => {
-    setIsDropdownOpen4(!isDropdownOpen4);
-  };
   return (
     <div className="grid grid-cols-1 h-full bg-black p-2 xl:p-8">
-      <div className="xl:my-44 my-16 space-y-4 xl:space-y-8">
+      <div className="my-auto space-y-4 xl:space-y-8">
         <div>
           <h1 className="text-white text-center text-4xl xl:text-9xl font-bold">
             WHY YOU

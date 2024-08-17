@@ -102,15 +102,15 @@ const OurNetwork = () => (
             description="Creative Supply Asia (Creasa) is distrubutor for printing and advertising raw material. Either we use for our internal company (in our group), we can also sell to another company."
           />
         </div>
-        <div className="w-full">
-          <div className="flex justify-center">
-            <Link to="/about">
-              <div className="flex border border-yellow-500 text-white font-bold rounded-xl w-fit mx-auto xl:mx-0 hover:bg-yellow-500 hover:text-white text-sm xl:text-base p-2">
-                <h1 className="my-auto">Read More</h1>
-                <IoIosArrowForward className="w-6 h-6 xl:w-8 xl:h-8" />
-              </div>
-            </Link>
-          </div>
+        <div className="flex items-center justify-center">
+          <Link to="/service">
+            <div className="p-2 my-auto hover:scale-110 hover:bg-gradient-to-l flex justify-between from-yellow-400 to-yellow-600 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-xl w-fit duration-200 delay-150">
+              <h1 className="text-white font-semibold text-left xl:px-5 px-2 text-sm xl:text-xl 2xl:text-2xl">
+                Read More
+              </h1>
+              <IoIosArrowForward className="text-white w-5 h-5 xl:w-7 xl:h-7" />
+            </div>
+          </Link>
         </div>
       </div>
     </div>

@@ -68,18 +68,16 @@ function Workus() {
             </div>
           ))}
         </div>
-        <div className="p-2 my-auto hover:scale-110 hover:bg-gradient-to-l flex justify-between from-white to-white border-2 border-blue-400 bg-gradient-to-r from-blue-400 to-blue-500 rounded-xl w-fit duration-200 delay-150 mx-auto">
-          <Link
-            to="/work"
-            className="text-center flex space-x-1
-          "
-          >
-            <h1 className="text-black font-semibold text-left xl:px-7 px-4 text-sm xl:text-xl 2xl:text-2xl">
-              View All Our Work
-            </h1>
-            <IoIosArrowForward className="text-black w-10 h-5 xl:w-12 xl:h-7" />
-          </Link>
-        </div>
+        <div className="flex items-center justify-center">
+            <Link to="/service">
+              <div className="p-2 my-auto hover:scale-110 hover:bg-gradient-to-l flex justify-between from-blue-400 to-blue-600 bg-gradient-to-r from-blue-400 to-blue-500 rounded-xl w-fit duration-200 delay-150">
+                <h1 className="text-white font-semibold text-left xl:px-5 px-2 text-sm xl:text-xl 2xl:text-2xl">
+                  View All  Our Works
+                </h1>
+                <IoIosArrowForward className="text-white w-5 h-5 xl:w-7 xl:h-7" />
+              </div>
+            </Link>
+          </div>
       </div>
     </div>
   );

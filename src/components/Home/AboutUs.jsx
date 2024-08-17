@@ -13,20 +13,20 @@ function AboutUs() {
 
   return (
     <div className="relative grid grid-cols-1 text-white bg-gradient-to-br from-yellow-500 to-blue-500 z-30">
-            <div className="bg-black z-10 absolute w-full h-full opacity-75"></div>
+      <div className="bg-black z-10 absolute w-full h-full opacity-75"></div>
 
       <div className="my-16 xl:my-44 z-20">
-        <div className="grid grid-cols-1 xl:grid-cols-2 space-x-0 xl:space-x-8">
-          <div className="p-2 xl:p-0">
+        <div className="grid grid-cols-1 xl:grid-cols-2 space-x-0 xl:space-x-8  p-4">
+          <div className="my-auto">
             <img
               src={teamyellow}
               alt="Team"
-              className="w-full h-auto rounded-xl shadow-xl"
+              className="w-full h-auto rounded-xl"
             />
           </div>
-          <div className="text-center xl:text-left my-auto space-y-4 xl:space-y-2">
+          <div className="text-center xl:text-left my-auto space-y-4 xl:space-y-6">
             <div>
-              <h1 className="text-yellow-500 text-2xl font-semibold">
+              <h1 className="text-yellow-500 text-2xl xl:text-4xl font-semibold">
                 About Us
               </h1>
             </div>
@@ -36,18 +36,20 @@ function AboutUs() {
                 Deliver Your Brand Vision.
               </h1>
             </div>
-            <div>
-              <p className="text-gray-300 text-sm xl:text-base">
+            <div className="xl:w-4/5">
+              <p className="text-gray-300 text-sm xl:text-lg">
                 Through our years of experience, we develop branding and
                 marketing strategies to best possible growth solutions for our
                 clients.
               </p>
             </div>
-            <div>
+            <div className="flex items-center justify-center xl:w-fit w-full">
               <Link to="/about">
-                <div className="flex border border-blue-500 text-white font-bold rounded-xl w-fit mx-auto xl:mx-0 hover:bg-blue-500 hover:text-white text-sm xl:text-base p-2">
-                  <h1 className="my-auto">Get To Know More</h1>
-                  <IoIosArrowForward className="w-6 h-6 xl:w-8 xl:h-8" />
+                <div className="p-2 my-auto hover:scale-110 hover:bg-gradient-to-l flex justify-between from-blue-400 to-blue-600 bg-gradient-to-r from-blue-400 to-blue-500 rounded-xl w-fit duration-200 delay-150">
+                  <h1 className="text-white font-semibold text-left xl:px-5 px-2 text-sm xl:text-xl 2xl:text-2xl">
+                    Get To Know More
+                  </h1>
+                  <IoIosArrowForward className="text-white w-5 h-5 xl:w-7 xl:h-7" />
                 </div>
               </Link>
             </div>
@@ -55,48 +57,48 @@ function AboutUs() {
         </div>
       </div>
       <div
-  ref={ref}
-  className="p-4 z-20"
-  style={{
-    background:
-      "linear-gradient(to right, rgba(250, 192, 22, 0.3), rgba(11, 153, 206, 0.3))",
-  }}
->
-  <div className="grid grid-cols-2 xl:grid-cols-4 gap-4 xl:gap-8 h-56 z-20">
-    <div className="flex items-center justify-center h-full z-20">
-      <StatItem
-        number="9"
-        suffix="th"
-        text="Years of Experience"
-        inView={inView}
-      />
-    </div>
-    <div className="flex items-center justify-center h-full">
-      <StatItem
-        number="50"
-        suffix="+"
-        text="Skilled Professionals"
-        inView={inView}
-      />
-    </div>
-    <div className="flex items-center justify-center h-full">
-      <StatItem
-        number="300"
-        suffix="+"
-        text="Satisfied Clients"
-        inView={inView}
-      />
-    </div>
-    <div className="flex items-center justify-center h-full">
-      <StatItem
-        number="2500"
-        suffix=""
-        text="Projects Done"
-        inView={inView}
-      />
-    </div>
-  </div>
-</div>
+        ref={ref}
+        className="p-4 z-20"
+        style={{
+          background:
+            "linear-gradient(to right, rgba(250, 192, 22, 0.3), rgba(11, 153, 206, 0.3))",
+        }}
+      >
+        <div className="grid grid-cols-2 xl:grid-cols-4 gap-4 xl:gap-8 h-56 z-20">
+          <div className="flex items-center justify-center h-full z-20">
+            <StatItem
+              number="9"
+              suffix="th"
+              text="Years of Experience"
+              inView={inView}
+            />
+          </div>
+          <div className="flex items-center justify-center h-full">
+            <StatItem
+              number="50"
+              suffix="+"
+              text="Skilled Professionals"
+              inView={inView}
+            />
+          </div>
+          <div className="flex items-center justify-center h-full">
+            <StatItem
+              number="300"
+              suffix="+"
+              text="Satisfied Clients"
+              inView={inView}
+            />
+          </div>
+          <div className="flex items-center justify-center h-full">
+            <StatItem
+              number="2500"
+              suffix=""
+              text="Projects Done"
+              inView={inView}
+            />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,14 +1,8 @@
-import { useNavigate } from 'react-router-dom';
 import gettouch from '../../assets/images/gettouch.jpg';
 import { IoIosArrowForward } from "react-icons/io";
 import { Link } from 'react-router-dom';
 
 const GetInTouch = () => {
-  const navigate = useNavigate();
-
-  const handleButtonClick = () => {
-    navigate('/contact');
-  };
 
   return (
     <div className="grid grid-cols-1 h-screen relative bg-black  z-30">
@@ -18,16 +12,16 @@ const GetInTouch = () => {
         <p className="text-white text-base md:text-lg mb-8 max-w-2xl md:max-w-4xl mx-auto">
           We’ll show you how to start powerful conversations, drive social engagement, build your brand, hit sales targets or meet other goals you have, wherever you are in the world.
         </p>
-        <div className="w-full z-30">
-          <div className="flex justify-center">
-            <Link to="/about">
-              <div className="flex border border-blue-500 text-white font-bold rounded-xl w-fit mx-auto xl:mx-0 hover:bg-blue-500 hover:text-white text-sm xl:text-base p-2">
-                <h1 className="my-auto">Work With Us</h1>
-                <IoIosArrowForward className="w-6 h-6 xl:w-8 xl:h-8" />
+        <div className="flex  items-center  justify-center">
+            <Link to="/service">
+              <div className="p-2 my-auto hover:scale-110 hover:bg-gradient-to-l flex justify-between from-blue-400 to-blue-600 bg-gradient-to-r from-blue-400 to-blue-500 rounded-xl w-fit duration-200 delay-150">
+                <h1 className="text-white font-semibold text-left xl:px-5 px-2 text-sm xl:text-xl 2xl:text-2xl">
+                  Work With  Us
+                </h1>
+                <IoIosArrowForward className="text-white w-5 h-5 xl:w-7 xl:h-7" />
               </div>
             </Link>
           </div>
-        </div>
       </div>
       <div
         className="absolute inset-0 bg-cover bg-center mix-blend-overlay"

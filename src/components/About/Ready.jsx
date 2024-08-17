@@ -1,5 +1,6 @@
-import { ChevronRight } from "lucide-react";
+import { IoIosArrowForward } from "react-icons/io";
 import ready from "../../assets/images/ready.jpg";
+import { Link } from "react-router-dom";
 
 const CTAJourney = () => {
   return (
@@ -20,13 +21,16 @@ const CTAJourney = () => {
           <p className="text-white text-center text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 drop-shadow-md">
             Talk to us about your ideas
           </p>
-          <button
-            className="bg-blue-500 text-white px-4 py-2 rounded-full flex items-center hover:bg-blue-600 focus:ring-4 focus:ring-blue-300 transition-colors text-sm sm:text-base"
-            aria-label="Click here to talk to us about your ideas"
-          >
-            Contact Us
-            <ChevronRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
-          </button>
+          <div className="flex items-center justify-center">
+            <Link to="/service">
+              <div className="p-2 my-auto hover:scale-110 hover:bg-gradient-to-l flex justify-between from-blue-400 to-blue-600 bg-gradient-to-r from-blue-400 to-blue-500 rounded-xl w-fit duration-200 delay-150">
+                <h1 className="text-white font-semibold text-left xl:px-5 px-2 text-sm xl:text-xl 2xl:text-2xl">
+                  Contact Us
+                </h1>
+                <IoIosArrowForward className="text-white w-5 h-5 xl:w-7 xl:h-7" />
+              </div>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

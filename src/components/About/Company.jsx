@@ -14,17 +14,10 @@ const Company = () => {
     arrows: true,
   };
 
-  const logoAnimationStyle = {
-    display: "flex",
-    whiteSpace: "nowrap",
-    position: "absolute",
-    animation: "scroll 20s linear infinite",
-  };
-
   return (
-    <section className="bg-black grid grid-cols-1">
-      <div className="my-auto space-y-16">
-        <div className="max-w-6xl mx-auto p-8 xl:p-0">
+    <section className="bg-black grid grid-cols-1 h-screen">
+      <div className="my-auto space-y-8">
+        <div className="max-w-6xl mx-auto ">
           <Slider {...settings}>
             <div>
               <img
@@ -48,25 +41,6 @@ const Company = () => {
               />
             </div>
           </Slider>
-        </div>
-        <style>
-          {`
-          @keyframes scroll {
-            0% {
-              transform: translateX(0);
-            }
-            100% {
-              transform: translateX(-100%);
-            }
-          }
-        `}
-        </style>
-        <div className="overflow-hidden relative h-8 xl:h-16">
-          <div style={logoAnimationStyle}>
-            {/* Duplicate the logo image for seamless scrolling */}
-            <img src={company} alt="Logos" className="h-auto" />
-            <img src={company} alt="Logos" className="h-auto" />
-          </div>
         </div>
       </div>
     </section>
