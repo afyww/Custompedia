@@ -46,7 +46,7 @@ function Hero() {
     const typedText = useTypingEffect(['Digital', 'Social Media', 'Advertising', 'KOL', 'Event']);
 
     return (
-        <div className="relative h-screen overflow-hidden">
+        <div className="relative h-screen overflow-hidden z-30">
             <video
                 autoPlay
                 loop

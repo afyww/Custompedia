@@ -1,67 +1,138 @@
-import messlaptop from '../assets/images/messlaptop.jpg';
+import { IoIosArrowForward } from "react-icons/io";
 
-const ContactForm = () => {
-  return (
-    <div className="w-full">
-      {/* Hero Section */}
-      <div className="relative min-h-screen flex items-center"> {/* Added flex and items-center for better centering */}
-        <img src={messlaptop} alt="Background" className="w-full h-full object-cover object-center absolute inset-0" />
-        <div className="absolute inset-0 bg-yellow-600 opacity-80"></div>
-        <div className="relative z-10 w-full px-4 sm:px-8 md:px-16 py-8 sm:py-12 md:py-16"> {/* Adjusted padding and added z-index */}
-          <h1 className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-4 sm:mb-6 md:mb-8 tracking-tight leading-tight">
-            CONTACT US
-          </h1>
-          <div className="bg-blue-600 text-white p-4 sm:p-6 md:p-8 max-w-2xl rounded-lg shadow-lg mb-4 sm:mb-6 md:mb-8">
-            <h2 className="font-bold text-lg sm:text-xl md:text-2xl mb-2 sm:mb-3 md:mb-4">What problems can we solve for your brand?</h2>
-            <p className="text-xs sm:text-sm md:text-base leading-relaxed">Insight led, culturally intelligent, globally relevant, platform-agnostic. We partner with clients to drive business outcomes.</p>
-          </div>
-          <p className="text-white max-w-2xl text-xs sm:text-sm md:text-base lg:text-lg leading-relaxed">
-            Whether you're looking to get in touch for an RFP / RFI or your next project, fill in the form below and let's talk.
-          </p>
+
+function Contactus() {
+    return (
+        <div className='grid grid-cols-1 bg-black'>
+            <div className="my-24 xl:my-44 2xl:my-48 mx-5 xl:mx-48 2xl:mx-52">
+                <div className="space-y-8 xl:space-y-24 2xl:space-y-36">
+                    <form className="space-y-2 xl:space-y-20 2xl:space-y-16">
+                        <div className="grid grid-cols-1 xl:grid-cols-3 space-y-5 xl:space-y-0">
+                            <div className="mx-10">
+                                <div className="">
+                                    <label className="text-sm xl:text-lg 2xl:text-xl text-extralight text-white text-left">Name *</label>
+                                </div>
+                                <div className="">
+                                    <input
+                                        type="text"
+                                        name="name"
+                                        value=''
+                                        onChange=''
+                                        className="w-full py-2 rounded-none bg-transparent border-b-2 border-white outline-none"
+                                    />
+                                </div>
+                            </div>
+                            <div className="mx-10">
+                                <div className="">
+                                    <label className="text-sm xl:text-lg 2xl:text-xl text-extralight text-white text-left">Email *</label>
+                                </div>
+                                <div className="">
+                                    <input
+                                        type="text"
+                                        name="name"
+                                        placeholder="e.g., example@mail.com"
+                                        value=''
+                                        onChange=''
+                                        className="w-full py-2 rounded-none bg-transparent border-b-2 border-white outline-none"
+                                    />
+                                </div>
+                            </div>
+                            <div className="mx-10">
+                                <div className="">
+                                    <label className="text-sm xl:text-lg 2xl:text-xl text-extralight text-white text-left">Phone *</label>
+                                </div>
+                                <div className="">
+                                    <input
+                                        type="text"
+                                        name="name"
+                                        placeholder="e.g., 555-555-5…"
+                                        value=''
+                                        onChange=''
+                                        className="w-full py-2 rounded-none bg-transparent border-b-2 border-white outline-none"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="grid grid-cols-1 xl:grid-cols-3 space-y-5 xl:space-y-0">
+                            <div className="mx-10">
+                                <div className="">
+                                    <label className="text-sm xl:text-lg 2xl:text-xl text-extralight text-white text-left">Company Name *</label>
+                                </div>
+                                <div className="">
+                                    <input
+                                        type="text"
+                                        name="name"
+                                        value=''
+                                        onChange=''
+                                        className="w-full py-2 rounded-none bg-transparent border-b-2 border-white outline-none"
+                                    />
+                                </div>
+                            </div>
+                            <div className="mx-10">
+                                <div className="">
+                                    <label className="text-sm xl:text-lg 2xl:text-xl text-extralight text-white text-left">Company Website *</label>
+                                </div>
+                                <div className="">
+                                    <input
+                                        type="text"
+                                        name="name"
+                                        value=''
+                                        onChange=''
+                                        className="w-full py-2 rounded-none bg-transparent border-b-2 border-white outline-none"
+                                    />
+                                </div>
+                            </div>
+                            <div className="mx-10">
+                                <div className="">
+                                    <label className="text-sm xl:text-lg 2xl:text-xl text-extralight text-white text-left">Company Social Media</label>
+                                </div>
+                                <div className="">
+                                    <input
+                                        type="text"
+                                        name="name"
+                                        value=''
+                                        onChange=''
+                                        className="w-full py-2 rounded-none bg-transparent border-b-2 border-white outline-none"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="grid grid-cols-1 xl:grid-cols-3">
+                            <div className="mx-10">
+                                <div className="">
+                                    <label className="text-sm xl:text-lg 2xl:text-xl text-bold text-white text-left">What service(s) are you
+                                        interested in? *</label>
+                                </div>
+                            </div>
+                            <div className="mx-10 col-span-2">
+                                <div className="">
+                                    <label className="text-sm xl:text-lg 2xl:text-xl text-bold text-white text-left">How can we help you?</label>
+                                </div>
+                                <div className="">
+                                    <textarea
+                                        type="text"
+                                        name="name"
+                                        value=''
+                                        onChange=''
+                                        rows="12"
+                                        className="w-full text-white border-2 py-2 bg-transparent border-white outline-none"
+                                    >
+
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="p-2 mx-auto my-auto hover:scale-110 hover:bg-gradient-to-l bg-gradient-to-r from-blue-400 to-blue-500 rounded-xl w-1/2 duration-200 delay-150">
+                            <button className="flex justify-between items-center w-full">
+                                <h1 className='text-white font-semibold px-4 text-left text-sm xl:text-xl 2xl:text-2xl'>Submit</h1>
+                                <IoIosArrowForward className='text-white w-5 xl:w-7 h-5 xl:h-7' />
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-      </div>
-      
-      {/* Form Section */}
-      <div className="bg-gray-100 py-8 sm:py-12 md:py-16 lg:py-20">
-        <form className="max-w-4xl mx-auto px-4 sm:px-8 md:px-12 lg:px-16">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-10">
-            {[
-              { id: 'name', label: 'Name' },
-              { id: 'lastName', label: 'Last name' },
-              { id: 'company', label: 'Company name' },
-              { id: 'jobTitle', label: 'Job title' },
-              { id: 'location', label: 'Where are you based?' },
-              { id: 'email', label: 'Email address', type: 'email' },
-              { id: 'phone', label: 'Phone number', type: 'tel' },
-            ].map((field) => (
-              <div key={field.id} className="relative mb-6 md:mb-8">
-                <input
-                  type={field.type || 'text'}
-                  id={field.id}
-                  className="peer mt-1 block w-full border-b-2 border-gray-300 bg-transparent focus:border-blue-500 focus:outline-none transition-colors duration-300 py-2 text-base md:text-lg"
-                  placeholder=" "
-                />
-                <label
-                  htmlFor={field.id}
-                  className="absolute left-0 -top-3.5 text-gray-600 text-sm md:text-base transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm md:peer-focus:text-base"
-                >
-                  {field.label}
-                </label>
-              </div>
-            ))}
-          </div>
-          <div className="mt-8 sm:mt-10 md:mt-12 lg:mt-16 flex justify-center sm:justify-end">
-            <button
-              type="submit"
-              className="bg-blue-600 text-white px-6 sm:px-8 md:px-10 py-2 sm:py-3 md:py-4 rounded-full hover:bg-blue-700 transition duration-300 text-base sm:text-lg md:text-xl font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-            >
-              Submit
-            </button>
-          </div>
-        </form>
-      </div>
-    </div>
-  );
-};
+    )
+}
 
-export default ContactForm;
+export default Contactus

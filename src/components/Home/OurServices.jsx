@@ -31,7 +31,7 @@ const Slider = () => {
   };
 
   return (
-    <div className="bg-black text-white p-4 xl:p-8 grid grid-cols-1">
+    <div className="bg-black text-white p-4 xl:p-8 grid grid-cols-1 z-30">
     <div className="w-full">
     <div className="flex space-x-2">
       <div>

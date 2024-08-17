@@ -31,7 +31,7 @@ NetworkCard.propTypes = {
 };
 
 const OurNetwork = () => (
-  <div className="relative h-full grid grid-cols-1 text-white bg-gradient-to-tr from-yellow-500 to-blue-500 p-4">
+  <div className="relative h-full grid grid-cols-1 text-white bg-gradient-to-tr from-yellow-500 to-blue-500 p-4 z-30">
     <div className="bg-black z-10 h-full w-full absolute opacity-75"></div>
     <div className="z-20 xl:my-32 my-12">
       <div className="flex space-x-2">
@@ -104,13 +104,12 @@ const OurNetwork = () => (
         </div>
         <div className="w-full">
           <div className="flex justify-center">
-            <Link
-              to="/about"
-              className="text-yellow-400 text-base xl:text-xl font-bold my-auto"
-            >
-              read more
+            <Link to="/about">
+              <div className="flex border border-yellow-500 text-white font-bold rounded-xl w-fit mx-auto xl:mx-0 hover:bg-yellow-500 hover:text-white text-sm xl:text-base p-2">
+                <h1 className="my-auto">Read More</h1>
+                <IoIosArrowForward className="w-6 h-6 xl:w-8 xl:h-8" />
+              </div>
             </Link>
-            <IoIosArrowForward className="text-yellow-400 w-6 h-6 xl:w-8 xl:h-8" />
           </div>
         </div>
       </div>

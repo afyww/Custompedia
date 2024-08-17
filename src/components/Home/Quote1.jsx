@@ -4,7 +4,7 @@ import star2 from "../../assets/images/star2.png";
 
 function Quote1() {
   return (
-    <div className="relative grid grid-cols-1 text-white bg-gradient-to-br from-yellow-500 to-blue-500">
+    <div className="relative grid grid-cols-1 text-white bg-gradient-to-br from-yellow-500 to-blue-500 z-30">
       {/* Combined Background Images */}
       
       {/* Overlay */}

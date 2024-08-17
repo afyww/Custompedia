@@ -12,7 +12,7 @@ function AboutUs() {
   });
 
   return (
-    <div className="relative grid grid-cols-1 text-white bg-gradient-to-br from-yellow-500 to-blue-500">
+    <div className="relative grid grid-cols-1 text-white bg-gradient-to-br from-yellow-500 to-blue-500 z-30">
             <div className="bg-black z-10 absolute w-full h-full opacity-75"></div>
 
       <div className="my-16 xl:my-44 z-20">

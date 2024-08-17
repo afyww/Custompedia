@@ -18,7 +18,7 @@ function Runningtext() {
   };
 
   return (
-    <div className="h-fit grid grid-cols-1 w-full max-w-fit mx-auto bg-blue-800">
+    <div className="h-fit grid grid-cols-1 w-full max-w-fit mx-auto bg-blue-800 z-30">
       <div className="my-4 xl:my-18">
         <Slider className="" {...settings}>
           <div className="w-full">
