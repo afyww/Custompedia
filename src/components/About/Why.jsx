@@ -24,8 +24,8 @@ function Why() {
     setIsDropdownOpen4(!isDropdownOpen4);
   };
   return (
-    <div className="grid grid-cols-1 h-full bg-black p-2 xl:p-16">
-      <div className="xl:my-8 my-4 space-y-4 xl:space-y-8">
+    <div className="grid grid-cols-1 h-full bg-black p-2 xl:p-8">
+      <div className="xl:my-44 my-16 space-y-4 xl:space-y-8">
         <div>
           <h1 className="text-white text-center text-4xl xl:text-9xl font-bold">
             WHY YOU
@@ -52,7 +52,7 @@ function Why() {
           <div className="bg-gray-800 p-4 xl:p-6 rounded-3xl">
             <div className="flex justify-between">
               <div className="my-auto">
-                <h1 className="text-white font-semibold text-xl xl:text-3xl">
+                <h1 className="text-white font-semibold text-sm xl:text-3xl">
                   FULL SERVICES CREATIVE AGENCY
                 </h1>
               </div>
@@ -77,7 +77,7 @@ function Why() {
           <div className="bg-gray-800 p-4 xl:p-6 rounded-3xl">
             <div className="flex justify-between">
               <div className="my-auto">
-                <h1 className="text-white font-semibold text-xl xl:text-3xl">
+                <h1 className="text-white font-semibold text-sm xl:text-3xl">
                 CONSCIENTIOUS IN PROCESS AND RESULT ORIENTED
                 </h1>
               </div>
@@ -98,7 +98,7 @@ function Why() {
           <div className="bg-gray-800 p-4 xl:p-6 rounded-3xl">
             <div className="flex justify-between">
               <div className="my-auto">
-                <h1 className="text-white font-semibold text-xl xl:text-3xl">
+                <h1 className="text-white font-semibold text-sm xl:text-3xl">
                 CONSCIENTIOUS IN PROCESS AND RESULT ORIENTED
                 </h1>
               </div>
