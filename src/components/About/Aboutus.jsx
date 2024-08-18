@@ -3,11 +3,11 @@ function Aboutus() {
     <div className="grid grid-cols-1 h-fit bg-black p-4">
       <div className="my-auto space-y-2 xl:space-y-4">
         <div className="xl:space-y-8 space-y-4">
-          <div className="bg-blue-500 rounded p-1 xl:p-2 w-fit">
-            <h1 className="text-white text-xs xl:text-xl font-semibold">
-              About Us
-            </h1>
-          </div>
+        <div className="bg-blue-500 rounded p-1 xl:p-2 w-fit">
+              <h1 className="text-white text-xs xl:text-xl font-semibold">
+                About Us
+              </h1>
+            </div>
           <div className="xl:space-y-8 space-y-4 w-full">
             <h1 className="text-white text-xs font-extralight text-left xl:text-xl">
               Why Us? Experience the all-in-one solution for unmatched creative

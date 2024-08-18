@@ -20,9 +20,9 @@ function About() {
         <Hero />
         <Aboutus />
         <Nineyears />
-        <What />
         <Why />
-        <Company />
+        <What />
+        {/* <Company /> */}
         <Workus />
         <Ready />
       </div>
