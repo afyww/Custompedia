@@ -31,9 +31,8 @@ NetworkCard.propTypes = {
 };
 
 const OurNetwork = () => (
-  <div className="relative h-full grid grid-cols-1 text-white bg-gradient-to-tr from-yellow-500 to-blue-500 p-4 z-30">
-    <div className="bg-black z-10 h-full w-full absolute opacity-75"></div>
-    <div className="z-20 xl:my-32 my-12">
+  <div className="bg-black text-white p-2 xl:p-4 grid grid-cols-1 z-30">
+    <div className="z-20 my-6 xl:my-12">
       <div className="flex space-x-2">
         <div>
           <h1 className="text-xl text-left xl:text-5xl 2xl:text-7xl text-white font-bold">
@@ -44,12 +43,12 @@ const OurNetwork = () => (
           <div className="bg-yellow-400 p-1 xl:p-2 rounded-xl px-8 xl:px-16"></div>
         </div>
       </div>
-      <p className="text-lg sm:text-xl mb-6 sm:mb-8">
-        Sister company that complete our creative universe
+      <p className="text-lg text-gray-300 max-w-2xl">
+      Sister company that complete our creative universe
       </p>
 
       <div className="space-y-4 xl:space-y-16">
-        <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 sm:gap-6">
+        <div className="grid grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-6">
           <NetworkCard
             logo={
               <img
@@ -102,7 +101,7 @@ const OurNetwork = () => (
             description="Creative Supply Asia (Creasa) is distrubutor for printing and advertising raw material. Either we use for our internal company (in our group), we can also sell to another company."
           />
         </div>
-        <div className="flex items-center justify-center">
+        <div className="">
           <Link to="/service">
             <div className="p-2 my-auto hover:scale-110 hover:bg-gradient-to-l flex justify-between from-yellow-400 to-yellow-600 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-xl w-fit duration-200 delay-150">
               <h1 className="text-white font-semibold text-left xl:px-5 px-2 text-sm xl:text-xl 2xl:text-2xl">

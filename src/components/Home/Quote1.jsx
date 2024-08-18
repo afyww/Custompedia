@@ -4,15 +4,15 @@ import star2 from "../../assets/images/star2.png";
 
 function Quote1() {
   return (
-    <div className="relative grid grid-cols-1 text-white bg-gradient-to-br from-yellow-500 to-blue-500 z-30">
+    <div className="relative grid grid-cols-1 text-white bg-gradient-to-br from-yellow-500 to-blue-500 z-30 p-2 xl:p-4">
       {/* Combined Background Images */}
       
       {/* Overlay */}
       <div className="bg-black z-10 absolute w-full h-full opacity-75"></div>
       
       {/* Content */}
-      <div className="p-2 z-20 my-16 xl:my-44">
-        <div className="relative mx-auto max-w-6xl text-center">
+      <div className="z-20 my-16 xl:my-32">
+        <div className="relative w-full text-left">
           <p className="text-xl sm:text-5xl md:text-5xl lg:text-xl xl:text-7xl font-bold font-unbounded mb-2 leading-tight flex flex-wrap items-center gap-2 text-justify">
             <span>A</span>
             <span className="text-white border-blue-400 border rounded-lg px-2 py-1">
@@ -89,46 +89,9 @@ function Quote1() {
             </span>
           </p>
         </div>
-
-        {/* Sliding Logos */}
-        <div className="relative w-full mt-8 sm:mt-12 md:mt-16 overflow-hidden z-20">
-          <div className="slide-container">
-            <div className="slide-animation">
-              <img
-                src={company}
-                alt="logo perusahaan"
-                className="w-full h-auto p-2 max-w-[2000%]"
-              />
-              <img
-                src={company}
-                alt="logo perusahaan"
-                className="w-full h-auto p-2 max-w-[200%]"
-              />
-            </div>
-          </div>
-        </div>
       </div>
       
-      {/* Custom CSS for Sliding Animation */}
-      <style jsx>{`
-        @keyframes slideLeftToRight {
-          0% {
-            transform: translateX(0);
-          }
-          100% {
-            transform: translateX(-50%);
-          }
-        }
-        .slide-container {
-          display: flex;
-          width: 200%;
-        }
-        .slide-animation {
-          animation: slideLeftToRight 15s linear infinite;
-          display: flex;
-          width: 100%;
-        }
-      `}</style>
+   
     </div>
   );
 }

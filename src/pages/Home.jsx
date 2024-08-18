@@ -21,8 +21,8 @@ function Home() {
                 <Hero />
                 <Runningtext />
                 <AboutUs />
-                <Motion />
                 <Quote1 />
+                <Motion />
                 <OurNetwork />
                 <OurServices />
                 <Workus />
