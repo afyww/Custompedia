@@ -27,7 +27,7 @@ const Slider = () => {
   };
 
   const handleSeeMoreClick = () => {
-    navigate("/work");
+    navigate("/about");
   };
 
   return (
