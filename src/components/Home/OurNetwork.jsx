@@ -61,7 +61,7 @@ const OurNetwork = () => (
             </div>
           </div>
           <div className="space-y-2">
-            <div className="mx-auto xl:mx-0 xl:px-14 px-10 py-0 w-fit bg-blue-400 rounded-xl">
+            <div className="mx-auto xl:mx-0 xl:px-16 px-14 py-2 xl:py-0 w-fit bg-blue-400 rounded-xl">
               <img src={customprinting} alt="" />
             </div>
             <div className="text-center xl:text-left">
@@ -78,7 +78,7 @@ const OurNetwork = () => (
             </div>
           </div>
           <div className="space-y-2">
-            <div className="mx-auto xl:mx-0 xl:px-10 xl:py-8 py-5 w-fit bg-blue-400 rounded-xl">
+            <div className="mx-auto xl:mx-0 px-10 xl:px-10 xl:py-8 py-7 w-fit bg-blue-400 rounded-xl">
               <img src={creasa} alt="" />
             </div>
             <div className="text-center xl:text-left">
@@ -95,7 +95,7 @@ const OurNetwork = () => (
             </div>
           </div>
           <div className="space-y-2">
-            <div className="mx-auto xl:mx-0 xl:px-10 py-0 w-fit bg-blue-400 rounded-xl">
+            <div className="mx-auto xl:mx-0 xl:px-10 px-4 xl:py-0 w-fit bg-blue-400 rounded-xl">
               <img src={parcelinpremium} alt="" />
             </div>
             <div className="text-center xl:text-left">

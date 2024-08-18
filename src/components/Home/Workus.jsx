@@ -57,7 +57,7 @@ function Workus() {
             Moves Businesses Forward
             </p>
           </div>
-          <div className="grid grid-cols-1 xl:grid-cols-2 gap-2 xl:p-8 p-4">
+          <div className="grid grid-cols-2 xl:grid-cols-2 gap-2 xl:p-8 p-4">
             {projects.map((project) => (
               <div className="w-full my-auto" key={project.id}>
                 <Link className="" to={`/project/${project.id}`}>
