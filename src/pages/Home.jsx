@@ -11,6 +11,7 @@ import Whatsapp from '../components/Whatsapp'
 import Runningtext from '../components/Home/Runningtext'
 import AboutUs from '../components/Home/AboutUs'
 import GetInTouch from '../components/Home/GetInTouch'
+import Clientus from '../components/Home/Clientus'
 
 function Home() {
     return (
@@ -25,6 +26,7 @@ function Home() {
                 <Motion />
                 <OurNetwork />
                 <OurServices />
+                <Clientus />
                 <Workus />
                 <GetInTouch />
             </div>

@@ -23,12 +23,12 @@ function Why() {
       <div className="grid grid-cols-1 xl:grid-cols-2 space-y-10">
           <div className="my-auto">
             <div>
-            <h1 className="text-2xl text-left xl:text-6xl 2xl:text-8xl text-white font-extrabold">
+            <h1 className="text-2xl text-left xl:text-6xl 2xl:text-7xl text-white font-extrabold">
             WHY YOU
               </h1>
             </div>
             <div>
-            <h1 className="text-2xl text-left xl:text-6xl 2xl:text-8xl text-blue-400 font-extrabold">
+            <h1 className="text-2xl text-left xl:text-6xl 2xl:text-7xl text-blue-400 font-extrabold">
             NEED US?
               </h1>
             </div>
@@ -36,7 +36,7 @@ function Why() {
               <h1 className="text-white font-light">
                 In a world filled with endless distractions, capturing attention
                 is an art and we are the masters of it. Our mission is clear: to
-                create{" "}
+                create
                 <span className="text-yellow-400">
                   extraordinary, winning social marketing campaigns,
                   comprehensive engagement strategies,
@@ -50,7 +50,7 @@ function Why() {
             <div className="bg-gray-800 p-4 xl:p-6 rounded-3xl">
               <div className="flex justify-between">
                 <div className="my-auto">
-                  <h1 className="text-white font-semibold text-sm xl:text-3xl">
+                  <h1 className="text-white font-semibold text-sm xl:text-2xl">
                     FULL SERVICES CREATIVE AGENCY
                   </h1>
                 </div>
@@ -79,7 +79,7 @@ function Why() {
             <div className="bg-gray-800 p-4 xl:p-6 rounded-3xl">
               <div className="flex justify-between">
                 <div className="my-auto">
-                  <h1 className="text-white font-semibold text-sm xl:text-3xl">
+                  <h1 className="text-white font-semibold text-sm xl:text-2xl">
                     CONSCIENTIOUS IN PROCESS AND RESULT ORIENTED
                   </h1>
                 </div>
@@ -106,7 +106,7 @@ function Why() {
             <div className="bg-gray-800 p-4 xl:p-6 rounded-3xl">
               <div className="flex justify-between">
                 <div className="my-auto">
-                  <h1 className="text-white font-semibold text-sm xl:text-3xl">
+                  <h1 className="text-white font-semibold text-sm xl:text-2xl">
                     CONSCIENTIOUS IN PROCESS AND RESULT ORIENTED
                   </h1>
                 </div>

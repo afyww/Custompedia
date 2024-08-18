@@ -11,7 +11,7 @@ function Quote1() {
       <div className="bg-black z-10 absolute w-full h-full opacity-75"></div>
       
       {/* Content */}
-      <div className="z-20 my-16 xl:my-32">
+      <div className="z-20 my-24 xl:my-44">
         <div className="relative w-full text-left">
           <p className="text-xl sm:text-5xl md:text-5xl lg:text-xl xl:text-7xl font-bold font-unbounded mb-2 leading-tight flex flex-wrap items-center gap-2 text-justify">
             <span>A</span>

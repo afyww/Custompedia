@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import customfluencer from "../../assets/images/customfluencer.png";
 import parcelinpack from "../../assets/images/parcelinpack.png";
 import parcelinpremium from "../../assets/images/parcelinpremium.png";
@@ -7,109 +6,112 @@ import creasa from "../../assets/images/creasa.png";
 import { IoIosArrowForward } from "react-icons/io";
 import { Link } from "react-router-dom";
 
-const NetworkCard = ({ logo, title, description }) => (
-  <div className="bg-gray-800 rounded-lg overflow-hidden flex flex-col sm:flex-row">
-    <div
-      className="w-full sm:w-1/3 p-4 flex items-center justify-center"
-      style={{ backgroundColor: "rgba(11, 153, 206, 1)" }}
-    >
-      {logo}
-    </div>
-    <div className="w-full sm:w-2/3 p-4">
-      <h3 className="text-white text-lg font-bold mb-2 font-unbound">
-        {title}
-      </h3>
-      <p className="text-gray-300 text-sm font-poppins">{description}</p>
-    </div>
-  </div>
-);
-
-NetworkCard.propTypes = {
-  logo: PropTypes.element.isRequired,
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-};
-
 const OurNetwork = () => (
   <div className="bg-black text-white p-2 xl:p-4 grid grid-cols-1 z-30">
     <div className="z-20 my-6 xl:my-12">
-      <div className="flex space-x-2">
+      <div className="space-y-10">
         <div>
-          <h1 className="text-xl text-left xl:text-5xl 2xl:text-7xl text-white font-bold">
-            Our Network
-          </h1>
-        </div>
-        <div className="pt-3.5 xl:pt-8 2xl:pt-12">
-          <div className="bg-yellow-400 p-1 xl:p-2 rounded-xl px-8 xl:px-16"></div>
-        </div>
-      </div>
-      <p className="text-lg text-gray-300 max-w-2xl">
-      Sister company that complete our creative universe
-      </p>
-
-      <div className="space-y-4 xl:space-y-16">
-        <div className="grid grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-6">
-          <NetworkCard
-            logo={
-              <img
-                src={parcelinpack}
-                alt="Parcelin"
-                className="w-16 sm:w-20 md:w-24"
-              />
-            }
-            title="ParcelinPack"
-            description="Parcelinpack is creative packaging and printing company. Our speciality in custom packaging, so you can create your dream packaging with any materials, shape for any occassions."
-          />
-          <NetworkCard
-            logo={
-              <img
-                src={customfluencer}
-                alt="Customfluencer"
-                className="w-16 sm:w-20 md:w-24"
-              />
-            }
-            title="Customfluencer"
-            description="Due the high demand in KOL Marketing service, Custompedia build Customfluencer to complete Custompedia environment, especially in influencer / KOL marketing."
-          />
-          <NetworkCard
-            logo={
-              <img
-                src={customprinting}
-                alt="Custom Printing"
-                className="w-16 sm:w-20 md:w-24"
-              />
-            }
-            title="Custom Printing"
-            description="Customprinting focused on retail sales for printing, advertising, and merchandise item. Design your own custom products and accessories. From apparel and sticker to merchandise, our print-on-demand products offer everything you need to unleash your creativity and style."
-          />
-          <NetworkCard
-            logo={
-              <img
-                src={parcelinpremium}
-                alt="Parcelin Premium"
-                className="w-16 sm:w-20 md:w-24"
-              />
-            }
-            title="Parcelin Premium"
-            description="Parcelinpremium is a online-based Exclusive Hampers and Gift for any special event such as Eid Mubarak, Christmas, CNY, etc. We also accept for corporate gift."
-          />
-          <NetworkCard
-            logo={
-              <img src={creasa} alt="Creasa" className="w-16 sm:w-20 md:w-24" />
-            }
-            title="Creasa Supply"
-            description="Creative Supply Asia (Creasa) is distrubutor for printing and advertising raw material. Either we use for our internal company (in our group), we can also sell to another company."
-          />
-        </div>
-        <div className="">
-          <Link to="/service">
-            <div className="p-2 my-auto hover:scale-110 hover:bg-gradient-to-l flex justify-between from-yellow-400 to-yellow-600 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-xl w-fit duration-200 delay-150">
-              <h1 className="text-white font-semibold text-left xl:px-5 px-2 text-sm xl:text-xl 2xl:text-2xl">
-                Read More
+          <div className="flex space-x-2">
+            <div>
+              <h1 className="text-xl text-left xl:text-5xl 2xl:text-7xl text-white font-bold">
+                Our Network
               </h1>
-              <IoIosArrowForward className="text-white w-5 h-5 xl:w-7 xl:h-7" />
             </div>
-          </Link>
+            <div className="pt-3.5 xl:pt-8 2xl:pt-12">
+              <div className="bg-yellow-400 p-1 xl:p-2 rounded-xl px-8 xl:px-16"></div>
+            </div>
+          </div>
+          <p className="text-lg text-gray-300 max-w-2xl">
+            Sister company that complete our creative universe
+          </p>
+        </div>
+        <div className="grid grid-cols-2 xl:grid-cols-3 my-auto gap-5 xl:gap-10 xl:mx-10">
+          <div className="space-y-2">
+            <div className="mx-auto xl:mx-0 px-10 xl:py-11 py-10 w-fit bg-blue-400 rounded-xl">
+              <img src={parcelinpack} alt="" />
+            </div>
+            <div className="text-center xl:text-left">
+              <h2 className="font-semibold text-lg text-yellow-400">
+                ParcelinPack
+              </h2>
+            </div>
+            <div className="text-center xl:text-left">
+              <p className="text-white font-light text-xs xl:text-base">
+                Parcelinpack is creative packaging and printing company. Our
+                speciality in custom packaging, so you can create your dream
+                packaging with any materials, shape for any occassions.
+              </p>
+            </div>
+          </div>
+          <div className="space-y-2">
+            <div className="mx-auto xl:mx-0 px-10 xl:py-7 py-8 w-fit bg-blue-400 rounded-xl">
+              <img src={customfluencer} alt="" />
+            </div>
+            <div className="text-center xl:text-left">
+              <h2 className="font-semibold text-lg text-yellow-400">
+                Customfluencer
+              </h2>
+            </div>
+            <div className="text-center xl:text-left">
+              <p className="text-white font-light text-xs xl:text-base">
+                Due the high demand in KOL Marketing service, Custompedia build
+                Customfluencer to complete Custompedia environment, especially
+                in influencer / KOL marketing.
+              </p>
+            </div>
+          </div>
+          <div className="space-y-2">
+            <div className="mx-auto xl:mx-0 xl:px-14 px-10 py-0 w-fit bg-blue-400 rounded-xl">
+              <img src={customprinting} alt="" />
+            </div>
+            <div className="text-center xl:text-left">
+              <h2 className="font-semibold text-lg text-yellow-400">
+                Custom Printing
+              </h2>
+            </div>
+            <div className="text-center xl:text-left">
+              <p className="text-white font-light text-xs xl:text-base">
+                Parcelinpack is creative packaging and printing company. Our
+                speciality in custom packaging, so you can create your dream
+                packaging with any materials, shape for any occassions.
+              </p>
+            </div>
+          </div>
+          <div className="space-y-2">
+            <div className="mx-auto xl:mx-0 xl:px-10 xl:py-8 py-5 w-fit bg-blue-400 rounded-xl">
+              <img src={creasa} alt="" />
+            </div>
+            <div className="text-center xl:text-left">
+              <h2 className="font-semibold text-lg text-yellow-400">
+                Creasa Supply
+              </h2>
+            </div>
+            <div className="text-center xl:text-left">
+            <p className="text-white font-light text-xs xl:text-base">
+            Creative Supply Asia (Creasa) is distrubutor for printing and
+                advertising raw material. Either we use for our internal company
+                (in our group), we can also sell to another company.
+              </p>
+            </div>
+          </div>
+          <div className="space-y-2">
+            <div className="mx-auto xl:mx-0 xl:px-10 py-0 w-fit bg-blue-400 rounded-xl">
+              <img src={parcelinpremium} alt="" />
+            </div>
+            <div className="text-center xl:text-left">
+              <h2 className="font-semibold text-lg text-yellow-400">
+                Parcelin Premium
+              </h2>
+            </div>
+            <div className="text-center xl:text-left">
+            <p className="text-white font-light text-xs xl:text-base">
+            Parcelinpremium is a online-based Exclusive Hampers and Gift for
+                any special event such as Eid Mubarak, Christmas, CNY, etc. We
+                also accept for corporate gift.
+              </p>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
