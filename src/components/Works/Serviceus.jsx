@@ -58,7 +58,7 @@ const Serviceus = () => {
 
   return (
     <div className="bg-gray-100 grid grid-cols-1 h-screen p-4">
-      <div className="space-y-4 xl:space-y-8 my-auto">
+      <div className="space-y-4 xl:space-y-8 ">
         <div className="flex space-x-2">
           <div>
             <h1 className="text-xl text-left xl:text-5xl 2xl:text-7xl text-black font-bold">
