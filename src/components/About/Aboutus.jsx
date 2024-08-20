@@ -1,8 +1,8 @@
 function Aboutus() {
   return (
-    <div className="grid grid-cols-1 h-fit bg-black p-4">
-      <div className="my-auto space-y-2 xl:space-y-4">
-        <div className="xl:space-y-8 space-y-4">
+    <div className="grid grid-cols-1 bg-black">
+      <div className="xl:my-20 my-8 mx-2 xl:mx-2 2xl:mx-4">
+      <div className="xl:space-y-8 space-y-4">
         <div className="flex space-x-2">
             <div>
               <h1 className="text-xl text-left xl:text-5xl 2xl:text-7xl text-white font-bold">
