@@ -3,8 +3,6 @@ import parcelinpack from "../../assets/images/parcelinpack.png";
 import parcelinpremium from "../../assets/images/parcelinpremium.png";
 import customprinting from "../../assets/images/customprinting.png";
 import creasa from "../../assets/images/creasa.png";
-import { IoIosArrowForward } from "react-icons/io";
-import { Link } from "react-router-dom";
 
 const OurNetwork = () => (
   <div className="bg-black text-white p-2 xl:p-4 grid grid-cols-1 z-30">

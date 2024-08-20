@@ -39,7 +39,7 @@ function Workus() {
   };
 
   return (
-    <div className="grid grid-cols-1 bg-black p-4 xl:p-8 z-30">
+    <div className="bg-black text-white p-2 xl:p-4 grid grid-cols-1 z-30">
       <div className="z-20 my-6 xl:my-12">
         <div className="space-y-5 xl:space-y-8 2xl:space-y-12">
           <div className="w-full">
