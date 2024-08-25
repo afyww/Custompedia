@@ -1,6 +1,5 @@
 import { IoIosArrowForward } from "react-icons/io";
 import ready from "../assets/images/ready.jpg";
-import { Link } from "react-router-dom";
 
 function Contactus() {
   return (

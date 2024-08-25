@@ -1,4 +1,10 @@
-import creasa from "../../assets/images/creas.png";
+import pertamina from "../../assets/images/pertamina.png";
+import gojek from "../../assets/images/gojek.png";
+import airbnb from "../../assets/images/airbnb.png";
+import astra from "../../assets/images/astra.png";
+import ojk from "../../assets/images/ojk.png";
+import emina from "../../assets/images/emina.png";
+import shopee from "../../assets/images/shopee.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -34,23 +40,26 @@ function Clientus() {
           </div>
           <div className="bg-white rounded-xl">
             <Slider className="" {...settings}>
-              <div className="my-auto mx-auto">
-                <img className="my-5" src={creasa} alt="" />
+              <div className="mx-auto my-20 p-3">
+                <img className="w-full h-16" src={pertamina} alt="" />
               </div>
-              <div className="my-auto mx-auto">
-                <img className="my-5" src={creasa} alt="" />
+              <div className="mx-auto my-20 p-3">
+                <img className="w-full h-16" src={gojek} alt="" />
               </div>
-              <div className="my-auto mx-auto">
-                <img className="my-5" src={creasa} alt="" />
+              <div className="mx-auto my-10 p-3">
+                <img className="w-full h-22" src={airbnb} alt="" />
               </div>
-              <div className="my-auto mx-auto">
-                <img className="my-5" src={creasa} alt="" />
+              <div className="mx-auto p-3">
+                <img className="w-full h-56" src={astra} alt="" />
               </div>
-              <div className="my-auto mx-auto">
-                <img className="my-5" src={creasa} alt="" />
+              <div className="mx-auto my-6 p-3">
+                <img className="w-full h-36" src={ojk} alt="" />
               </div>
-              <div className="my-auto mx-auto">
-                <img className="my-5" src={creasa} alt="" />
+              <div className="mx-auto p-3">
+                <img className="w-full h-56" src={emina} alt="" />
+              </div>
+              <div className="mx-auto p-3">
+                <img className="w-full h-56" src={shopee} alt="" />
               </div>
             </Slider>
           </div>
