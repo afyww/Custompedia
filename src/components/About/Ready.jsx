@@ -23,7 +23,7 @@ const CTAJourney = () => {
           </p>
           <div className="flex items-center justify-center">
             <Link to="/service">
-              <div className="p-2 my-auto hover:scale-110 hover:bg-gradient-to-l flex justify-between from-blue-400 to-blue-600 bg-gradient-to-r from-blue-400 to-blue-500 rounded-xl w-fit duration-200 delay-150">
+              <div className="p-2 my-auto hover:scale-110 hover:bg-gradient-to-l flex justify-between bg-gradient-to-r from-blue-400 to-blue-500 rounded-xl w-fit duration-200 delay-150">
                 <h1 className="text-white font-semibold text-left xl:px-5 px-2 text-sm xl:text-xl 2xl:text-2xl">
                   Contact Us
                 </h1>

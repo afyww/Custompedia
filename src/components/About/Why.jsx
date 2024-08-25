@@ -20,28 +20,26 @@ function Why() {
   return (
     <div className="grid grid-cols-1 bg-black">
       <div className="xl:my-20 my-8 mx-2 xl:mx-2 2xl:mx-4">
-      <div className="grid grid-cols-1 xl:grid-cols-2 space-y-10">
+        <div className="grid grid-cols-1 xl:grid-cols-2 space-y-10">
           <div className="my-auto">
             <div>
-            <h1 className="text-2xl text-left xl:text-6xl 2xl:text-7xl text-white font-extrabold">
-            WHY YOU
+              <h1 className="text-2xl text-left xl:text-6xl 2xl:text-7xl text-white font-extrabold">
+                WHY YOU
               </h1>
             </div>
             <div>
-            <h1 className="text-2xl text-left xl:text-6xl 2xl:text-7xl text-blue-400 font-extrabold">
-            NEED US?
+              <h1 className="text-2xl text-left xl:text-6xl 2xl:text-7xl text-blue-400 font-extrabold">
+                NEED US?
               </h1>
             </div>
             <div className="mx-auto text-xs xl:text-base">
               <h1 className="text-white font-light">
                 In a world filled with endless distractions, capturing attention
-                is an art and we are the masters of it. Our mission is clear: to
-                create
+                is an art and we are the masters of it. Our mission is clear:
                 <span className="text-yellow-400">
-                  extraordinary, winning social marketing campaigns,
-                  comprehensive engagement strategies,
-                  <span className="text-white">and</span> captivating narratives
-                  that propel brands to new heights on industry.
+                  to create extraordinary, winning social marketing campaigns,
+                  comprehensive engagement strategies, and captivating
+                  narratives that propel brands to new heights on industry.
                 </span>
               </h1>
             </div>

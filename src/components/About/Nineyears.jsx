@@ -41,8 +41,8 @@ function Nineyears() {
               </div>
               <div className="text-center xl:text-left">
                 <p className="text-white font-semibold text-xs">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                  tristique lorem.{" "}
+                  We bring years of relevant expertise, ensuring the highest
+                  standards in everything we do.
                 </p>
               </div>
             </div>
@@ -59,8 +59,8 @@ function Nineyears() {
               </div>
               <div className="text-center xl:text-left">
                 <p className="text-white font-semibold text-xs">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                  tristique lorem.{" "}
+                  Our team of highly skilled professionals offers relevant
+                  solutions tailored to your needs.
                 </p>
               </div>
             </div>
@@ -77,8 +77,8 @@ function Nineyears() {
               </div>
               <div className="text-center xl:text-left">
                 <p className="text-white font-semibold text-xs">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                  tristique lorem.{" "}
+                  We have a track record of delivering relevant results that
+                  satisfy our clients.
                 </p>
               </div>
             </div>
@@ -95,8 +95,8 @@ function Nineyears() {
               </div>
               <div className="text-center xl:text-left">
                 <p className="text-white font-semibold text-xs">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                  tristique lorem.{" "}
+                  With over 2,500 projects done, our experience is both vast and
+                  highly relevant to your success.
                 </p>
               </div>
             </div>
