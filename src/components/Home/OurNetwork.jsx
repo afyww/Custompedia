@@ -3,6 +3,8 @@ import parcelinpack from "../../assets/images/parcelinpack.png";
 import parcelinpremium from "../../assets/images/parcelinpremium.png";
 import customprinting from "../../assets/images/customprinting.png";
 import creasa from "../../assets/images/creasa.png";
+import { Link } from "react-router-dom";
+import { IoIosArrowForward } from "react-icons/io";
 
 const OurNetwork = () => (
   <div className="bg-black text-white p-2 xl:p-4 grid grid-cols-1 z-30">
@@ -85,8 +87,8 @@ const OurNetwork = () => (
               </h2>
             </div>
             <div className="text-center xl:text-left">
-            <p className="text-white font-light text-xs xl:text-base">
-            Creative Supply Asia (Creasa) is distrubutor for printing and
+              <p className="text-white font-light text-xs xl:text-base">
+                Creative Supply Asia (Creasa) is distrubutor for printing and
                 advertising raw material. Either we use for our internal company
                 (in our group), we can also sell to another company.
               </p>
@@ -102,15 +104,25 @@ const OurNetwork = () => (
               </h2>
             </div>
             <div className="text-center xl:text-left">
-            <p className="text-white font-light text-xs xl:text-base">
-            Parcelinpremium is a online-based Exclusive Hampers and Gift for
+              <p className="text-white font-light text-xs xl:text-base">
+                Parcelinpremium is a online-based Exclusive Hampers and Gift for
                 any special event such as Eid Mubarak, Christmas, CNY, etc. We
                 also accept for corporate gift.
               </p>
             </div>
           </div>
-
         </div>
+        <div className="w-fit mx-auto">
+            <Link to="/work">
+              <div className="p-2 my-auto hover:scale-110 hover:bg-gradient-to-l flex justify-between from-yellow-400 to-yellow-600 bg-gradient-to-r from-blue-400 to-blue-500 rounded-xl w-fit duration-200 delay-150">
+                <h1 className="text-white font-semibold text-left xl:px-5 px-2 text-sm xl:text-xl 2xl:text-2xl">
+                  Read More
+                </h1>
+                <IoIosArrowForward className="text-white w-5 h-5 xl:w-7 xl:h-7" />
+              </div>
+            </Link>
+          </div>
+
       </div>
     </div>
   </div>
