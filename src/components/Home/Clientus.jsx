@@ -20,7 +20,7 @@ import pradita from "../../assets/images/pradita.png";
 import semarang from "../../assets/images/Semarang.png";
 import hsb from "../../assets/images/HSB.png";
 import sanggar from "../../assets/images/sanggar.png";
-import iris from "../../assets/images/iris.png";
+import iris from "../../assets/images/Iris.png";
 import pln from "../../assets/images/pln.png";
 import jateng from "../../assets/images/jateng.png";
 import Slider from "react-slick";
