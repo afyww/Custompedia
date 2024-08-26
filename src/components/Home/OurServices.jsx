@@ -16,6 +16,8 @@ const Slider = () => {
     { id: 3, title: "KOL Management", content: "See More", image: kol },
     { id: 4, title: "Event Organizer", content: "See More", image: eo },
     { id: 5, title: "Social Media", content: "See More", image: sosmed },
+    { id: 6, title: "Merchandise", content: "See More", image: sosmed },
+    { id: 7, title: "Content Production", content: "See More", image: sosmed },
   ];
 
   const nextSlide = () => {
