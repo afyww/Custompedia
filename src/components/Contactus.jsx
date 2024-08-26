@@ -11,31 +11,32 @@ function Contactus() {
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-yellow-900 opacity-60"></div>
-        <div className="relative z-10 h-full flex justify-between items-center p-4 xl:p-8">
-          <div className="">
+        <div className="relative z-10 xl:flex h-full justify-between items-center p-4 xl:p-8">
+          <div className="my-14">
             <h1 className="text-white text-left text-xl xl:text-8xl font-extrabold drop-shadow-md">
               CONTACT US
             </h1>
           </div>
-          <div className="xl:w-1/3 hidden xl:block">
-            <p className="text-white text-left xl:text-xl font-bold drop-shadow-md">
+          <div className="xl:w-1/3 my-auto">
+            <p className="text-white text-left text-xs xl:text-xl font-bold drop-shadow-md">
               What problems can we solve for your brand?
             </p>
-            <p className="text-white bg-blue-400 text-left xl:text-xl font-bold drop-shadow-md">
+            <p className="text-white text-left text-xs xl:text-xl font-bold drop-shadow-md">
               Insight led, culturally intelligent, globally relevant,
               platform-agnostic. We partner with clients to drive business
               outcomes.
-            </p>
-            <p className="text-white text-left xl:text-xl font-bold drop-shadow-md">
-              Whether you're looking to get in touch for an RFP / RFI or your
-              next project, fill in the form below and let's talk.{" "}
             </p>
           </div>
         </div>
       </div>
       <div className="my-24 xl:my-44 2xl:my-48 mx-auto">
         <div className="space-y-8 xl:space-y-24 2xl:space-y-36">
-          <form className="space-y-2 xl:space-y-20 2xl:space-y-16">
+          <form className="space-y-10 xl:space-y-20 2xl:space-y-16">
+          <p className="text-white text-center text-xs xl:text-xl font-bold drop-shadow-md">
+              Whether you're looking to get in touch for an RFP / RFI or your
+              next project, fill in the form below and let's talk.{" "}
+            </p>
+
             <div className="grid grid-cols-1 xl:grid-cols-3 space-y-5 xl:space-y-0">
               <div className="mx-10">
                 <div className="">

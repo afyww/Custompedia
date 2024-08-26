@@ -1,10 +1,18 @@
 import pertamina from "../../assets/images/pertamina.png";
 import gojek from "../../assets/images/gojek.png";
+import gopay from "../../assets/images/Gopay.png";
 import airbnb from "../../assets/images/airbnb.png";
 import astra from "../../assets/images/astra.png";
 import ojk from "../../assets/images/ojk.png";
 import emina from "../../assets/images/emina.png";
-import shopee from "../../assets/images/shopee.png";
+import shopee from "../../assets/images/Shopee.png";
+import bni from "../../assets/images/BNI.png";
+import btn from "../../assets/images/BTN.png";
+import bpr from "../../assets/images/BPR.png";
+import unika from "../../assets/images/Unika.png";
+import roda from "../../assets/images/Roda.png";
+import pegipegi from "../../assets/images/PegiPegi.png";
+import bytedance from "../../assets/images/bytedance.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -21,7 +29,7 @@ function Clientus() {
     speed: 10000,
     autoplaySpeed: 0,
     cssEase: "linear",
-    arrows: false, // This line removes the arrows
+    arrows: false, 
   };
 
   return (
@@ -41,7 +49,7 @@ function Clientus() {
           <div className="bg-white rounded-xl">
             <Slider className="" {...settings}>
               <div className="mx-auto my-20 p-3">
-                <img className="w-full h-16" src={pertamina} alt="" />
+                <img className="w-full h-22" src={pertamina} alt="" />
               </div>
               <div className="mx-auto my-20 p-3">
                 <img className="w-full h-16" src={gojek} alt="" />
@@ -58,8 +66,32 @@ function Clientus() {
               <div className="mx-auto p-3">
                 <img className="w-full h-56" src={emina} alt="" />
               </div>
+              <div className="mx-auto my-10 p-3">
+                <img className="w-full h-36" src={shopee} alt="" />
+              </div>
               <div className="mx-auto p-3">
-                <img className="w-full h-56" src={shopee} alt="" />
+                <img className="w-full h-56" src={bni} alt="" />
+              </div>
+              <div className="mx-auto p-3">
+                <img className="w-full h-56" src={bpr} alt="" />
+              </div>
+              <div className="mx-auto p-3">
+                <img className="w-full h-56" src={unika} alt="" />
+              </div>
+              <div className="mx-auto p-3">
+                <img className="w-full h-56" src={bytedance} alt="" />
+              </div>
+              <div className="mx-auto p-3">
+                <img className="w-full h-56" src={btn} alt="" />
+              </div>
+              <div className="mx-auto p-3">
+                <img className="w-full h-56" src={pegipegi} alt="" />
+              </div>
+              <div className="mx-auto p-3">
+                <img className="w-full h-56" src={roda} alt="" />
+              </div>
+              <div className="mx-auto p-3">
+                <img className="w-full h-56" src={gopay} alt="" />
               </div>
             </Slider>
           </div>

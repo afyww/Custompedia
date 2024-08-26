@@ -21,19 +21,23 @@ function Why() {
     <div className="grid grid-cols-1 bg-black">
       <div className="xl:my-20 my-8 mx-2 xl:mx-2 2xl:mx-4">
         <div className="grid grid-cols-1 xl:grid-cols-2 space-y-10">
-          <div className="my-auto">
+          <div className="my-auto xl:space-y-4 space-y-2">
             <div>
-              <h1 className="text-2xl text-left xl:text-6xl 2xl:text-7xl text-white font-extrabold">
-                WHY YOU
-              </h1>
-            </div>
-            <div>
-              <h1 className="text-2xl text-left xl:text-6xl 2xl:text-7xl text-blue-400 font-extrabold">
-                NEED US?
-              </h1>
+              <div>
+                <h1 className="text-2xl text-center xl:text-left xl:text-6xl 2xl:text-7xl text-white font-extrabold">
+                  WHY YOU
+                </h1>
+              </div>
+              <div>
+                <h1 className="text-2xl text-center xl:text-left xl:text-6xl 2xl:text-7xl text-blue-400 font-extrabold">
+                  NEED US?
+                </h1>
+              </div>
             </div>
             <div className="mx-auto text-xs xl:text-base">
-              <h1 className="text-white font-light">
+              <h1 className="text-white text-center xl:text-left font-light"
+                            style={{ textAlign: "justify" }}
+>
                 In a world filled with endless distractions, capturing attention
                 is an art and we are the masters of it. Our mission is clear:
                 <span className="text-yellow-400">
@@ -64,7 +68,9 @@ function Why() {
               </div>
               {isDropdownOpen && (
                 <div className="my-4 bg-gray-700 p-4 rounded-xl">
-                  <p className="text-white font-semibold text-left text-xs xl:text-lg 2xl:text-xl">
+                  <p className="text-white font-semibold text-left text-xs xl:text-lg 2xl:text-xl"
+                                style={{ textAlign: "justify" }}
+>
                     We map aut brand value, vision, objectives, and create the
                     precise step to react the target. From strategy, branding,
                     and execute the project, our professional team will help you
@@ -93,7 +99,9 @@ function Why() {
               </div>
               {isDropdownOpen2 && (
                 <div className="mt-4 bg-gray-700 p-4 rounded-xl">
-                  <p className="text-white font-semibold text-left text-xs xl:text-lg 2xl:text-xl">
+                  <p className="text-white font-semibold text-left text-xs xl:text-lg 2xl:text-xl"
+                                style={{ textAlign: "justify" }}
+>
                     From the vision to strategy, from strategy to execute, our
                     objective is that the process and progress will lead the
                     project to targeted KPI.
@@ -120,7 +128,9 @@ function Why() {
               </div>
               {isDropdownOpen3 && (
                 <div className="mt-4 bg-gray-700 p-4 rounded-xl">
-                  <p className="text-white font-semibold text-left text-xs xl:text-lg 2xl:text-xl">
+                  <p className="text-white font-semibold text-left text-xs xl:text-lg 2xl:text-xl"
+                                style={{ textAlign: "justify" }}
+>
                     As the world trend and customer behaviour change faster, it
                     makes the business face new issues and have to adapt day to
                     day. We create new new ideas to help the client to solve the

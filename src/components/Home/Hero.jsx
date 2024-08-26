@@ -92,7 +92,6 @@ function Hero() {
             <div className="xl:flex justify-center xl:space-x-12">
               <div className="">
                 <h1 className="text-white text-2xl text-center font-semibold xl:text-7xl 2xl:text-8xl">
-                  {" "}
                   MARKETING AGENCY
                 </h1>
               </div>

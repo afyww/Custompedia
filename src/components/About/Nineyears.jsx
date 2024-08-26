@@ -6,7 +6,7 @@ function Nineyears() {
       <div className="xl:my-20 my-8 mx-2 xl:mx-2 2xl:mx-4">
         <div className="grid grid-cols-1 xl:grid-cols-2 space-y-10">
           <div className="space-y-10">
-            <div className="">
+            <div className="xl:space-y-4 space-y-2">
               <div>
                 <h1 className="text-2xl text-left xl:text-6xl 2xl:text-7xl text-white font-extrabold">
                   NINE YEARS
@@ -15,8 +15,11 @@ function Nineyears() {
                   IN THE GAME
                 </h1>
               </div>
-              <div className="">
-                <p className="text-white font-light text-left text-xs xl:text-lg 2xl:text-xl">
+              <div className="xl:max-w-2xl">
+                <p
+                  className="text-white font-light text-left text-xs xl:text-lg 2xl:text-xl"
+                  style={{ textAlign: "justify" }}
+                >
                   Through our years of experience, we develop branding and
                   marketing strategic to best possible growth solutions for our
                   clients.
