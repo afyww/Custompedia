@@ -8,10 +8,10 @@ function Nineyears() {
           <div className="space-y-10">
             <div className="xl:space-y-4 space-y-2">
               <div>
-                <h1 className="text-2xl text-left xl:text-6xl 2xl:text-7xl text-white font-extrabold">
+                <h1 className="text-2xl text-center xl:text-left xl:text-6xl 2xl:text-7xl text-white font-extrabold">
                   NINE YEARS
                 </h1>
-                <h1 className="text-2xl text-left xl:text-6xl 2xl:text-7xl text-blue-400 font-extrabold">
+                <h1 className="text-2xl text-center xl:text-left xl:text-6xl 2xl:text-7xl text-blue-400 font-extrabold">
                   IN THE GAME
                 </h1>
               </div>
