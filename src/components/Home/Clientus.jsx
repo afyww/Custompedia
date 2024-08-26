@@ -5,7 +5,7 @@ import airbnb from "../../assets/images/airbnb.png";
 import astra from "../../assets/images/astra.png";
 import ojk from "../../assets/images/ojk.png";
 import emina from "../../assets/images/emina.png";
-import shopee from "../../assets/images/Shopee.png";
+import shopee from "../../assets/images/shopee.png";
 import bni from "../../assets/images/BNI.png";
 import btn from "../../assets/images/BTN.png";
 import bpr from "../../assets/images/BPR.png";
