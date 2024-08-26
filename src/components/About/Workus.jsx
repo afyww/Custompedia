@@ -32,8 +32,11 @@ function Workus() {
               </h1>
             </div>
           </div>
-          <div>
-            <p className="text-black text-sm xl:text-xl w-full xl:w-1/2">
+          <div className="max-w-6xl">
+            <p
+              className="text-black text-sm xl:text-xl w-full xl:w-1/2"
+              style={{ textAlign: "justify" }}
+            >
               Our ongoing project exemplifies our dedication and collaboration,
               driving us towards innovative and impactful results.
             </p>

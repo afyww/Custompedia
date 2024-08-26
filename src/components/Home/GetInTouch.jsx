@@ -6,7 +6,7 @@ const GetInTouch = () => {
 
   return (
     <div className="grid grid-cols-1 h-screen relative bg-black z-30 p-2">
-      <div className="absolute inset-0 bg-gradient-to-br from-yellow-800 to-blue-800 opacity-80"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-black to-blue-900 opacity-80"></div>
       <div className="relative z-10 text-center my-auto">
         <h1 className="text-5xl xl:text-9xl font-bold text-yellow-400 mb-4">GET IN</h1>
         <h1 className="text-5xl xl:text-9xl font-bold text-yellow-400 mb-4">TOUCH</h1>
