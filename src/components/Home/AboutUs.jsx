@@ -38,8 +38,7 @@ function AboutUs() {
             </div>
             <div className="xl:w-4/5">
               <p
-                className="text-gray-300 text-sm xl:text-lg"
-                style={{ textAlign: "justify" }}
+                className="text-gray-300 text-sm xl:text-lg text-center xl:text-left"
               >
                 Through our years of experience, we develop branding and
                 marketing strategies to best possible growth solutions for our
