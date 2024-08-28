@@ -37,9 +37,7 @@ function AboutUs() {
               </h1>
             </div>
             <div className="xl:w-4/5">
-              <p
-                className="text-gray-300 text-sm xl:text-lg text-center xl:text-left"
-              >
+              <p className="text-gray-300 text-sm xl:text-lg text-center xl:text-left">
                 Through our years of experience, we develop branding and
                 marketing strategies to best possible growth solutions for our
                 clients.
@@ -117,7 +115,7 @@ function StatItem({ number, suffix, text, inView }) {
   return (
     <div className="text-center">
       <p className="font-poppins text-3xl xl:text-5xl font-bold text-yellow-400">
-        {hasAnimated ? <CountUp end={parseInt(number)} duration={2.5} /> : "0"}
+        {hasAnimated ? <CountUp end={parseInt(number)} duration={10} /> : "0"}
         {suffix}
       </p>
       <p className="font-poppins text-xs xl:text-base font-semibold text-white">

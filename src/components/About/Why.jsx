@@ -54,7 +54,7 @@ function Why() {
               <div className="flex justify-between">
                 <div className="my-auto">
                   <h1 className="text-white font-semibold text-sm xl:text-2xl">
-                    FULL SERVICES CREATIVE AGENCY
+                    Full-service creative agency
                   </h1>
                 </div>
                 <button onClick={toggleDropdown}>
@@ -86,7 +86,7 @@ function Why() {
               <div className="flex justify-between">
                 <div className="my-auto">
                   <h1 className="text-white font-semibold text-sm xl:text-2xl">
-                    CONSCIENTIOUS IN PROCESS AND RESULT ORIENTED
+                    Conscientious in process and result oriented
                   </h1>
                 </div>
                 <button onClick={toggleDropdown2}>
@@ -116,7 +116,7 @@ function Why() {
               <div className="flex justify-between">
                 <div className="my-auto">
                   <h1 className="text-white font-semibold text-sm xl:text-2xl">
-                    CONSCIENTIOUS IN PROCESS AND RESULT ORIENTED
+Crafting the project with creativity and authentic ideas
                   </h1>
                 </div>
                 <button onClick={toggleDropdown3}>

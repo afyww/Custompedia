@@ -1,6 +1,14 @@
+import { useState, useEffect } from "react";
+import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
 import map from "../../assets/images/map.png";
 
 function Nineyears() {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
   return (
     <div className="grid grid-cols-1 bg-black">
       <div className="xl:my-20 my-8 mx-2 xl:mx-2 2xl:mx-4">
@@ -30,12 +38,13 @@ function Nineyears() {
               <img src={map} alt="" />
             </div>
           </div>
-          <div className="grid grid-cols-2 xl:grid-cols-2 my-auto gap-5 xl:gap-10 xl:mx-10">
+          <div
+            className="grid grid-cols-2 xl:grid-cols-2 my-auto gap-5 xl:gap-10 xl:mx-10"
+            ref={ref}
+          >
             <div className="space-y-2">
               <div className="mx-auto xl:mx-0 p-4 w-fit border-2 border-yellow-400 rounded-xl">
-                <h2 className="text-2xl xl:text-5xl font-bold text-white">
-                  9th
-                </h2>
+                <StatItem number="9" suffix="th" inView={inView} />
               </div>
               <div className="text-center xl:text-left">
                 <h2 className="font-semibold text-xs xl:text-lg text-blue-400">
@@ -51,9 +60,7 @@ function Nineyears() {
             </div>
             <div className="space-y-2">
               <div className="mx-auto xl:mx-0 p-4 w-fit border-2 border-yellow-400 rounded-xl">
-                <h2 className="text-2xl xl:text-5xl font-bold text-white">
-                  50+
-                </h2>
+              <StatItem number="50" suffix="+" inView={inView} />
               </div>
               <div className="text-center xl:text-left">
                 <h2 className="font-semibold text-xs xl:text-lg text-blue-400">
@@ -69,9 +76,7 @@ function Nineyears() {
             </div>
             <div className="space-y-2">
               <div className="mx-auto xl:mx-0 p-4 w-fit border-2 border-yellow-400 rounded-xl">
-                <h2 className="text-2xl xl:text-5xl font-bold text-white">
-                  300+
-                </h2>
+              <StatItem number="300" suffix="+" inView={inView} />
               </div>
               <div className="text-center xl:text-left">
                 <h2 className="font-semibold text-xs xl:text-lg text-blue-400">
@@ -87,9 +92,7 @@ function Nineyears() {
             </div>
             <div className="space-y-2">
               <div className="mx-auto xl:mx-0 p-4 w-fit border-2 border-yellow-400 rounded-xl">
-                <h2 className="text-2xl xl:text-5xl font-bold text-white">
-                  2,5K
-                </h2>
+              <StatItem number="2499" suffix="+" inView={inView} />
               </div>
               <div className="text-center xl:text-left">
                 <h2 className="font-semibold text-xs xl:text-lg text-blue-400">
@@ -106,6 +109,28 @@ function Nineyears() {
           </div>
         </div>
       </div>
+    </div>
+  );
+}
+
+function StatItem({ number, suffix, text, inView }) {
+  const [hasAnimated, setHasAnimated] = useState(false);
+
+  useEffect(() => {
+    if (inView && !hasAnimated) {
+      setHasAnimated(true);
+    }
+  }, [inView, hasAnimated]);
+
+  return (
+    <div className="text-center">
+      <p className="font-poppins text-3xl xl:text-5xl font-bold text-yellow-400">
+        {hasAnimated ? <CountUp end={parseInt(number)} duration={10} /> : "0"}
+        {suffix}
+      </p>
+      <p className="font-poppins text-xs xl:text-base font-semibold text-white">
+        {text}
+      </p>
     </div>
   );
 }
