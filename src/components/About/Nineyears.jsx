@@ -124,7 +124,7 @@ function StatItem({ number, suffix, text, inView }) {
 
   return (
     <div className="text-center">
-      <p className="font-poppins text-3xl xl:text-5xl font-bold text-yellow-400">
+      <p className="font-poppins text-3xl xl:text-5xl font-bold text-white">
         {hasAnimated ? <CountUp end={parseInt(number)} duration={10} /> : "0"}
         {suffix}
       </p>
