@@ -23,36 +23,12 @@ import sanggar from "../../assets/images/sanggar.png";
 import iris from "../../assets/images/Iris.png";
 import pln from "../../assets/images/PLN.png";
 import jateng from "../../assets/images/jateng.png";
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
 import { IoIosArrowForward } from "react-icons/io";
 
 function Clientus() {
-  const settings = {
-    dots: false,
-    infinite: true,
-    slidesToShow: 5,
-    slidesToScroll: 5,
-    autoplay: true,
-    speed: 10000,
-    autoplaySpeed: 0,
-    cssEase: "linear",
-    arrows: false,
-  };
-  const settings2 = {
-    dots: false,
-    infinite: true,
-    slidesToShow: 5,
-    slidesToScroll: 5,
-    autoplay: true,
-    speed: 10000,
-    autoplaySpeed: 0,
-    cssEase: "linear",
-    arrows: false,
-    rtl: true,
-  };
 
   return (
     <div className="bg-black text-white p-2 xl:p-4 grid grid-cols-1 z-30">
@@ -68,134 +44,32 @@ function Clientus() {
               <div className="bg-yellow-400 p-1 xl:p-2 rounded-xl px-8 xl:px-16"></div>
             </div>
           </div>
-          <div className="bg-white rounded-xl">
-            <Slider className="" {...settings}>
-              <div className="mx-auto my-20 p-3">
-                <img className="w-full h-22" src={pertamina} alt="" />
-              </div>
-              <div className="mx-auto my-20 p-3">
-                <img className="w-full h-16" src={gojek} alt="" />
-              </div>
-              <div className="mx-auto my-10 p-3">
-                <img className="w-full h-22" src={airbnb} alt="" />
-              </div>
-              <div className="mx-auto p-3">
-                <img className="w-full h-56" src={astra} alt="" />
-              </div>
-              <div className="mx-auto my-6 p-3">
-                <img className="w-full h-36" src={ojk} alt="" />
-              </div>
-              <div className="mx-auto p-3">
-                <img className="w-full h-56" src={emina} alt="" />
-              </div>
-              <div className="mx-auto my-10 p-3">
-                <img className="w-full h-36" src={shopee} alt="" />
-              </div>
-              <div className="mx-auto p-3">
-                <img className="w-full h-56" src={bni} alt="" />
-              </div>
-              <div className="mx-auto p-3">
-                <img className="w-full h-56" src={bpr} alt="" />
-              </div>
-              <div className="mx-auto p-3">
-                <img className="w-full h-56" src={unika} alt="" />
-              </div>
-              <div className="mx-auto p-3">
-                <img className="w-full h-56" src={bytedance} alt="" />
-              </div>
-              <div className="mx-auto p-3">
-                <img className="w-full h-56" src={btn} alt="" />
-              </div>
-              <div className="mx-auto p-3">
-                <img className="w-full h-56" src={pegipegi} alt="" />
-              </div>
-              <div className="mx-auto p-3">
-                <img className="w-full h-56" src={roda} alt="" />
-              </div>
-              <div className="mx-auto p-3">
-                <img className="w-full h-56" src={gopay} alt="" />
-              </div>
-              <div className="mx-auto p-3">
-                <img className="w-full h-56" src={traveloka} alt="" />
-              </div>
-            </Slider>
-            <Slider className="" {...settings2}>
-              <div className="mx-auto my-20 p-3">
-                <img className="w-full h-22" src={pertamina} alt="" />
-              </div>
-              <div className="mx-auto my-20 p-3">
-                <img className="w-full h-16" src={gojek} alt="" />
-              </div>
-              <div className="mx-auto my-10 p-3">
-                <img className="w-full h-22" src={airbnb} alt="" />
-              </div>
-              <div className="mx-auto p-3">
-                <img className="w-full h-56" src={astra} alt="" />
-              </div>
-              <div className="mx-auto my-6 p-3">
-                <img className="w-full h-36" src={ojk} alt="" />
-              </div>
-              <div className="mx-auto p-3">
-                <img className="w-full h-56" src={emina} alt="" />
-              </div>
-              <div className="mx-auto my-10 p-3">
-                <img className="w-full h-36" src={shopee} alt="" />
-              </div>
-              <div className="mx-auto p-3">
-                <img className="w-full h-56" src={bni} alt="" />
-              </div>
-              <div className="mx-auto p-3">
-                <img className="w-full h-56" src={bpr} alt="" />
-              </div>
-              <div className="mx-auto p-3">
-                <img className="w-full h-56" src={unika} alt="" />
-              </div>
-              <div className="mx-auto p-3">
-                <img className="w-full h-56" src={bytedance} alt="" />
-              </div>
-              <div className="mx-auto p-3">
-                <img className="w-full h-56" src={btn} alt="" />
-              </div>
-              <div className="mx-auto p-3">
-                <img className="w-full h-56" src={pegipegi} alt="" />
-              </div>
-              <div className="mx-auto p-3">
-                <img className="w-full h-56" src={roda} alt="" />
-              </div>
-              <div className="mx-auto p-3">
-                <img className="w-full h-56" src={gopay} alt="" />
-              </div>
-              <div className="mx-auto p-3">
-                <img className="w-full h-56" src={traveloka} alt="" />
-              </div>
-              <div className="mx-auto p-3">
-                <img className="w-full h-56" src={sampoerna} alt="" />
-              </div>
-              <div className="mx-auto p-3">
-                <img className="w-full h-56" src={tokopedia} alt="" />
-              </div>
-              <div className="mx-auto p-3">
-                <img className="w-full h-56" src={hsb} alt="" />
-              </div>
-              <div className="mx-auto p-3">
-                <img className="w-full h-56" src={semarang} alt="" />
-              </div>
-              <div className="mx-auto p-3">
-                <img className="w-full h-56" src={jateng} alt="" />
-              </div>
-              <div className="mx-auto p-3">
-                <img className="w-full h-56" src={pln} alt="" />
-              </div>
-              <div className="mx-auto p-3">
-                <img className="w-full h-56" src={pradita} alt="" />
-              </div>
-              <div className="mx-auto p-3">
-                <img className="w-full h-56" src={sanggar} alt="" />
-              </div>
-              <div className="mx-auto p-3">
-                <img className="w-full h-56" src={iris} alt="" />
-              </div>
-            </Slider>
+          <div className="p-8 grid grid-cols-5  bg-white rounded-xl">
+              <img className="mx-auto my-auto p-1" src={pertamina} alt="" />
+              <img className="mx-auto my-auto p-1" src={gojek} alt="" />
+              <img className="mx-auto my-auto p-1" src={airbnb} alt="" />
+              <img className="mx-auto my-auto p-1" src={astra} alt="" />
+              <img className="mx-auto my-auto p-1" src={ojk} alt="" />
+              <img className="mx-auto my-auto p-1" src={emina} alt="" />
+              <img className="mx-auto my-auto p-1" src={shopee} alt="" />
+              <img className="mx-auto my-auto p-1" src={bni} alt="" />
+              <img className="mx-auto my-auto p-1" src={bpr} alt="" />
+              <img className="mx-auto my-auto p-1" src={unika} alt="" />
+              <img className="mx-auto my-auto p-1" src={bytedance} alt="" />
+              <img className="mx-auto my-auto p-1" src={btn} alt="" />
+              <img className="mx-auto my-auto p-1" src={pegipegi} alt="" />
+              <img className="mx-auto my-auto p-1" src={roda} alt="" />
+              <img className="mx-auto my-auto p-1" src={gopay} alt="" />
+              <img className="mx-auto my-auto p-1" src={traveloka} alt="" />
+              <img className="mx-auto my-auto p-1" src={pradita} alt="" />
+              <img className="mx-auto my-auto p-1" src={sampoerna} alt="" />
+              <img className="mx-auto my-auto p-1" src={tokopedia} alt="" />
+              <img className="mx-auto my-auto p-1" src={sanggar} alt="" />
+              <img className="mx-auto my-auto p-1" src={semarang} alt="" />
+              <img className="mx-auto my-auto p-1" src={jateng} alt="" />
+              <img className="mx-auto my-auto p-1" src={hsb} alt="" />
+              <img className="mx-auto my-auto p-1" src={iris} alt="" />
+              <img className="mx-auto my-auto p-1" src={pln} alt="" />
           </div>
         </div>
       </div>

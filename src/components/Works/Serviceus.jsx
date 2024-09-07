@@ -57,7 +57,7 @@ const Serviceus = () => {
         [];
 
   return (
-    <div className="bg-gray-100 grid grid-cols-1 h-screen p-4">
+    <div className="bg-gray-100 grid grid-cols-1 p-4 h-screen">
       <div className="space-y-4 xl:space-y-8 ">
         <div className="flex space-x-2">
           <div>
@@ -85,7 +85,7 @@ const Serviceus = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 xl:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 xl:grid-cols-4 gap-4">
           {displayedProjects.map((project) => (
             <MediaCard
               key={project.id}
