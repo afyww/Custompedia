@@ -57,7 +57,6 @@ function Postdetail() {
                         <div className="space-y-2 xl:space-y-10">
                             <div className="space-y-2">
                                 <h1 className="text-lg text-left xl:text-5xl 2xl:text-7xl text-white font-base">{post.judul}</h1>
-                                <h1 className="text-base text-left xl:text-xl 2xl:text-2xl text-white font-base">{post.user.name}</h1>
                                 <h1 className="text-base text-left xl:text-xl 2xl:text-2xl text-white font-base">{post.published_at}</h1>
                             </div>
                             <div className="w-full">
