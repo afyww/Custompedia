@@ -7,7 +7,7 @@ const MediaCard = ({ src, projectId }) => (
   <div className="w-full">
     <Link to={`/project/${projectId}`}>
       <img
-        src={`https://custom.beilcoff.shop/storage/${src}`}
+        src={`https://admin.custompedia.agency/storage/${src}`}
         alt="Project"
         className="w-full h-full object-cover rounded-xl"
       />
@@ -30,7 +30,7 @@ const Serviceus = () => {
     const fetchCategories = async () => {
       try {
         const response = await axios.get(
-          "https://custom.beilcoff.shop/api/kategoris"
+          "https://admin.custompedia.agency/api/kategoris"
         );
         setCategories([{ id: "all", kategori: "All" }, ...response.data]);
         setIsLoading(false);
