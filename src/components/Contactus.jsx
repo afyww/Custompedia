@@ -39,7 +39,6 @@ function Contactus() {
             icon: 'success',
             confirmButtonText: 'OK',
           }).then(() => {
-            // Reset formData after alert is closed
             setFormData({
               name: "",
               email: "",
