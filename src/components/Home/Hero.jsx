@@ -107,7 +107,7 @@ function Hero() {
             </div>
             <div className="xl:flex xl:justify-center xl:space-x-10 space-y-8">
               <div className="xl:w-1/3 my-auto">
-                <p className="text-white font-base text-center xl:text-left text-sm xl:text-base 2xl:text-lg"
+                <p className="text-white font-base text-center xl:text-left text-sm xl:text-base 2xl:text-lg p-2"
                   style={{ textAlign: "justify" }}
                 >
                   Ready To See How Our True Full-Stack Solution Can Help Drive

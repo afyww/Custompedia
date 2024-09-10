@@ -11,8 +11,7 @@ function Hero() {
         <h1 className="text-4xl xl:text-8xl font-bold text-yellow-500">
           OUR WORK
         </h1>
-        <p className="text-sm xl:text-2xl font-extrabold mx-auto text-white"
-          style={{ textAlign: "justify" }}
+        <p className="text-sm xl:text-2xl font-extrabold mx-auto p-2 xl:w-3/4 text-center text-white"
         >
           While many marketing agencies specialize in certain parts of the process,
           such as branding, analytics, or advertising, CUSTOMPEDIA offers a full
