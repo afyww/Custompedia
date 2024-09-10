@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const apiUrl = "https://custom.beilcoff.shop/api";
+const apiUrl = "https://admin.custompedia.agency/api";
 
 const createAxiosInstance = () => {
   const instance = axios.create({
