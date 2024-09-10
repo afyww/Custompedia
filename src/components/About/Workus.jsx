@@ -48,7 +48,7 @@ function Workus() {
               <Link to={`/project/${project.id}`}>
                 <div className="">
                   <img
-                    src={`https://custom.beilcoff.shop/storage/${project.img1}`}
+                    src={`https://admin.custompedia.agency/storage/${project.img1}`}
                     alt={project.title}
                     className="w-full object-cover rounded-3xl"
                   />
