@@ -38,6 +38,18 @@ function Contactus() {
             text: 'Message sent successfully!',
             icon: 'success',
             confirmButtonText: 'OK',
+          }).then(() => {
+            // Reset formData after alert is closed
+            setFormData({
+              name: "",
+              email: "",
+              phone: "",
+              companyName: "",
+              companyWebsite: "",
+              socialMedia: "",
+              service: "",
+              message: "",
+            });
           });
         },
         (error) => {
