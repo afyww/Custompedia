@@ -44,7 +44,7 @@ function Clientus() {
               <div className="bg-yellow-400 p-1 xl:p-2 rounded-xl px-8 xl:px-16"></div>
             </div>
           </div>
-          <div className="p-8 grid grid-cols-5  bg-white rounded-xl">
+          <div className="p-2 xl:p-8 grid grid-cols-5  bg-white rounded-xl">
               <img className="mx-auto my-auto p-1" src={pertamina} alt="" />
               <img className="mx-auto my-auto p-1" src={gojek} alt="" />
               <img className="mx-auto my-auto p-1" src={airbnb} alt="" />
