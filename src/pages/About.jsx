@@ -22,7 +22,6 @@ function About() {
         <Nineyears />
         <Why />
         <What />
-        {/* <Company /> */}
         <Workus />
         <Ready />
       </div>

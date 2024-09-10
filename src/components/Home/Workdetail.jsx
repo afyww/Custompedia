@@ -107,7 +107,9 @@ function Workdetail() {
       <div className="my-16 xl:my-32 mx-5 xl:mx-24 2xl:mx-28">
         <div className="space-y-6 xl:space-y-20">
           <div>
-            <h1 className="text-base text-left xl:text-3xl 2xl:text-5xl text-white font-base">
+            <h1 className="text-base text-left xl:text-3xl 2xl:text-5xl text-white font-base"
+                              style={{ textAlign: "justify" }}
+>
               {project.description}
             </h1>
           </div>

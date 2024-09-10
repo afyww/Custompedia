@@ -2,7 +2,7 @@ import ready2 from "../../assets/images/ready2.jpg";
 
 function Hero() {
   return (
-    <div 
+    <div
       className="relative grid grid-cols-1 h-screen bg-black bg-cover bg-center"
       style={{ backgroundImage: `url(${ready2})` }}
     >
@@ -11,12 +11,14 @@ function Hero() {
         <h1 className="text-4xl xl:text-8xl font-bold text-yellow-500">
           OUR WORK
         </h1>
-        <p className="text-sm xl:text-2xl font-extrabold mx-auto xl:w-3/4 text-white">
-          While many marketing agencies specialize in certain parts of the process, 
-          such as branding, analytics, or advertising, CUSTOMPEDIA offers a full 
-          range of digital services. This is a tremendous advantage of our partners. 
-          Housing all these functions under one roof fosters cross-functional 
-          collaboration and cost efficiency, giving you the opportunity to view your 
+        <p className="text-sm xl:text-2xl font-extrabold mx-auto text-white"
+          style={{ textAlign: "justify" }}
+        >
+          While many marketing agencies specialize in certain parts of the process,
+          such as branding, analytics, or advertising, CUSTOMPEDIA offers a full
+          range of digital services. This is a tremendous advantage of our partners.
+          Housing all these functions under one roof fosters cross-functional
+          collaboration and cost efficiency, giving you the opportunity to view your
           entire digital strategy in full picture.
         </p>
       </div>

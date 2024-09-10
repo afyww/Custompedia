@@ -54,6 +54,13 @@ function Hero() {
     "Event",
   ]);
 
+  const scrollToContent = () => {
+    window.scrollTo({
+      top: window.innerHeight, // Scroll down by the height of the viewport
+      behavior: "smooth", // Smooth scroll
+    });
+  };
+
   return (
     <div className="relative h-screen overflow-hidden z-30">
       <video
@@ -77,7 +84,9 @@ function Hero() {
                 </h1>
               </div>
               <div className="mx-auto xl:w-1/4 xl:mx-0 my-auto">
-                <p className="text-white font-base text-center xl:text-left text-sm xl:text-base 2xl:text-lg">
+                <p className="text-white font-base text-center xl:text-left text-sm xl:text-base 2xl:text-lg"
+                  style={{ textAlign: "justify" }}
+                >
                   We can help your company grow and win more business with
                   creative branding, social media, digital, print and
                   merchandise.
@@ -98,7 +107,9 @@ function Hero() {
             </div>
             <div className="xl:flex xl:justify-center xl:space-x-10 space-y-8">
               <div className="xl:w-1/3 my-auto">
-                <p className="text-white font-base text-center xl:text-left text-sm xl:text-base 2xl:text-lg">
+                <p className="text-white font-base text-center xl:text-left text-sm xl:text-base 2xl:text-lg"
+                  style={{ textAlign: "justify" }}
+                >
                   Ready To See How Our True Full-Stack Solution Can Help Drive
                   Meaningful Growth For You.
                 </p>
@@ -107,11 +118,13 @@ function Hero() {
                 <div className="xl:px-24 mx-8 xl:mx-0 px-0 p-1 xl:p-2 rounded-xl my-auto border-4 border-yellow-500"></div>
               </div>
               <div className="justify-center flex my-auto">
-                <div className="border-2 p-4 border-blue-400 rounded-full" id="app">
-                  <div className="arrow arrowSliding delay1"></div>
-                  <div className="arrow arrowSliding delay2"></div>
-                  <div className="arrow arrowSliding delay3"></div>
-                </div>
+                <button onClick={scrollToContent}>
+                  <div className="border-2 p-4 border-blue-400 rounded-full" id="app">
+                    <div className="arrow arrowSliding delay1"></div>
+                    <div className="arrow arrowSliding delay2"></div>
+                    <div className="arrow arrowSliding delay3"></div>
+                  </div>
+                </button>
               </div>
             </div>
           </div>

@@ -63,7 +63,9 @@ function Postdetail() {
                                 <img className="w-full h-full rounded-xl" src={`https://custom.beilcoff.shop/storage/${post.img}`} alt="" />
                             </div>
                             <div>
-                                <h1 className="text-base text-left xl:text-xl 2xl:text-3xl text-white font-base">{post.content}</h1>
+                                <h1 className="text-base text-left xl:text-xl 2xl:text-3xl text-white font-base"
+                                    style={{ textAlign: "justify" }}
+                                >{post.content}</h1>
                             </div>
                         </div>
                     </div>

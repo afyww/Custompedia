@@ -36,7 +36,9 @@ const OurNetwork = () => (
               </h2>
             </div>
             <div className="text-center xl:text-left">
-              <p className="text-white font-light text-xs xl:text-base">
+              <p className="text-white font-light text-xs xl:text-base"
+                style={{ textAlign: "justify" }}
+              >
                 Parcelinpack is creative packaging and printing company. Our
                 speciality in custom packaging, so you can create your dream
                 packaging with any materials, shape for any occassions.
@@ -53,7 +55,9 @@ const OurNetwork = () => (
               </h2>
             </div>
             <div className="text-center xl:text-left">
-              <p className="text-white font-light text-xs xl:text-base">
+              <p className="text-white font-light text-xs xl:text-base"
+                style={{ textAlign: "justify" }}
+              >
                 Due the high demand in KOL Marketing service, Custompedia build
                 Customfluencer to complete Custompedia environment, especially
                 in influencer / KOL marketing.
@@ -70,7 +74,9 @@ const OurNetwork = () => (
               </h2>
             </div>
             <div className="text-center xl:text-left">
-              <p className="text-white font-light text-xs xl:text-base">
+              <p className="text-white font-light text-xs xl:text-base"
+                style={{ textAlign: "justify" }}
+              >
                 Parcelinpack is creative packaging and printing company. Our
                 speciality in custom packaging, so you can create your dream
                 packaging with any materials, shape for any occassions.
@@ -87,7 +93,9 @@ const OurNetwork = () => (
               </h2>
             </div>
             <div className="text-center xl:text-left">
-              <p className="text-white font-light text-xs xl:text-base">
+              <p className="text-white font-light text-xs xl:text-base"
+                style={{ textAlign: "justify" }}
+              >
                 Creative Supply Asia (Creasa) is distrubutor for printing and
                 advertising raw material. Either we use for our internal company
                 (in our group), we can also sell to another company.
@@ -104,7 +112,9 @@ const OurNetwork = () => (
               </h2>
             </div>
             <div className="text-center xl:text-left">
-              <p className="text-white font-light text-xs xl:text-base">
+              <p className="text-white font-light text-xs xl:text-base"
+                style={{ textAlign: "justify" }}
+              >
                 Parcelinpremium is a online-based Exclusive Hampers and Gift for
                 any special event such as Eid Mubarak, Christmas, CNY, etc. We
                 also accept for corporate gift.
@@ -113,15 +123,15 @@ const OurNetwork = () => (
           </div>
         </div>
         <div className="w-fit mx-auto">
-            <Link to="/work">
-              <div className="p-2 my-auto hover:scale-110 hover:bg-gradient-to-l flex justify-between bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-xl w-fit duration-200 delay-150">
-                <h1 className="text-white font-semibold text-left xl:px-5 px-2 text-sm xl:text-xl 2xl:text-2xl">
-                  Read More
-                </h1>
-                <IoIosArrowForward className="text-white w-5 h-5 xl:w-7 xl:h-7" />
-              </div>
-            </Link>
-          </div>
+          <Link to="/work">
+            <div className="p-2 my-auto hover:scale-110 hover:bg-gradient-to-l flex justify-between bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-xl w-fit duration-200 delay-150">
+              <h1 className="text-white font-semibold text-left xl:px-5 px-2 text-sm xl:text-xl 2xl:text-2xl">
+                Read More
+              </h1>
+              <IoIosArrowForward className="text-white w-5 h-5 xl:w-7 xl:h-7" />
+            </div>
+          </Link>
+        </div>
 
       </div>
     </div>

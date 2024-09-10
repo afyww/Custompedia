@@ -20,8 +20,7 @@ function Footer() {
                                 <h1 className='font-extrabold font-sans text-black text-center text-xs xl:text-lg 2xl:text-xl'>Business</h1>
                             </div>
                             <div className='space-y-2 text-center'>
-                                <h1 className='font-light font-sans text-black text-center text-xs xl:text-lg 2xl:text-xl'>hello@custompedia.id</h1>
-                                <h1 className='font-light font-sans text-black text-center text-xs xl:text-lg 2xl:text-xl'>hellocustompedia@gmail.com</h1>
+                                <h1 className='font-light font-sans text-black text-center text-xs xl:text-lg 2xl:text-xl'>hello@custompedia.company</h1>
                                 <h1 className='font-light font-sans text-black text-center text-xs xl:text-lg 2xl:text-xl'>+62 819 0832 111</h1>
                             </div>
                         </div>
