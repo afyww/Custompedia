@@ -1,5 +1,6 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
+import Swal from "sweetalert2"; // Import SweetAlert2
 import { IoIosArrowForward } from "react-icons/io";
 import ready from "../assets/images/ready.jpg";
 
@@ -32,11 +33,21 @@ function Contactus() {
       .then(
         (result) => {
           console.log(result.text);
-          alert("Message sent successfully!");
+          Swal.fire({
+            title: 'Success!',
+            text: 'Message sent successfully!',
+            icon: 'success',
+            confirmButtonText: 'OK',
+          });
         },
         (error) => {
           console.log(error.text);
-          alert("Failed to send message, please try again.");
+          Swal.fire({
+            title: 'Error!',
+            text: 'Failed to send message, please try again.',
+            icon: 'error',
+            confirmButtonText: 'OK',
+          });
         }
       );
   };
