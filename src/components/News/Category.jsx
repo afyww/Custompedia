@@ -65,7 +65,7 @@ function Category() {
                                             <div className="flex-shrink-0 w-44 h-52 xl:w-72 xl:h-80">
                                                 <img
                                                     className="w-full h-full rounded-xl object-cover"
-                                                    src={`https://custom.beilcoff.shop/storage/${post.img}`}
+                                                    src={`https://admin.custompedia.agency/storage/${post.img}`}
                                                     alt={post.judul}
                                                 />
                                             </div>
