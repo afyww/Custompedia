@@ -35,7 +35,7 @@ function Clientus() {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 2, // Default for larger screens
+    slidesToShow: 5, // Default for larger screens
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
@@ -62,8 +62,7 @@ function Clientus() {
   };
 
   return (
-    <div className="bg-black text-white p-2 xl:p-4 grid grid-cols-1">
-      <div className="p-5">
+    <div className="bg-black text-white p-2 xl:p-6 grid grid-cols-1 space-y-4">
         <div className="space-y-5 xl:space-y-8 2xl:space-y-12 ">
           <div className="flex space-x-2">
             <div>
@@ -76,75 +75,74 @@ function Clientus() {
             </div>
           </div>
           <Slider className='w-full bg-white rounded-xl' {...settings}>
-            <div className='w-full h-28 p-2 xl:p-4'>
-              <img className="'w-full h-full" src={pertamina} alt="" />
+            <div className='w-fit h-44 p-2 xl:p-4'>
+              <img className="'w-full h-full mx-auto my-auto" src={pertamina} alt="" />
             </div>
-            <div className='w-full h-28 p-2 xl:p-4'>
-              <img className="'w-full h-full" src={airbnb} alt="" />
+            <div className='w-fit h-44 p-2 xl:p-4'>
+              <img className="'w-full h-full mx-auto my-auto" src={airbnb} alt="" />
             </div>
-            <div className='w-full h-28 p-2 xl:p-4'>
+            <div className='w-fit h-44 p-2 xl:p-4'>
               <img className="'w-full h-full" src={astra} alt="" />
             </div>
-            <div className='w-full h-28 p-2 xl:p-4'>
+            <div className='w-full h-44 p-2 xl:p-4'>
               <img className="'w-full h-full" src={ojk} alt="" />
             </div>
-            <div className='w-full h-28 p-2 xl:p-4'>
-              <img className="'w-full h-full" src={emina} alt="" />
+            <div className='w-full h-44 p-2 xl:p-4'>
+              <img className="'w-full h-full mx-auto my-auto" src={emina} alt="" />
             </div>
-            <div className='w-full h-28 p-2 xl:p-4'>
+            <div className='w-full h-44 p-2 xl:p-4'>
               <img className="'w-full h-full" src={shopee} alt="" />
             </div>
-            <div className='w-full h-28 p-2 xl:p-4'>
+            <div className='w-full h-44 p-2 xl:p-4'>
               <img className="'w-full h-full" src={bni} alt="" />
             </div>
-            <div className='w-full h-28 p-2 xl:p-4'>
+            <div className='w-full h-44 p-2 xl:p-4'>
               <img className="w-full h-full" src={unika} alt="" />
             </div>
-            <div className='w-full h-28 p-2 xl:p-4'>
+            <div className='w-full h-44 p-2 xl:p-4'>
               <img className="'w-full h-full" src={bytedance} alt="" />
             </div>
-            <div className='w-full h-28 p-2 xl:p-4'>
+            <div className='w-full h-44 p-2 xl:p-4'>
               <img className="'w-full h-full" src={btn} alt="" />
             </div>
-            <div className='w-full h-28 p-2 xl:p-4'>
+            <div className='w-full h-44 p-2 xl:p-4'>
               <img className="'w-full h-full" src={pegipegi} alt="" />
             </div>
-            <div className='w-full h-28 p-2 xl:p-4'>
+            <div className='w-full h-44 p-2 xl:p-4'>
               <img className="'w-full h-full" src={roda} alt="" />
             </div>
-            <div className='w-full h-28 p-2 xl:p-4'>
+            <div className='w-full h-44 p-2 xl:p-4'>
               <img className="'w-full h-full" src={gopay} alt="" />
             </div>
-            <div className='w-full h-28 p-2 xl:p-4'>
+            <div className='w-full h-44 p-2 xl:p-4'>
               <img className="'w-full h-full" src={traveloka} alt="" />
             </div>
-            <div className='w-full h-28 p-2 xl:p-4'>
-              <img className="'w-full h-full" src={pradita} alt="" />
+            <div className='w-full h-44 p-2 xl:p-4'>
+              <img className="'h-full mx-auto" src={pradita} alt="" />
             </div>
-            <div className='w-full h-28 p-2 xl:p-4'>
-              <img className="'w-full h-full" src={sampoerna} alt="" />
+            <div className='w-full h-44 p-2 xl:p-4'>
+              <img className="'h-full mx-auto" src={sampoerna} alt="" />
             </div>
-            <div className='w-full h-28 p-2 xl:p-4'>
-              <img className="'w-full h-full" src={tokopedia} alt="" />
+            <div className='w-full h-44 p-2 xl:p-4'>
+              <img className="h-full mx-auto" src={tokopedia} alt="" />
             </div>
-            <div className='w-full h-28 p-2 xl:p-4'>
-              <img className="mx-auto my-auto p-1" src={sanggar} alt="" />
+            <div className='w-full h-44 p-2 xl:p-4'>
+              <img className="h-full mx-auto" src={sanggar} alt="" />
             </div>
-            <div className='w-full h-28 p-2 xl:p-4'>
-              <img className="'w-full h-full" src={semarang} alt="" />
+            <div className='w-full h-44 p-2 xl:p-4'>
+              <img className="h-full mx-auto" src={semarang} alt="" />
             </div>
-            <div className='w-full h-28 p-2 xl:p-4'>
-              <img className="'w-full h-full" src={jateng} alt="" />
+            <div className='w-full h-44 p-2 xl:p-4'>
+              <img className="h-full mx-auto" src={jateng} alt="" />
             </div>
-            <div className='w-full h-28 p-2 xl:p-4'>
-              <img className="'w-full h-full" src={hsb} alt="" />
+            <div className='w-full h-44 p-2 xl:p-4'>
+              <img className="h-full mx-auto" src={hsb} alt="" />
             </div>
-            <div className='w-full h-28 p-2 xl:p-4'>
-              <img className="'w-full h-full" src={pln} alt="" />
+            <div className='w-full h-44 p-2 xl:p-4'>
+              <img className="'h-full mx-auto my-auto" src={pln} alt="" />
             </div>
           </Slider>
         </div>
-      </div>
       <div className="w-fit">
         <Link to="/work">
           <div className="p-2 my-auto hover:scale-110 hover:bg-gradient-to-l flex justify-between from-blue-400 to-blue-600 bg-gradient-to-r rounded-xl w-fit duration-200 delay-150">
