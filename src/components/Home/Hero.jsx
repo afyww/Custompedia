@@ -56,8 +56,8 @@ function Hero() {
 
   const scrollToContent = () => {
     window.scrollTo({
-      top: window.innerHeight, // Scroll down by the height of the viewport
-      behavior: "smooth", // Smooth scroll
+      top: window.innerHeight,
+      behavior: "smooth",
     });
   };
 

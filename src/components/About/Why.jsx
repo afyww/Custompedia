@@ -116,7 +116,7 @@ function Why() {
               <div className="flex justify-between">
                 <div className="my-auto">
                   <h1 className="text-white font-semibold text-sm xl:text-2xl">
-Crafting the project with creativity and authentic ideas
+                    Crafting the project with creativity and authentic ideas
                   </h1>
                 </div>
                 <button onClick={toggleDropdown3}>
