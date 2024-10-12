@@ -62,87 +62,87 @@ function Clientus() {
   };
 
   return (
-    <div className="bg-black text-white p-2 xl:p-6 grid grid-cols-1 space-y-4">
-        <div className="space-y-5 xl:space-y-8 2xl:space-y-12 ">
-          <div className="flex space-x-2">
-            <div>
-              <h1 className="text-xl text-left xl:text-5xl 2xl:text-7xl text-white font-bold">
-                Our Client
-              </h1>
-            </div>
-            <div className="pt-3.5 xl:pt-8 2xl:pt-12">
-              <div className="bg-yellow-400 p-1 xl:p-2 rounded-xl px-8 xl:px-16"></div>
-            </div>
+    <div className="bg-black text-white p-7 grid grid-cols-1 space-y-4">
+      <div className="space-y-5 xl:space-y-8 2xl:space-y-12 ">
+        <div className="flex space-x-2">
+          <div>
+            <h1 className="text-xl text-left xl:text-5xl 2xl:text-7xl text-white font-bold">
+              Our Client
+            </h1>
           </div>
-          <Slider className='w-full bg-white rounded-xl' {...settings}>
-            <div className='w-fit h-44 p-2 xl:p-4'>
-              <img className="'w-full h-full mx-auto my-auto" src={pertamina} alt="" />
-            </div>
-            <div className='w-fit h-44 p-2 xl:p-4'>
-              <img className="'w-full h-full mx-auto my-auto" src={airbnb} alt="" />
-            </div>
-            <div className='w-fit h-44 p-2 xl:p-4'>
-              <img className="'w-full h-full" src={astra} alt="" />
-            </div>
-            <div className='w-full h-44 p-2 xl:p-4'>
-              <img className="'w-full h-full" src={ojk} alt="" />
-            </div>
-            <div className='w-full h-44 p-2 xl:p-4'>
-              <img className="'w-full h-full mx-auto my-auto" src={emina} alt="" />
-            </div>
-            <div className='w-full h-44 p-2 xl:p-4'>
-              <img className="'w-full h-full" src={shopee} alt="" />
-            </div>
-            <div className='w-full h-44 p-2 xl:p-4'>
-              <img className="'w-full h-full" src={bni} alt="" />
-            </div>
-            <div className='w-full h-44 p-2 xl:p-4'>
-              <img className="w-full h-full" src={unika} alt="" />
-            </div>
-            <div className='w-full h-44 p-2 xl:p-4'>
-              <img className="'w-full h-full" src={bytedance} alt="" />
-            </div>
-            <div className='w-full h-44 p-2 xl:p-4'>
-              <img className="'w-full h-full" src={btn} alt="" />
-            </div>
-            <div className='w-full h-44 p-2 xl:p-4'>
-              <img className="'w-full h-full" src={pegipegi} alt="" />
-            </div>
-            <div className='w-full h-44 p-2 xl:p-4'>
-              <img className="'w-full h-full" src={roda} alt="" />
-            </div>
-            <div className='w-full h-44 p-2 xl:p-4'>
-              <img className="'w-full h-full" src={gopay} alt="" />
-            </div>
-            <div className='w-full h-44 p-2 xl:p-4'>
-              <img className="'w-full h-full" src={traveloka} alt="" />
-            </div>
-            <div className='w-full h-44 p-2 xl:p-4'>
-              <img className="'h-full mx-auto" src={pradita} alt="" />
-            </div>
-            <div className='w-full h-44 p-2 xl:p-4'>
-              <img className="'h-full mx-auto" src={sampoerna} alt="" />
-            </div>
-            <div className='w-full h-44 p-2 xl:p-4'>
-              <img className="h-full mx-auto" src={tokopedia} alt="" />
-            </div>
-            <div className='w-full h-44 p-2 xl:p-4'>
-              <img className="h-full mx-auto" src={sanggar} alt="" />
-            </div>
-            <div className='w-full h-44 p-2 xl:p-4'>
-              <img className="h-full mx-auto" src={semarang} alt="" />
-            </div>
-            <div className='w-full h-44 p-2 xl:p-4'>
-              <img className="h-full mx-auto" src={jateng} alt="" />
-            </div>
-            <div className='w-full h-44 p-2 xl:p-4'>
-              <img className="h-full mx-auto" src={hsb} alt="" />
-            </div>
-            <div className='w-full h-44 p-2 xl:p-4'>
-              <img className="'h-full mx-auto my-auto" src={pln} alt="" />
-            </div>
-          </Slider>
+          <div className="pt-3.5 xl:pt-8 2xl:pt-12">
+            <div className="bg-yellow-400 p-1 xl:p-2 rounded-xl px-8 xl:px-16"></div>
+          </div>
         </div>
+        <Slider className='w-full bg-white rounded-xl' {...settings}>
+          <div className='w-full h-28 xl:h-44 p-2 xl:p-4'>
+            <img className="w-full h-full mx-auto my-auto" src={pertamina} alt="" />
+          </div>
+          <div className='w-full h-28 xl:h-44 p-2 xl:p-4'>
+            <img className="w-full h-full mx-auto my-auto" src={airbnb} alt="" />
+          </div>
+          <div className='w-full h-28 xl:h-44 p-2 xl:p-4'>
+            <img className="h-full w-full mx-auto my-auto" src={astra} alt="" />
+          </div>
+          <div className='w-full h-28 xl:h-44 p-2 xl:p-4'>
+            <img className="h-full w-full mx-auto my-auto" src={ojk} alt="" />
+          </div>
+          <div className='w-full h-28 xl:h-44 p-2 xl:p-4'>
+            <img className="h-full w-full mx-auto my-auto" src={emina} alt="" />
+          </div>
+          <div className='w-full h-28 xl:h-44 p-2 xl:p-4'>
+            <img className="h-full w-full mx-auto my-auto" src={shopee} alt="" />
+          </div>
+          <div className='w-full h-28 xl:h-44 p-2 xl:p-4'>
+            <img className="h-full w-full mx-auto my-auto" src={bni} alt="" />
+          </div>
+          <div className='w-full h-28 xl:h-44 p-2 xl:p-4'>
+            <img className="h-full w-full mx-auto my-auto" src={unika} alt="" />
+          </div>
+          <div className='w-full h-28 xl:h-44 p-2 xl:p-4'>
+            <img className="h-full w-full mx-auto my-auto" src={bytedance} alt="" />
+          </div>
+          <div className='w-full h-28 xl:h-44 p-2 xl:p-4'>
+            <img className="h-full w-full mx-auto my-auto" src={btn} alt="" />
+          </div>
+          <div className='w-full h-28 xl:h-44 p-2 xl:p-4'>
+            <img className="h-full w-full mx-auto my-auto" src={pegipegi} alt="" />
+          </div>
+          <div className='w-full h-28 xl:h-44 p-2 xl:p-4'>
+            <img className="h-full w-full mx-auto my-auto" src={roda} alt="" />
+          </div>
+          <div className='w-full h-28 xl:h-44 p-2 xl:p-4'>
+            <img className="h-full w-full mx-auto my-auto" src={gopay} alt="" />
+          </div>
+          <div className='w-full h-28 xl:h-44 p-2 xl:p-4'>
+            <img className="h-full w-full mx-auto my-auto" src={traveloka} alt="" />
+          </div>
+          <div className='w-full h-28 xl:h-44 p-2 xl:p-4'>
+            <img className="h-full w-full mx-auto my-auto" src={pradita} alt="" />
+          </div>
+          <div className='w-full h-28 xl:h-44 p-2 xl:p-4'>
+            <img className="h-full w-full mx-auto my-auto" src={sampoerna} alt="" />
+          </div>
+          <div className='w-full h-28 xl:h-44 p-2 xl:p-4'>
+            <img className="h-full w-full mx-auto my-auto" src={tokopedia} alt="" />
+          </div>
+          <div className='w-full h-28 xl:h-44 p-2 xl:p-4'>
+            <img className="h-full w-full mx-auto my-auto" src={sanggar} alt="" />
+          </div>
+          <div className='w-full h-28 xl:h-44 p-2 xl:p-4'>
+            <img className="h-full w-full mx-auto my-auto" src={semarang} alt="" />
+          </div>
+          <div className='w-full h-28 xl:h-44 p-2 xl:p-4'>
+            <img className="h-full w-full mx-auto my-auto" src={jateng} alt="" />
+          </div>
+          <div className='w-full h-28 xl:h-44 p-2 xl:p-4'>
+            <img className="h-full w-full mx-auto my-auto" src={hsb} alt="" />
+          </div>
+          <div className='w-full h-28 xl:h-44 p-2 xl:p-4'>
+            <img className="h-full w-full mx-auto my-auto" src={pln} alt="" />
+          </div>
+        </Slider>
+      </div>
       <div className="w-fit">
         <Link to="/work">
           <div className="p-2 my-auto hover:scale-110 hover:bg-gradient-to-l flex justify-between from-blue-400 to-blue-600 bg-gradient-to-r rounded-xl w-fit duration-200 delay-150">
