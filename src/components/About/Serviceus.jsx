@@ -32,125 +32,125 @@ function Serviceus() {
     };
     return (
         <div className='grid grid-cols-1 bg-black'>
-            <div className="my-28 xl:my-36 mx-5 xl:mx-24 2xl:mx-28">
-                <div className="space-y-8 xl:space-y-10">
+            <div className="my-28 md:my-36 mx-5 md:mx-28">
+                <div className="space-y-8 md:space-y-10">
                     <div className="flex space-x-2">
                         <div>
-                            <h1 className="text-2xl text-center xl:text-left xl:text-6xl 2xl:text-8xl text-white font-extrabold">SERVICES</h1>
+                            <h1 className="text-2xl text-center md:text-left md:text-8xl text-white font-extrabold">SERVICES</h1>
                         </div>
-                        <div className='pt-3.5 xl:pt-7'>
-                            <div className='border-2 xl:border-4 border-yellow-400 p-1 xl:p-2 rounded-xl px-12 xl:px-24'>
+                        <div className='pt-3.5 md:pt-7'>
+                            <div className='border-2 md:border-4 border-yellow-400 p-1 md:p-2 rounded-xl px-12 md:px-24'>
                             </div>
                         </div>
                     </div>
                     <div className="space-y-4">
-                        <div className="xl:w-1/2">
-                            <h1 className="text-xl text-left xl:text-5xl 2xl:text-7xl text-white font-bold">Solutions for all your business needs</h1>
+                        <div className="md:w-1/2">
+                            <h1 className="text-xl text-left md:text-7xl text-white font-bold">Solutions for all your business needs</h1>
                         </div>
-                        <div className="xl:w-3/4">
-                            <p className="text-white font-semibold text-left text-xs xl:text-lg 2xl:text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tristique lorem sem, et semper libero ornare lacinia. Nunc efficitur dolor id diam consequat congue. Aenean aliquet facilisis augue, vel lobortis lectus vestibulum sed. Integer sit amet mauris rhoncus, tincidunt augue quis, tristique nulla. Etiam mattis sollicitudin est, sed dictum tortor scelerisque at.</p>
+                        <div className="md:w-3/4">
+                            <p className="text-white font-semibold text-left text-xs md:text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tristique lorem sem, et semper libero ornare lacinia. Nunc efficitur dolor id diam consequat congue. Aenean aliquet facilisis augue, vel lobortis lectus vestibulum sed. Integer sit amet mauris rhoncus, tincidunt augue quis, tristique nulla. Etiam mattis sollicitudin est, sed dictum tortor scelerisque at.</p>
                         </div>
                     </div>
                     <div className='my-auto space-y-4 '>
-                        <div className='bg-gray-800 p-4 xl:p-6 rounded-3xl'>
+                        <div className='bg-gray-800 p-4 md:p-6 rounded-3xl'>
                             <div className='flex justify-between'>
                                 <div className='my-auto'>
-                                    <h1 className='text-white font-semibold text-xl xl:text-3xl'>DIGITAL MARKETING</h1>
+                                    <h1 className='text-white font-semibold text-xl md:text-3xl'>DIGITAL MARKETING</h1>
                                 </div>
                                 <button onClick={toggleDropdown}>
                                     <div className='my-auto'>
-                                        <img className='my-auto w-3/4 xl:w-full' src={drop} alt="" />
+                                        <img className='my-auto w-3/4 md:w-full' src={drop} alt="" />
                                     </div>
                                 </button>
                             </div>
                             {isDropdownOpen && (
                                 <div className='my-4 bg-gray-700 p-4 rounded-xl'>
-                                    <p className='text-white font-semibold text-left text-xs xl:text-lg 2xl:text-xl'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tristique lorem sem, et semper libero ornare lacinia. Nunc efficitur dolor id diam consequat congue. Aenean aliquet facilisis augue, vel lobortis lectus vestibulum sed. Integer sit amet mauris rhoncus, tincidunt augue quis, tristique nulla. Etiam mattis sollicitudin est, sed dictum tortor scelerisque at.</p>
+                                    <p className='text-white font-semibold text-left text-xs md:text-xl'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tristique lorem sem, et semper libero ornare lacinia. Nunc efficitur dolor id diam consequat congue. Aenean aliquet facilisis augue, vel lobortis lectus vestibulum sed. Integer sit amet mauris rhoncus, tincidunt augue quis, tristique nulla. Etiam mattis sollicitudin est, sed dictum tortor scelerisque at.</p>
                                 </div>
                             )}
                         </div>
-                        <div className='bg-gray-800 p-4 xl:p-6 rounded-3xl'>
+                        <div className='bg-gray-800 p-4 md:p-6 rounded-3xl'>
                             <div className='flex justify-between'>
                                 <div className='my-auto'>
-                                    <h1 className='text-white font-semibold text-xl xl:text-3xl'>SOSIAL MEDIA</h1>
+                                    <h1 className='text-white font-semibold text-xl md:text-3xl'>SOSIAL MEDIA</h1>
                                 </div>
                                 <button onClick={toggleDropdown2}>
                                     <div className='my-auto'>
-                                        <img className='my-auto w-3/4 xl:w-full' src={drop} alt="" />
+                                        <img className='my-auto w-3/4 md:w-full' src={drop} alt="" />
                                     </div>
                                 </button>
                             </div>
                             {isDropdownOpen2 && (
                                 <div className='mt-4 bg-gray-700 p-4 rounded-xl'>
-                                    <p className='text-white font-semibold text-left text-xs xl:text-lg 2xl:text-xl'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tristique lorem sem, et semper libero ornare lacinia. Nunc efficitur dolor id diam consequat congue. Aenean aliquet facilisis augue, vel lobortis lectus vestibulum sed. Integer sit amet mauris rhoncus, tincidunt augue quis, tristique nulla. Etiam mattis sollicitudin est, sed dictum tortor scelerisque at.</p>
+                                    <p className='text-white font-semibold text-left text-xs md:text-xl'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tristique lorem sem, et semper libero ornare lacinia. Nunc efficitur dolor id diam consequat congue. Aenean aliquet facilisis augue, vel lobortis lectus vestibulum sed. Integer sit amet mauris rhoncus, tincidunt augue quis, tristique nulla. Etiam mattis sollicitudin est, sed dictum tortor scelerisque at.</p>
                                 </div>
                             )}
                         </div>
-                        <div className='bg-gray-800 p-4 xl:p-6 rounded-3xl'>
+                        <div className='bg-gray-800 p-4 md:p-6 rounded-3xl'>
                             <div className='flex justify-between'>
                                 <div className='my-auto'>
-                                    <h1 className='text-white font-semibold text-xl xl:text-3xl'>KOL MANAGEMENT</h1>
+                                    <h1 className='text-white font-semibold text-xl md:text-3xl'>KOL MANAGEMENT</h1>
                                 </div>
                                 <button onClick={toggleDropdown3}>
                                     <div className='my-auto'>
-                                        <img className='my-auto w-3/4 xl:w-full' src={drop} alt="" />
+                                        <img className='my-auto w-3/4 md:w-full' src={drop} alt="" />
                                     </div>
                                 </button>
                             </div>
                             {isDropdownOpen3 && (
                                 <div className='mt-4 bg-gray-700 p-4 rounded-xl'>
-                                    <p className='text-white font-semibold text-left text-xs xl:text-lg 2xl:text-xl'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tristique lorem sem, et semper libero ornare lacinia. Nunc efficitur dolor id diam consequat congue. Aenean aliquet facilisis augue, vel lobortis lectus vestibulum sed. Integer sit amet mauris rhoncus, tincidunt augue quis, tristique nulla. Etiam mattis sollicitudin est, sed dictum tortor scelerisque at.</p>
+                                    <p className='text-white font-semibold text-left text-xs md:text-xl'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tristique lorem sem, et semper libero ornare lacinia. Nunc efficitur dolor id diam consequat congue. Aenean aliquet facilisis augue, vel lobortis lectus vestibulum sed. Integer sit amet mauris rhoncus, tincidunt augue quis, tristique nulla. Etiam mattis sollicitudin est, sed dictum tortor scelerisque at.</p>
                                 </div>
                             )}
                         </div>
-                        <div className='bg-gray-800 p-4 xl:p-6 rounded-3xl'>
+                        <div className='bg-gray-800 p-4 md:p-6 rounded-3xl'>
                             <div className='flex justify-between'>
                                 <div className='my-auto'>
-                                    <h1 className='text-white font-semibold text-xl xl:text-3xl'>ADVERTISING</h1>
+                                    <h1 className='text-white font-semibold text-xl md:text-3xl'>ADVERTISING</h1>
                                 </div>
                                 <button onClick={toggleDropdown4}>
                                     <div className='my-auto'>
-                                        <img className='my-auto w-3/4 xl:w-full' src={drop} alt="" />
+                                        <img className='my-auto w-3/4 md:w-full' src={drop} alt="" />
                                     </div>
                                 </button>
                             </div>
                             {isDropdownOpen4 && (
                                 <div className='mt-4 bg-gray-700 p-4 rounded-xl'>
-                                    <p className='text-white font-semibold text-left text-xs xl:text-lg 2xl:text-xl'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tristique lorem sem, et semper libero ornare lacinia. Nunc efficitur dolor id diam consequat congue. Aenean aliquet facilisis augue, vel lobortis lectus vestibulum sed. Integer sit amet mauris rhoncus, tincidunt augue quis, tristique nulla. Etiam mattis sollicitudin est, sed dictum tortor scelerisque at.</p>
+                                    <p className='text-white font-semibold text-left text-xs md:text-xl'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tristique lorem sem, et semper libero ornare lacinia. Nunc efficitur dolor id diam consequat congue. Aenean aliquet facilisis augue, vel lobortis lectus vestibulum sed. Integer sit amet mauris rhoncus, tincidunt augue quis, tristique nulla. Etiam mattis sollicitudin est, sed dictum tortor scelerisque at.</p>
                                 </div>
                             )}
                         </div>
-                        <div className='bg-gray-800 p-4 xl:p-6 rounded-3xl'>
+                        <div className='bg-gray-800 p-4 md:p-6 rounded-3xl'>
                             <div className='flex justify-between'>
                                 <div className='my-auto'>
-                                    <h1 className='text-white font-semibold text-xl xl:text-3xl'>BRAND ACTIVATION</h1>
+                                    <h1 className='text-white font-semibold text-xl md:text-3xl'>BRAND ACTIVATION</h1>
                                 </div>
                                 <button onClick={toggleDropdown5}>
                                     <div className='my-auto'>
-                                        <img className='my-auto w-3/4 xl:w-full' src={drop} alt="" />
+                                        <img className='my-auto w-3/4 md:w-full' src={drop} alt="" />
                                     </div>
                                 </button>
                             </div>
                             {isDropdownOpen5 && (
                                 <div className='mt-4 bg-gray-700 p-4 rounded-xl'>
-                                    <p className='text-white font-semibold text-left text-xs xl:text-lg 2xl:text-xl'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tristique lorem sem, et semper libero ornare lacinia. Nunc efficitur dolor id diam consequat congue. Aenean aliquet facilisis augue, vel lobortis lectus vestibulum sed. Integer sit amet mauris rhoncus, tincidunt augue quis, tristique nulla. Etiam mattis sollicitudin est, sed dictum tortor scelerisque at.</p>
+                                    <p className='text-white font-semibold text-left text-xs md:text-xl'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tristique lorem sem, et semper libero ornare lacinia. Nunc efficitur dolor id diam consequat congue. Aenean aliquet facilisis augue, vel lobortis lectus vestibulum sed. Integer sit amet mauris rhoncus, tincidunt augue quis, tristique nulla. Etiam mattis sollicitudin est, sed dictum tortor scelerisque at.</p>
                                 </div>
                             )}
                         </div>
-                        <div className='bg-gray-800 p-4 xl:p-6 rounded-3xl'>
+                        <div className='bg-gray-800 p-4 md:p-6 rounded-3xl'>
                             <div className='flex justify-between'>
                                 <div className='my-auto'>
-                                    <h1 className='text-white font-semibold text-xl xl:text-3xl'>CONTENT PRODUCTION</h1>
+                                    <h1 className='text-white font-semibold text-xl md:text-3xl'>CONTENT PRODUCTION</h1>
                                 </div>
                                 <button onClick={toggleDropdown6}>
                                     <div className='my-auto'>
-                                        <img className='my-auto w-3/4 xl:w-full' src={drop} alt="" />
+                                        <img className='my-auto w-3/4 md:w-full' src={drop} alt="" />
                                     </div>
                                 </button>
                             </div>
                             {isDropdownOpen6 && (
                                 <div className='mt-4 bg-gray-700 p-4 rounded-xl'>
-                                    <p className='text-white font-semibold text-left text-xs xl:text-lg 2xl:text-xl'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tristique lorem sem, et semper libero ornare lacinia. Nunc efficitur dolor id diam consequat congue. Aenean aliquet facilisis augue, vel lobortis lectus vestibulum sed. Integer sit amet mauris rhoncus, tincidunt augue quis, tristique nulla. Etiam mattis sollicitudin est, sed dictum tortor scelerisque at.</p>
+                                    <p className='text-white font-semibold text-left text-xs md:text-xl'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tristique lorem sem, et semper libero ornare lacinia. Nunc efficitur dolor id diam consequat congue. Aenean aliquet facilisis augue, vel lobortis lectus vestibulum sed. Integer sit amet mauris rhoncus, tincidunt augue quis, tristique nulla. Etiam mattis sollicitudin est, sed dictum tortor scelerisque at.</p>
                                 </div>
                             )}
                         </div>

@@ -11,7 +11,7 @@ const CTAJourney = () => {
         className="absolute inset-0 w-full h-full object-cover object-center"
       />
       <div className="absolute inset-0 bg-yellow-400 opacity-60"></div>
-      <div className="relative z-10 h-full xl:flex justify-between items-center p-6 md:p-10 lg:p-16">
+      <div className="relative z-10 h-full md:flex justify-between items-center p-6 md:p-10 lg:p-16">
         <h2 className="text-white text-left text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold drop-shadow-md">
           Ready to start a new journey
           <br className="hidden sm:inline" />
@@ -24,10 +24,10 @@ const CTAJourney = () => {
           <div className="flex items-center justify-center">
             <Link to="/contact">
               <div className="p-2 my-auto hover:scale-110 hover:bg-gradient-to-l flex justify-between bg-gradient-to-r from-blue-400 to-blue-500 rounded-xl w-fit duration-200 delay-150">
-                <h1 className="text-white font-semibold text-left xl:px-5 px-2 text-sm xl:text-xl 2xl:text-2xl">
+                <h1 className="text-white font-semibold text-left md:px-5 px-2 text-sm md:text-xl 2md:text-2xl">
                   Contact Us
                 </h1>
-                <IoIosArrowForward className="text-white w-5 h-5 xl:w-7 xl:h-7" />
+                <IoIosArrowForward className="text-white w-5 h-5 md:w-7 md:h-7" />
               </div>
             </Link>
           </div>

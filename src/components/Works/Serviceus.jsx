@@ -58,22 +58,22 @@ const Serviceus = () => {
 
   return (
     <div className="bg-gray-100 grid grid-cols-1 p-4 h-screen">
-      <div className="space-y-4 xl:space-y-8 ">
+      <div className="space-y-4 md:space-y-8 ">
         <div className="flex space-x-2">
           <div>
-            <h1 className="text-xl text-left xl:text-5xl 2xl:text-7xl text-black font-bold">
+            <h1 className="text-xl text-left md:text-7xl text-black font-bold">
               Services
             </h1>
           </div>
-          <div className="pt-3.5 xl:pt-8 2xl:pt-12">
-            <div className="bg-yellow-400 p-1 xl:p-2 rounded-xl px-8 xl:px-16"></div>
+          <div className="pt-3.5 md:pt-8 2md:pt-12">
+            <div className="bg-yellow-400 p-1 md:p-2 rounded-xl px-8 md:px-16"></div>
           </div>
         </div>
         <div className="flex gap-2 overflow-auto">
           {categories.map((category) => (
             <button
               key={category.id}
-              className={`px-4 xl:px-8 p-1 xl:p-2 text-xs xl:text-sm font-bold rounded-xl ${
+              className={`px-4 md:px-8 p-1 md:p-2 text-xs md:text-sm font-bold rounded-xl ${
                 category.kategori === selectedCategory
                   ? "bg-blue-500 text-white"
                   : "bg-white text-black "
@@ -85,7 +85,7 @@ const Serviceus = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-2 xl:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {displayedProjects.map((project) => (
             <MediaCard
               key={project.id}

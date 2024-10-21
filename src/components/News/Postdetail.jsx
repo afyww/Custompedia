@@ -51,29 +51,29 @@ function Postdetail() {
 
     return (
         <div className="grid grid-cols-1 bg-black">
-            <div className="my-24 xl:my-44 mx-5 xl:mx-24 2xl:mx-28">
-                <div className="grid grid-cols-1 xl:grid-cols-3">
+            <div className="my-24 md:my-44 mx-5 md:mx-28">
+                <div className="grid grid-cols-1 md:grid-cols-3">
                     <div className="col-span-2">
-                        <div className="space-y-2 xl:space-y-10">
+                        <div className="space-y-2 md:space-y-10">
                             <div className="space-y-2">
-                                <h1 className="text-lg text-left xl:text-5xl 2xl:text-7xl text-white font-base">{post.judul}</h1>
-                                <h1 className="text-base text-left xl:text-xl 2xl:text-2xl text-white font-base">{post.published_at}</h1>
+                                <h1 className="text-lg text-left md:text-7xl text-white font-base">{post.judul}</h1>
+                                <h1 className="text-base text-left md:text-2xl text-white font-base">{post.published_at}</h1>
                             </div>
                             <div className="w-full">
                                 <img className="w-full h-full rounded-xl" src={`https://admin.custompedia.agency/storage/${post.img}`} alt="" />
                             </div>
                             <div>
-                                <h1 className="text-base text-left xl:text-xl 2xl:text-3xl text-white font-base"
+                                <h1 className="text-base text-left md:text-3xl text-white font-base"
                                     style={{ textAlign: "justify" }}
                                 >{post.content}</h1>
                             </div>
                         </div>
                     </div>
-                    <div className="space-y-4 xl:space-y-8 my-8 xl:my-36">
+                    <div className="space-y-4 md:space-y-8 my-8 md:my-36">
                         <div className="mx-auto">
-                            <h1 className="text-base text-left xl:text-center xl:text-xl 2xl:text-2xl text-white font-base">Related Post</h1>
+                            <h1 className="text-base text-left md:text-center md:text-2xl text-white font-base">Related Post</h1>
                         </div>
-                        <div className="xl:p-4 space-y-5">
+                        <div className="md:p-4 space-y-5">
                             {relatedpost.map((post) => (
                                 <div className="bg-gray-700 rounded-xl" key={post.id}>
                                     <div className="flex justify-between items-stretch">
@@ -84,7 +84,7 @@ function Postdetail() {
                                                 alt={post.judul}
                                             />
                                         </div>
-                                        <div className="flex-grow my-auto text-left space-y-1 xl:space-y-5 p-2">
+                                        <div className="flex-grow my-auto text-left space-y-1 md:space-y-5 p-2">
                                             <div>
                                                 <h1 className="text-white text-xs font-semibold">{post.judul}</h1>
                                                 <h1 className="text-white text-xs font-light">{post.published_at}</h1>
@@ -95,8 +95,8 @@ function Postdetail() {
                                             <div className="w-fit">
                                                 <Link to={`/post/${post.id}`}>
                                                     <div className="p-1 my-auto hover:scale-110 hover:bg-gradient-to-l flex justify-between from-blue-400 to-blue-600 bg-gradient-to-r from-blue-400 to-blue-500 rounded-xl w-fit duration-200 delay-150">
-                                                        <h1 className='text-white font-semibold text-left xl:px-2 px-1 text-xs 2xl:text-xs'>Read More</h1>
-                                                        <IoIosArrowForward className='text-white w-3 h-3.5 xl:w-3 xl:h-3' />
+                                                        <h1 className='text-white font-semibold text-left md:px-2 px-1 md:text-xs'>Read More</h1>
+                                                        <IoIosArrowForward className='text-white w-3 h-3.5 md:w-3 md:h-3' />
                                                     </div>
                                                 </Link>
                                             </div>

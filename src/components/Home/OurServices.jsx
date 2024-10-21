@@ -33,17 +33,17 @@ const Slider = () => {
   };
 
   return (
-    <div className="bg-black text-white p-2 xl:p-4 grid grid-cols-1 z-30">
-      <div className="z-20 my-6 xl:my-12">
+    <div className="bg-black text-white p-2 md:p-4 grid grid-cols-1 z-30">
+      <div className="z-20 my-6 md:my-12">
         <div className="w-full">
           <div className="flex space-x-2">
             <div>
-              <h1 className="text-xl text-left xl:text-5xl 2xl:text-7xl text-white font-bold">
+              <h1 className="text-xl text-left md:text-7xl text-white font-bold">
                 Our Service
               </h1>
             </div>
-            <div className="pt-3.5 xl:pt-8 2xl:pt-12">
-              <div className="bg-yellow-400 p-1 xl:p-2 rounded-xl px-8 xl:px-16"></div>
+            <div className="pt-3.5 md:pt-8 2md:pt-12">
+              <div className="bg-yellow-400 p-1 md:p-2 rounded-xl px-8 md:px-16"></div>
             </div>
           </div>
           <p className="text-lg text-gray-300 max-w-2xl">

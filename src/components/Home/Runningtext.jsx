@@ -19,20 +19,20 @@ function Runningtext() {
 
   return (
     <div className="h-fit grid grid-cols-1 w-full max-w-fit mx-auto bg-blue-800 z-30">
-      <div className="my-4 xl:my-18">
+      <div className="my-4 md:my-18">
         <Slider className="" {...settings}>
           <div className="w-full">
-            <h1 className="text-white text-xl xl:text-5xl font-extrabold flex items-center">
+            <h1 className="text-white text-xl md:text-5xl font-extrabold flex items-center">
               Merchant Branding <img src={star} alt="Running Star" className="ml-2 h-6 xl:h-10" />
             </h1>
           </div>
           <div className="w-full">
-            <h1 className="text-white text-xl xl:text-5xl font-extrabold flex items-center">
+            <h1 className="text-white text-xl md:text-5xl font-extrabold flex items-center">
               POI & POSM <img src={star} alt="Running Star" className="ml-2 h-6 xl:h-10" />
             </h1>
           </div>
           <div className="w-full">
-            <h1 className="text-white text-xl xl:text-5xl font-extrabold flex items-center">
+            <h1 className="text-white text-xl md:text-5xl font-extrabold flex items-center">
               Advertising <img src={star} alt="Running Star" className="ml-2 h-6 xl:h-10" />
             </h1>
           </div>

@@ -1,21 +1,21 @@
 function Aboutus() {
   return (
     <div className="grid grid-cols-1 bg-black">
-      <div className="xl:my-20 my-8 mx-2 xl:mx-2 2xl:mx-4">
-        <div className="xl:space-y-8 space-y-4">
+      <div className="md:my-20 my-8 mx-2 md:mx-4">
+        <div className="md:space-y-8 space-y-4">
           <div className="flex space-x-2">
             <div>
-              <h1 className="text-xl text-left xl:text-5xl 2xl:text-7xl text-white font-bold">
+              <h1 className="text-xl text-left md:text-7xl text-white font-bold">
                 About Us
               </h1>
             </div>
-            <div className="pt-3.5 xl:pt-8 2xl:pt-12">
-              <div className="bg-yellow-400 p-1 xl:p-2 rounded-xl px-8 xl:px-16"></div>
+            <div className="pt-3.5 md:pt-12">
+              <div className="bg-yellow-400 p-1 md:p-2 rounded-xl px-8 md:px-16"></div>
             </div>
           </div>
-          <div className="xl:space-y-8 space-y-4">
+          <div className="md:space-y-8 space-y-4">
             <h1
-              className="text-white text-xs font-extralight xl:text-xl"
+              className="text-white text-xs font-extralight md:text-xl"
               style={{ textAlign: "justify" }}
             >
               Why Us? Experience the all-in-one solution for unmatched creative
@@ -29,7 +29,7 @@ function Aboutus() {
               digital presence.
             </h1>
             <h1
-              className="text-white text-xs font-extralight xl:text-xl"
+              className="text-white text-xs font-extralight md:text-xl"
               style={{ textAlign: "justify" }}
             >
               With a decade of expertise, our team combines creativity and

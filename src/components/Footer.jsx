@@ -8,8 +8,8 @@ function Footer() {
     return (
         <footer className="h-fit w-full bg-white mx-auto">
             <div className="">
-                <div className="grid grid-cols-2 p-8 xl:p-10 space-y-4 xl:space-y-0">
-                    <div className="flex justify-around col-span-2 xl:col-span-1">
+                <div className="grid grid-cols-2 p-8 md:p-10 space-y-4 md:space-y-0">
+                    <div className="flex justify-around col-span-2 md:col-span-1">
                         <div className="">
                             <Link to="/">
                                 <img src={logo} alt="" />
@@ -17,20 +17,20 @@ function Footer() {
                         </div>
                         <div className='space-y-4 col-span-1'>
                             <div>
-                                <h1 className='font-extrabold font-sans text-black text-center text-xs xl:text-lg 2xl:text-xl'>Business</h1>
+                                <h1 className='font-extrabold font-sans text-black text-center text-xs md:text-xl'>Business</h1>
                             </div>
                             <div className='space-y-2 text-center'>
-                                <h1 className='font-light font-sans text-black text-center text-xs xl:text-lg 2xl:text-xl'>hello@custompedia.company</h1>
-                                <h1 className='font-light font-sans text-black text-center text-xs xl:text-lg 2xl:text-xl'>+62 819 0832 111</h1>
+                                <h1 className='font-light font-sans text-black text-center text-xs md:text-xl'>hello@custompedia.company</h1>
+                                <h1 className='font-light font-sans text-black text-center text-xs md:text-xl'>+62 819 0832 111</h1>
                             </div>
                         </div>
                     </div>
-                    <div className='space-y-4 col-span-2 xl:col-span-1'>
+                    <div className='space-y-4 col-span-2 md:col-span-1'>
                         <div>
-                            <h1 className='font-extrabold font-sans text-black text-center text-xs xl:text-lg 2xl:text-xl'>Address</h1>
+                            <h1 className='font-extrabold font-sans text-black text-center text-xs md:text-xl'>Address</h1>
                         </div>
                         <div className='text-center'>
-                            <h1 className='font-light font-sans text-black text-center text-xs xl:text-lg 2xl:text-xl'>Jl. Tlogo Sarangan No.39, Palebon, Kec. Pedurungan, Kota Semarang, Jawa Tengah 50246, Indonesia</h1>
+                            <h1 className='font-light font-sans text-black text-center text-xs md:text-xl'>Jl. Tlogo Sarangan No.39, Palebon, Kec. Pedurungan, Kota Semarang, Jawa Tengah 50246, Indonesia</h1>
                         </div>
                         <div className='mx-auto'>
                             <iframe className="mx-auto"
@@ -41,19 +41,19 @@ function Footer() {
 
                     </div>
                 </div>
-                <div className="grid grid-cols-1 xl:grid-cols-2">
-                    <div className='text-center order-2 xl:order-1 p-2.5 xl:p-5 my-auto'>
-                        <h1 className='font-extrabold font-sans text-black text-center text-xs xl:text-lg 2xl:text-xl'>
+                <div className="grid grid-cols-1 md:grid-cols-2">
+                    <div className='text-center order-2 md:order-1 p-2.5 md:p-5 my-auto'>
+                        <h1 className='font-extrabold font-sans text-black text-center text-xs md:text-xl'>
                             Copyright © PT Custompedia Creative 2024
                         </h1>
                     </div>
-                    <div className='space-y-4 mx-auto p-4 order-1 xl:order-2'>
+                    <div className='space-y-4 mx-auto p-4 order-1 md:order-2'>
                         <div>
-                            <h1 className='font-extrabold font-sans text-black text-center text-xs xl:text-lg 2xl:text-xl'>
+                            <h1 className='font-extrabold font-sans text-black text-center text-xs md:text-xl'>
                                 Connect With Us
                             </h1>
                         </div>
-                        <div className='flex gap-4 xl:gap-8 justify-center'>
+                        <div className='flex gap-4 md:gap-8 justify-center'>
                             <Link to=''>
                                 <FaInstagram className='text-black w-8 h-8' />
                             </Link>
