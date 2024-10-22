@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const apiUrl = "https://admin.custompedia.agency/api";
+const apiUrl = "https://panel.custompedia.agency/api";
 
 const createAxiosInstance = () => {
   const instance = axios.create({
