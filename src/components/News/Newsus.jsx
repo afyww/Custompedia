@@ -66,7 +66,7 @@ function Newsus() {
                                     <div className="flex-shrink-0 w-44 h-52 md:w-72 md:h-80">
                                         <img
                                             className="w-full h-full rounded-xl object-cover"
-                                            src={`https://admin.custompedia.agency/storage/${post.img}`}
+                                            src={`https://panel.custompedia.agency/storage/${post.img}`}
                                             alt={post.judul}
                                         />
                                     </div>

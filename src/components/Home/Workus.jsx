@@ -63,7 +63,7 @@ function Workus() {
                 <Link className="" to={`/project/${project.id}`}>
                   <div className="relative group shadow-xl transform duration-500 hover:bg-right cursor-pointer">
                     <img
-                      src={`https://admin.custompedia.agency/storage/${project.img1}`}
+                      src={`https://panel.custompedia.agency/storage/${project.img1}`}
                       alt={project.project}
                       className="w-full h-full object-cover rounded-xl"
                     />

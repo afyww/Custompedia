@@ -83,7 +83,7 @@ function Workdetail() {
       <div
         className="bg-cover bg-opacity-40 bg-center h-screen flex justify-start items-center"
         style={{
-          backgroundImage: `url(https://admin.custompedia.agency/storage/${encodeURIComponent(project.img1)})`,
+          backgroundImage: `url(https://panel.custompedia.agency/storage/${encodeURIComponent(project.img1)})`,
         }}
       >
         <div className="mx-5 xl:mx-28 p-2 bg-opacity-45 bg-black rounded-xl">
@@ -126,7 +126,7 @@ function Workdetail() {
                   <div>
                     <img
                       className="w-full h-full"
-                      src={`https://admin.custompedia.agency/storage/${image}`}
+                      src={`https://panel.custompedia.agency/storage/${image}`}
                       alt=""
                     />
                   </div>
@@ -137,7 +137,7 @@ function Workdetail() {
           <div>
             <video autoPlay playsInline loop className="rounded w-full h-full">
               <source
-                src={`https://admin.custompedia.agency/storage/${project.video}`}
+                src={`https://panel.custompedia.agency/storage/${project.video}`}
                 type="video/mp4"
               />
               Your browser does not support the video tag.

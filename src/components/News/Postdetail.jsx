@@ -60,7 +60,7 @@ function Postdetail() {
                                 <h1 className="text-base text-left md:text-2xl text-white font-base">{post.published_at}</h1>
                             </div>
                             <div className="w-full">
-                                <img className="w-full h-full rounded-xl" src={`https://admin.custompedia.agency/storage/${post.img}`} alt="" />
+                                <img className="w-full h-full rounded-xl" src={`https://panel.custompedia.agency/storage/${post.img}`} alt="" />
                             </div>
                             <div>
                                 <h1 className="text-base text-left md:text-3xl text-white font-base"
@@ -80,7 +80,7 @@ function Postdetail() {
                                         <div className="flex-shrink-0 w-40 h-40">
                                             <img
                                                 className="w-full h-full rounded-xl object-cover"
-                                                src={`https://admin.custompedia.agency/storage/${post.img}`}
+                                                src={`https://panel.custompedia.agency/storage/${post.img}`}
                                                 alt={post.judul}
                                             />
                                         </div>
