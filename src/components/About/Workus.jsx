@@ -61,7 +61,7 @@ function Workus() {
                         Custompedia
                       </p>
                     </div>
-                    <h2 className="font-bold text-lg md:text-3xl text-left">
+                    <h2 className="font-bold text-xs md:text-3xl text-left">
                       {project.project}
                     </h2>
                   </div>

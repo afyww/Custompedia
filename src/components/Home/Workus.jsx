@@ -68,7 +68,7 @@ function Workus() {
                       className="w-full h-full object-cover rounded-xl"
                     />
                     <div className="absolute inset-0 bg-black bg-opacity-20 py-8 md:py-36 hover:bg-opacity-75 transform duration-300 flex items-center justify-center">
-                      <h2 className="text-white duration-300 mx-5 bottom-0 font-extrabold text-2xl md:text-4xl opacity-0 transition-opacity group-hover:opacity-100 hover:text-white">
+                      <h2 className="text-white duration-300 mx-5 bottom-0 font-extrabold text-xs md:text-4xl opacity-0 transition-opacity group-hover:opacity-100 hover:text-white">
                         {project.project}
                       </h2>
                     </div>
